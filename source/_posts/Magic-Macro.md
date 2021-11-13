@@ -1,7 +1,8 @@
 ---
 author: kawhicurry
 title: Magic-Macro
-categories: Language
+categories:
+- Language
 date: 2021-11-07 20:28:58
 tags: C
 ---
