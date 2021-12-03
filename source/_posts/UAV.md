@@ -1,12 +1,12 @@
 ---
 author: kawhicurry
-title: UAV
+title: 记录从无人机上学到的东西
 categories: uncategorized
 date: 2021-11-16 20:54:45
 tags: auto
 ---
 
-# 记录目前从无人机上学到的东西
+# 记录从无人机上学到的东西
 
 *UAV*: Unmanned Aerial Vehicle
 

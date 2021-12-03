@@ -1,3 +1,11 @@
+---
+author: kawhicurry
+title: 0xCalculator 16进制计算器
+categories: cpp
+date: 2021-11-28 17:31:31
+tags: cpp
+---
+
 # 功能
 
 1. 对十六进制数进行双目、表达式运算
@@ -12,6 +20,9 @@
 1. ：ui设计与qt框架
 2. ：核心算法
 3. ：文件读写
+
+# 开源地址
+<https://github.com/kawhicurry/0xCalculator>
 
 # 开发过程
 
