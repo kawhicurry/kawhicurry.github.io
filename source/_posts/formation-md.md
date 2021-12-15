@@ -1,0 +1,192 @@
+---
+author: kawhicurry
+title: 修改2d球队的阵型
+categories: robocup
+date: 2021-12-13 16:26:21
+tags: apollo
+---
+其实是很久之前写的了，现在拿过来发布一下
+
+# Formation after score.
+
+## Principle
+
+Formation files are saved in a separate folder with surfix .conf.
+Its form is like below:
+```
+Formation Static
+# move positions when playmode is BeforeKickOff or AfterGoal.
+1 Goalie     -49.0   0.0
+2 CenterBack -25.0  -7.0
+3 CenterBack -25.0   7.0
+4 SideBack   -25.0 -15.0
+5 SideBack   -25.0  15.0
+6 DefensiveHalf -20.0   0.0
+7 OffensiveHalf -10.0 -7.0
+8 OffensiveHalf -10.0  7.0
+9  SideForward  -5.0 -10.0
+10 SideForward -5.0  10.0
+11 CenterForward -2.0   0.0
+```
+This is a static one,a dynamic one is like this:
+```
+Formation DelaunayTriangulation 2
+Begin Roles
+1 Goalie 0
+2 CenterBack -1
+3 CenterBack 2
+4 SideBack -1
+5 SideBack 4
+6 DefensiveHalf 0
+7 OffensiveHalf -1
+8 OffensiveHalf 7
+9 SideForward -1
+10 SideForward 9
+11 CenterForward 0
+End Roles
+Begin Samples 2 45
+----- 0 -----
+Ball 0 0
+1 -50 0
+2 -13.63 -5.6
+3 -13.9 5.6
+4 -13.09 -16.13
+5 -13.01 14.51
+6 -11.18 -0.36
+7 -6.58 -8.2
+8 -7.57 8.29
+9 -1.26 -11.99
+10 -1.8 12.17
+11 11.72 0
+----- 1 -----
+Ball -54.44 -20.73
+1 -50 0
+2 -47.41 -10.72
+3 -45.24 -5.14
+4 -50.02 -17.21
+5 -45.6 3.88
+6 -39.73 -9.8
+7 -40.83 -15.77
+8 -31.82 3.85
+9 -40.78 -29.47
+10 -27.69 21.98
+11 -14.9 -5.27
+```
+You can figure out exact coordinate through a location picture in the user-manual.
+
+In the `strategy.cpp` ,formation files was first read like this:
+```c++
+const std::string Strategy::BEFORE_KICK_OFF_CONF = "before-kick-off.conf";
+const std::string Strategy::NORMAL_FORMATION_CONF = "normal-formation.conf";
+```
+
+Then,a function named `read()` will check whether formation files is available:
+```c++
+bool
+Strategy::read( const std::string & formation_dir )
+{
+    static bool s_initialized = false;
+
+    if ( s_initialized )
+    {
+        std::cerr << __FILE__ << ' ' << __LINE__ << ": already initialized."
+                  << std::endl;
+        return false;
+    }
+    std::string configpath = formation_dir;
+    if ( ! configpath.empty()
+         && configpath[ configpath.length() - 1 ] != '/' )
+    {
+        configpath += '/';
+    }
+
+    // before kick off
+    M_before_kick_off_formation = readFormation( configpath + BEFORE_KICK_OFF_CONF );
+    if ( ! M_before_kick_off_formation )
+    {
+        std::cerr << "Failed to read before_kick_off formation" << std::endl;
+        return false;
+    }
+
+    //...
+
+    s_initialized = true;
+    return true;
+```
+
+After that,`getFormation()` will determine which formation to apply according to the worldmode.Mainly the `wm.gameMode().type()` and `wm.gameMode().side()`
+```c++
+    //
+    // opponent indirect free kick
+    //
+    if ( ( wm.gameMode().type() == GameMode::BackPass_
+           && wm.gameMode().side() == wm.ourSide() )
+         || ( wm.gameMode().type() == GameMode::IndFreeKick_
+              && wm.gameMode().side() == wm.theirSide() ) )
+    {
+        return M_indirect_freekick_opp_formation;
+    }
+```
+
+## Operation
+
+1. add formation file `celebrate-1-L.conf` and `celebrate-1-R.conf`
+```
+Formation Static
+# ---------------------------------------------------------
+# move positions when playmode is AfterGoal.
+1 Goalie     -50.0   0.0
+2 CenterBack -45.0  0.0
+3 CenterBack -40.0   0.0
+4 SideBack   -35.0  0.0
+5 SideBack   -30.0  0.0
+6 DefensiveHalf -25.0   0.0
+7 OffensiveHalf -20.0  0.0
+8 OffensiveHalf -15.0  0.0
+9  SideForward  -10.0  0.0
+10 SideForward -5.0  0.0
+11 CenterForward -1.0   0.0
+# ---------------------------------------------------------
+```
+
+2. add formation object in `strategy.cpp` and `strategy.h`
+```c++
+    //celebrate formation
+    static const std::string CELEBRATE_1_L_FORMATION_CONF;
+
+    //celebrate formation
+    rcsc::Formation::Ptr M_Celebrate_1_L_formation;
+```
+
+3. add logistic judge in functions
+```c++
+//in read()
+    M_Celebrate_1_L_formation = readFormation( configpath + CELEBRATE_1_L_FORMATION_CONF);
+    if ( ! M_indirect_freekick_our_formation )
+    {
+        std::cerr << "Failed to read celebrate-1-L-formation" << std::endl;
+        return false;
+    }
+//in getFormation()
+    if (wm.gameMode().type() == GameMode::AfterGoal_ && wm.gameMode().side() == wm.ourSide())
+    {
+        if (wm.time().stopped() <= 20)
+        {
+            if (wm.ourSide() == LEFT)
+                return M_Celebrate_1_L_formation;
+            else
+                return M_Celebrate_1_R_formation;
+        }
+        if (wm.time().stopped() <= 40)
+        {
+        }
+    }
+```
+You can change your formation at most twice according to rules.So a empty if is left.
+Notice: use wm.time().stopped() to make sure formation get normally in time
+
+
+
+
+
+
