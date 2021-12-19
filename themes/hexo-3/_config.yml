@@ -25,7 +25,7 @@ link:
     # oschina: https://my.oschina.net/yelog
     # juejin:
     # email: jaytp@qq.com
-    # qq: 872336115
+    qq: 1145315261
     # kugou: https://www.kugou.com/
     # neteasemusic: https://music.163.com/#/user/home?id=88151013
 
@@ -34,7 +34,7 @@ author:
   on: true
   authors:
     author1: kawhicurry
-    author2: 小马哥
+    author2: others
 ##############################
 
 # 文章分类设置
@@ -88,7 +88,7 @@ menu:
 # 文末声明
 article_txt: 转载请注明来源，欢迎对文章中的引用来源进行考证，欢迎指出任何有错误或不够清晰的表达。可以在下面评论区评论，也可以邮件至 kawhicurry@foxmail.com
 
-bottom_text: ©2020-2022 kawhicurry
+bottom_text: ©2021-2022 kawhicurry
 # 自定义页面最下方的站点版权信息
 # 如果不填，则自定义为 ©2017 author (这个author为hexo根目录_config.yml中配置的)
 
@@ -112,10 +112,10 @@ searchAll: false
 #   field: post
 
 
-copyright: false
+copyright: true
 # Copyright info. of post | 文末版权信息
 
-word_count: false
+word_count: true
 # true 开启字数统计
 # 开启此功能需要安装插件 ：在 hexo根目录 执行npm i hexo-wordcount --save
 
@@ -123,7 +123,7 @@ word_count: false
 # 不蒜子网站计数设置
 # http://ibruce.info/2015/04/04/busuanzi/
 visit_counter:
-  on: true
+  on: false
   site_visit: true
   page_visit: true
 
@@ -176,16 +176,16 @@ img_resize: default
 
 # 代码段高亮样式，markdown 语法 `demo`
 code:
-  theme: dark-red
+  theme: github
 # 支持主题：
 # dark-red: 红字(默认)
 # github: github样式（灰色底，黑字）
 
 highlight:
   on: true # true开启代码高亮，开启需要关闭博客 _config.yml 中的 highlight
-  lineNum: false # true显示行号
+  lineNum: true # true显示行号
   copy: true # 复制功能
-  theme: atom-light
+  theme: github
 # 代码高亮主题,效果可以查看 https://highlightjs.org/static/demo/
 # 支持主题：
 # sublime : 参考sublime的高亮主题
@@ -212,7 +212,7 @@ mathjax:
 
 # Mermaid 支持
 mermaid:
-  on: false
+  on: true
   cdn: //cdn.jsdelivr.net/npm/mermaid@8.4.2/dist/mermaid.min.js
   #cdn: //cdnjs.cloudflare.com/ajax/libs/mermaid/8.3.1/mermaid.min.js
   options: # 更多配置信息可以参考 https://mermaidjs.github.io/#/mermaidAPI
