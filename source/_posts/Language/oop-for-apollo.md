@@ -1,10 +1,11 @@
 ---
 author: kawhicurry
 title: 给Apollo的面对对象课
-categories: uncategorized
-date: 2021-11-21 19:21:13
+categories:
+  - Language
 tags: cpp
 cover: true
+date: 2021-11-21 19:21:13
 ---
 
 # 课前提醒（给我自己的）
@@ -43,7 +44,7 @@ int main(){
 
 **提问**：`iostream`头文件应该放在哪？
 
-```c++
+```cpp
 //fun.h
 #include <iostream>
 ```
@@ -67,7 +68,7 @@ VS（IDE）的编译过程：
 
 **提问**：如果把上面的`stdio.h`改成`iostream`，会怎么样
 
-```c++
+```cpp
 //fun.h
 #ifndef _fun
 #define _fun
@@ -122,7 +123,7 @@ C不允许同名函数，即使允许，你也不知道show了谁的price。如�
 
 把函数写在struct里面，让函数成为struct的“专属函数”。C不许我们这么做，但是C++可以
 
-```c++
+```cpp
 struct Book{
     char name[10];
     char ISBN[20];
@@ -143,7 +144,7 @@ theBook.showPrice();
 
 **提问**：考虑price的合理性，如何正确的为price赋值？（price>0)
 
-```c++
+```cpp
 //考虑这种用法
 theBook.price=100;
 
@@ -161,7 +162,7 @@ theBook.price=100;
 
 封装的必要性
 
-```c++
+```cpp
 class Book{
 private:
     char name[10];
@@ -203,7 +204,7 @@ Book b;
 
 我们可以如何创建一个对象？我们需要Constructor，构造函数。
 
-```c++
+```cpp
 class Book{
 public:
     Book(){}
@@ -240,7 +241,7 @@ Book b2(10,"Apollo");
 
 **提问**：我希望有一个科幻书，科幻书有一个别人没有的成员：科幻程度(depth)。同时有一种传记，有一个独有的值来记录传记主人公的名字(person)。
 
-```c++
+```cpp
 class Book{
 public:
     //...
@@ -258,7 +259,7 @@ private:
 
 有公共属性，也有独有的属性(attribute)
 
-```c++
+```cpp
 class Fiction:public Book{
 public:
     Fiction();
@@ -291,7 +292,7 @@ class biography:public Book{
 
 现在，我希望所有书都是被分了类的（如果不知道怎么分，就分到“未知分类”里面去），我们现在不允许直接创建一个Book对象，必须要先从Book继承一个专门的分类，再创建该分类的对象。
 
-```c++
+```cpp
 class Book{
 public:
     virtual Book();
@@ -314,7 +315,7 @@ private:
 
 `virtual`要求必须由子类来实现，这就是重载。重载允许同名，但必须接受不同参数。
 
-```c++
+```cpp
 #include <iostream>
 using namespace std;
 
@@ -329,7 +330,7 @@ int main() {
 
 **提问**：
 
-```c++
+```cpp
 //已经有了这个函数
 Book(double the_price,char* the_name){
    setPrice(the_price);
@@ -349,7 +350,7 @@ C++编译器不允许这样的事情发生，会出现redefinition报错，编�
 
 更进一步，考虑Book==Book
 
-```c++
+```cpp
 Book a(1,"apollo");
 Book b(10,"apollo");
 
@@ -461,7 +462,7 @@ int main(void) {
 
 C++ 使用封装好的new 和delete
 
-```c++
+```cpp
 int main(void) {
 
     int i = 0;
@@ -522,7 +523,7 @@ int main(void) {
 
 # 完整示例
 
-```c++
+```cpp
 //book.h
 #ifndef _book
 #define _book
@@ -559,7 +560,7 @@ private:
 #endif
 ```
 
-```c++
+```cpp
 //book.cpp
 #include "book.h"
 
@@ -584,14 +585,14 @@ int Book::set_price(double the_price){
 //set_name 和 set_ISBN 略
 ```
 
-```c++
+```cpp
 //show.hpp
 void show_price(Book the_book){
     std::cout<<the_book.price<<std::endl;
 }
 ```
 
-```c++
+```cpp
 //main.cpp
 #include "book.hpp"
 

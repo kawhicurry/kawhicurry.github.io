@@ -36,7 +36,7 @@ skip_render:
 # --------------------------------------------------------------------------
 
 # Writing
-new_post_name: :title.md # File name of new posts
+new_post_name: :category/:title.md # File name of new posts
 default_layout: post
 titlecase: false # Transform title into titlecase
 external_link:
@@ -49,16 +49,16 @@ post_asset_folder: false
 relative_link: false
 future: true
 highlight:
-  enable: true
-  line_number: true
+  enable: false
+  line_number: false
   auto_detect: false
   tab_replace: ''
-  wrap: true
+  wrap: false
   hljs: false
 prismjs:
   enable: true
   preprocess: true
-  line_number: false
+  line_number: true
   tab_replace: ''
 
 # Home page setting
@@ -71,10 +71,19 @@ index_generator:
   order_by: -date
 
 # Category & Tag
-default_category: uncategorized
+default_category: 待定
 category_map:
+  前端: Front-end
+  后端: Back-end
+  运维: Operation
+  工具: Tools
+  日常: Daily
+  待定: uncategorized
 tag_map:
 
+auto_category:
+ enable: true
+ depth:
 # Metadata elements
 ## https://developer.mozilla.org/en-US/docs/Web/HTML/Element/meta
 meta_generator: true

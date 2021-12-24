@@ -1,9 +1,10 @@
 ---
 author: kawhicurry
 title: log-a-rsync-mistake
-categories: linux
-date: 2021-12-03 16:16:26
+categories:
+  - Operation
 tags: rsync
+date: 2021-12-03 16:16:26
 ---
 
 # log a rsync mistake

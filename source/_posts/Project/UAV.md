@@ -1,10 +1,10 @@
 ---
 author: kawhicurry
 title: 记录从无人机上学到的东西
-categories: auto
-date: 2021-11-16 20:54:45
+categories:
+  - Project
 tags: auto
-cover: true
+date: 2021-11-16 20:54:45
 ---
 
 # 记录从无人机上学到的东西

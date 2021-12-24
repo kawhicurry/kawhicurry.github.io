@@ -1,9 +1,10 @@
 ---
 author: kawhicurry
 title: log-a-git-error
-categories: tool
-date: 2021-11-10 20:01:01
+categories:
+  - Operation
 tags: git
+date: 2021-11-10 20:01:01
 ---
 
 When I tried to clone a repo from self-built gitlab. I met a error like this：

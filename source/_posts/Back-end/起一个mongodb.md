@@ -1,11 +1,12 @@
 ---
 author: kawhicurry
 title: 起一个mongodb
-categories: database
+categories:
+  - Back-end
 top: 0
 cover: 0
-date: 2021-12-23 12:58:30
 tags: mongodb
+date: 2021-12-23 12:58:30
 img:
 coverImg:
 summary:

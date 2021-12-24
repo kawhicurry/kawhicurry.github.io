@@ -42,14 +42,12 @@ category:
   num: true # 分类显示文章数
   sub: true # 开启多级分类
   sort:
-    - daily
-    - tool
-    - front
-    - back
-    - operation
-    - auto
-    - math
-    - uncategorized
+    - 前端
+    - 后端
+    - 运维
+    - 工具
+    - 日常
+    - 待定
   width:
     lg: 120 # 1468px<屏幕宽度 左侧分类宽度
     md: 100 # 1024px<屏幕宽度<=1468px 左侧分类宽度
@@ -182,8 +180,8 @@ code:
 # github: github样式（灰色底，黑字）
 
 highlight:
-  on: true # true开启代码高亮，开启需要关闭博客 _config.yml 中的 highlight
-  lineNum: true # true显示行号
+  on: false # true开启代码高亮，开启需要关闭博客 _config.yml 中的 highlight
+  lineNum: false # true显示行号
   copy: true # 复制功能
   theme: github
 # 代码高亮主题,效果可以查看 https://highlightjs.org/static/demo/

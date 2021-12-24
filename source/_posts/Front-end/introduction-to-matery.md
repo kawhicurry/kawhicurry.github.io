@@ -1,10 +1,11 @@
 ---
 author: kawhicurry
 title: introduction-to-matery
-categories: front
-date: 2021-12-19 20:02:04
+categories:
+  - Front-end
 tags: hexo
 top: 1
+date: 2021-12-19 20:02:04
 ---
 ## 文章 Front-matter 介绍
 

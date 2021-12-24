@@ -1,7 +1,8 @@
 [
     {
-        "avatar": "http://image.luokangyuan.com/1_qq_27922023.jpg",
+        "cover": true,
+        "coverImg": "http://image.luokangyuan.com/1_qq_27922023.jpg",
         "title": "UAV",
-        "path": "auto/UAV"
+        "path": "auto/uav"
     }
 ]

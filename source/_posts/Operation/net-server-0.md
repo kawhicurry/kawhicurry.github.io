@@ -1,9 +1,10 @@
 ---
 author: kawhicurry
 title: Situation of operation technology
-categories: operation
-date: 2021-11-13 20:01:01
+categories:
+  - Operation
 tags: git
+date: 2021-11-13 20:01:01
 ---
 # 一个软件的诞生
 

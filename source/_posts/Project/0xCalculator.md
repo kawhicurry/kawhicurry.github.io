@@ -1,9 +1,10 @@
 ---
 author: kawhicurry
 title: 0xCalculator 16进制计算器
-categories: cpp
-date: 2021-11-28 17:31:31
+categories:
+  - Project
 tags: cpp
+date: 2021-11-28 17:31:31
 ---
 
 # 功能
@@ -95,7 +96,7 @@ qt文件将会以平铺的方式放置在同一工程目录下，其组织结构
 
 通过在组件上右键选择 转到槽 可以快捷创建槽函数。示例如图：
 
-```c++
+```cpp
 //mainwindow.h
 void MainWindow::on_pushButton_left_bracket_clicked();
 //mainwindow.cpp
@@ -107,7 +108,7 @@ void MainWindow::on_pushButton_left_bracket_clicked() {
 
 手动创建几个后，就可以发现其规矩。一个槽函数的名称由`on_name_action`组成。`pushButton_left_bracket`是改按键的名称，这个名称需要在ui文件中指定，当拖动pushButton的时候，qt会按照12345依次给其一个默认名称，并且上面的默认文字都是pushButton。因此对于声明，可以用宏生成。
 
-```c++
+```cpp
 //mainwindwo.h
 #define clicked_func(name) void on_pushButton_##name##_clicked();
   clicked_func(0);
@@ -158,7 +159,7 @@ qt为用户提供了`text Browser`,`text Edit`,`Plain text edit`,`line edit`等�
 
 等号按键是计算器最核心的按键，以下为等号按键的槽函数
 
-```c++
+```cpp
 //mainwindow.cpp
 void MainWindow::on_pushButton_equal_clicked() {
   ui->textBrowser_input->setFocus();

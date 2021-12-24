@@ -120,17 +120,6 @@
   
   <li class="hide-on-med-and-down nav-item">
     
-    <a href="/contact" class="waves-effect waves-light">
-      
-      <i class="fas fa-comments" style="zoom: 0.6;"></i>
-      
-      <span>留言板</span>
-    </a>
-    
-  </li>
-  
-  <li class="hide-on-med-and-down nav-item">
-    
     <a href="/friends" class="waves-effect waves-light">
       
       <i class="fas fa-address-book" style="zoom: 0.6;"></i>
@@ -215,17 +204,6 @@
 			    <i class="fa-fw fas fa-user-circle"></i>
 			
 			关于
-		</a>
-          
-        </li>
-        
-        <li class="m-nav-item">
-	  
-		<a href="/contact" class="waves-effect waves-light">
-			
-			    <i class="fa-fw fas fa-comments"></i>
-			
-			留言板
 		</a>
           
         </li>
@@ -468,30 +446,6 @@
         
             
             <div class="carousel-item amber white-text carousel-post bg-cover"
-                 style="background-image: url('/medias/featureimages/6.jpg');">
-                <div class="container">
-                    <div class="row">
-                        <div class="col s10 offset-s1">
-                            <div class="title center-align">记录从无人机上学到的东西</div>
-                            <div class="description center-align">
-                                
-                                    记录从无人机上学到的东西UAV: Unmanned Aerial Vehicle
-项目的目的分为森林救火和森林巡逻，我被分在森林巡逻部分。主要是让飞机按一定轨迹在操场上飞行，以z形路线飞过一个操场。森姐救火则是在上述基础上加上使用视觉识别找
-                                
-                            </div>
-                            <div class="cover-btns">
-                                <a href="/auto/uav/" class="waves-effect waves-light btn"
-                                   target="_blank">
-                                    <i class="icon fa fa-eye fa-fw"></i>阅读更多
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        
-            
-            <div class="carousel-item amber white-text carousel-post bg-cover"
                  style="background-image: url('/medias/featureimages/21.jpg');">
                 <div class="container">
                     <div class="row">
@@ -504,11 +458,16 @@
 准备好使用g++
 
 多文件编程Why非结构化与结构化：goto满天飞的后果
-How123456789101112131415161718//fun.hvoid func();//fun.c
+How//fun.h
+void func();
+
+//fun.cpp
+#include "fun.h"
+void
                                 
                             </div>
                             <div class="cover-btns">
-                                <a href="/uncategorized/oop-for-apollo/" class="waves-effect waves-light btn"
+                                <a href="/language/oop-for-apollo/" class="waves-effect waves-light btn"
                                    target="_blank">
                                     <i class="icon fa fa-eye fa-fw"></i>阅读更多
                                 </a>
@@ -557,7 +516,7 @@ How123456789101112131415161718//fun.hvoid func();//fun.c
         let autoCarousel = function () {
             carouselIntervalId = setInterval(function () {
                 coverSlider.carousel('next');
-            }, 5000);
+            }, 10000);
         };
         autoCarousel();
         
@@ -668,7 +627,7 @@ How123456789101112131415161718//fun.hvoid func();//fun.c
              <!-- 隐藏某个文章 -->
             <div class="article col s12 m6 l4" data-aos="zoom-in">
                 <div class="card">
-                    <a href="/database/qi-yi-ge-mongodb/">
+                    <a href="/back-end/qi-yi-ge-mongodb/">
                         <div class="card-image">
                             
                             
@@ -699,8 +658,8 @@ mogodb
                                 
                                 <i class="fas fa-bookmark fa-fw icon-category"></i>
                                 
-                                <a href="/categories/database/" class="post-category">
-                                    database
+                                <a href="/categories/Back-end/" class="post-category">
+                                    Back-end
                                 </a>
                                 
                                 
@@ -724,7 +683,7 @@ mogodb
              <!-- 隐藏某个文章 -->
             <div class="article col s12 m6 l4" data-aos="zoom-in">
                 <div class="card">
-                    <a href="/uncategorized/zi-zhi-rss-yue-du-qi/">
+                    <a href="/project/zi-zhi-rss-yue-du-qi/">
                         <div class="card-image">
                             
                             
@@ -737,9 +696,10 @@ mogodb
                     <div class="card-content article-content">
                         <div class="summary block-with-text">
                             
-                                尝试自制了一个rss阅读器，使用python+linux的crontab+hexo
-有空来记录一下
-
+                                尝试自制了一个rss阅读器，现在还在开发中。
+想法Rss：简单信息聚合。
+互联网使我们得以接触到广泛的信息，而我们往往希望自己关注的创作者（某个网站）有更新时，自己能第一个被通知。Rss便是为此而生。
+Rss的概念其实很简单。它的使用过程大
                             
                         </div>
                         <div class="publish-info">
@@ -750,8 +710,8 @@ mogodb
                                 
                                 <i class="fas fa-bookmark fa-fw icon-category"></i>
                                 
-                                <a href="/categories/uncategorized/" class="post-category">
-                                    uncategorized
+                                <a href="/categories/Project/" class="post-category">
+                                    Project
                                 </a>
                                 
                                 
@@ -775,7 +735,7 @@ mogodb
              <!-- 隐藏某个文章 -->
             <div class="article col s12 m6 l4" data-aos="zoom-in">
                 <div class="card">
-                    <a href="/front/introduction-to-matery/">
+                    <a href="/front-end/introduction-to-matery/">
                         <div class="card-image">
                             
                             
@@ -810,8 +770,8 @@ Markd
                                 
                                 <i class="fas fa-bookmark fa-fw icon-category"></i>
                                 
-                                <a href="/categories/front/" class="post-category">
-                                    front
+                                <a href="/categories/Front-end/" class="post-category">
+                                    Front-end
                                 </a>
                                 
                                 
@@ -860,8 +820,8 @@ Source Insi
                                 
                                 <i class="fas fa-bookmark fa-fw icon-category"></i>
                                 
-                                <a href="/categories/tools/" class="post-category">
-                                    tools
+                                <a href="/categories/Tools/" class="post-category">
+                                    Tools
                                 </a>
                                 
                                 
@@ -877,7 +837,7 @@ Source Insi
              <!-- 隐藏某个文章 -->
             <div class="article col s12 m6 l4" data-aos="zoom-in">
                 <div class="card">
-                    <a href="/robocup/formation-md/">
+                    <a href="/project/xiu-gai-2d-qiu-dui-de-zhen-xing/">
                         <div class="card-image">
                             
                             
@@ -902,8 +862,8 @@ Formation after score.PrincipleFormation files are saved in a separate folder wi
                                 
                                 <i class="fas fa-bookmark fa-fw icon-category"></i>
                                 
-                                <a href="/categories/robocup/" class="post-category">
-                                    robocup
+                                <a href="/categories/Project/" class="post-category">
+                                    Project
                                 </a>
                                 
                                 
@@ -927,7 +887,7 @@ Formation after score.PrincipleFormation files are saved in a separate folder wi
              <!-- 隐藏某个文章 -->
             <div class="article col s12 m6 l4" data-aos="zoom-in">
                 <div class="card">
-                    <a href="/linux/log-a-rsync-mistake/">
+                    <a href="/operation/log-a-rsync-mistake/">
                         <div class="card-image">
                             
                             
@@ -941,7 +901,7 @@ Formation after score.PrincipleFormation files are saved in a separate folder wi
                         <div class="summary block-with-text">
                             
                                 log a rsync mistakeI want to sync some files from 2 directories mirror1 andmirror2.So I run:
-12nohup rsync &lt;src&gt;/m
+nohup rsync &lt;src>/mirror
                             
                         </div>
                         <div class="publish-info">
@@ -952,8 +912,8 @@ Formation after score.PrincipleFormation files are saved in a separate folder wi
                                 
                                 <i class="fas fa-bookmark fa-fw icon-category"></i>
                                 
-                                <a href="/categories/linux/" class="post-category">
-                                    linux
+                                <a href="/categories/Operation/" class="post-category">
+                                    Operation
                                 </a>
                                 
                                 
@@ -977,7 +937,7 @@ Formation after score.PrincipleFormation files are saved in a separate folder wi
              <!-- 隐藏某个文章 -->
             <div class="article col s12 m6 l4" data-aos="zoom-in">
                 <div class="card">
-                    <a href="/cpp/0xcalculator/">
+                    <a href="/project/0xcalculator/">
                         <div class="card-image">
                             
                             
@@ -1014,8 +974,8 @@ Formation after score.PrincipleFormation files are saved in a separate folder wi
                                 
                                 <i class="fas fa-bookmark fa-fw icon-category"></i>
                                 
-                                <a href="/categories/cpp/" class="post-category">
-                                    cpp
+                                <a href="/categories/Project/" class="post-category">
+                                    Project
                                 </a>
                                 
                                 
@@ -1039,7 +999,7 @@ Formation after score.PrincipleFormation files are saved in a separate folder wi
              <!-- 隐藏某个文章 -->
             <div class="article col s12 m6 l4" data-aos="zoom-in">
                 <div class="card">
-                    <a href="/uncategorized/oop-for-apollo/">
+                    <a href="/language/oop-for-apollo/">
                         <div class="card-image">
                             
                             
@@ -1057,7 +1017,12 @@ Formation after score.PrincipleFormation files are saved in a separate folder wi
 准备好使用g++
 
 多文件编程Why非结构化与结构化：goto满天飞的后果
-How123456789101112131415161718//fun.hvoid func();//fun.c
+How//fun.h
+void func();
+
+//fun.cpp
+#include "fun.h"
+void
                             
                         </div>
                         <div class="publish-info">
@@ -1068,8 +1033,8 @@ How123456789101112131415161718//fun.hvoid func();//fun.c
                                 
                                 <i class="fas fa-bookmark fa-fw icon-category"></i>
                                 
-                                <a href="/categories/uncategorized/" class="post-category">
-                                    uncategorized
+                                <a href="/categories/Language/" class="post-category">
+                                    Language
                                 </a>
                                 
                                 
@@ -1093,7 +1058,7 @@ How123456789101112131415161718//fun.hvoid func();//fun.c
              <!-- 隐藏某个文章 -->
             <div class="article col s12 m6 l4" data-aos="zoom-in">
                 <div class="card">
-                    <a href="/auto/uav/">
+                    <a href="/project/uav/">
                         <div class="card-image">
                             
                             
@@ -1118,8 +1083,8 @@ How123456789101112131415161718//fun.hvoid func();//fun.c
                                 
                                 <i class="fas fa-bookmark fa-fw icon-category"></i>
                                 
-                                <a href="/categories/auto/" class="post-category">
-                                    auto
+                                <a href="/categories/Project/" class="post-category">
+                                    Project
                                 </a>
                                 
                                 
@@ -1180,8 +1145,8 @@ How123456789101112131415161718//fun.hvoid func();//fun.c
                                 
                                 <i class="fas fa-bookmark fa-fw icon-category"></i>
                                 
-                                <a href="/categories/operation/" class="post-category">
-                                    operation
+                                <a href="/categories/Operation/" class="post-category">
+                                    Operation
                                 </a>
                                 
                                 
@@ -1250,7 +1215,7 @@ How123456789101112131415161718//fun.hvoid func();//fun.c
             <br>
             
                 &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
-                        class="white-color">17.3k</span>
+                        class="white-color">18.2k</span>
             
             
             
