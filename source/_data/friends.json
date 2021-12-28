@@ -14,10 +14,17 @@
         "title": "Visit Blog"
     },
     {
-        "avatar": "https://nymrli.top/",
+        "avatar": "https://nymrli.top/img/assets/favicon.ico",
         "name": "阿波罗的前辈",
         "introduction": "来自南邮apollo的大佬",
-        "url": "https://nymrli.top/img/assets/favicon.ico",
+        "url": "https://nymrli.top",
+        "title": "Read More"
+    },
+    {
+        "avatar": "http://apollo2d.shuihua.top/gitbook/images/apple-touch-icon-precomposed-152.png",
+        "name": "Apollo2d 的文档",
+        "introduction": "记录2d组的重建过程",
+        "url": "http://apollo2d.shuihua.top",
         "title": "Read More"
     }
 ]
