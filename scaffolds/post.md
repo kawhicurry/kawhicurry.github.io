@@ -2,8 +2,10 @@
 author: kawhicurry
 title: {{ title }}
 date: {{ date }}
-categories: 待定
+categories:
 tags:
+- tag1
+- tag2
 description: {{ title }}
 img:
 top: 0
