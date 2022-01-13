@@ -118,6 +118,6 @@ theme: hexo-theme-matery
 # Deployment
 ## Docs: https://hexo.io/docs/one-command-deployment
 deploy:
-  type: 'git'
+- type: 'git'
   repo: "git@github.com:kawhicurry/kawhicurry.github.io.git"
-  branch: website
+  branch: 'website'
