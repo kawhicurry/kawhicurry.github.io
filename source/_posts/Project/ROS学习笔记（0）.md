@@ -1,15 +1,14 @@
----
 author: kawhicurry
 title: ROS学习笔记（0）
 tags:
-  - 专栏：ros学习笔记
   - linux
+  - 专栏：ros学习笔记
 description: ROS学习笔记（0）
 top: 0
 cover: 0
 categories:
   - Project
-date: 2022-01-15 14:51:33
+date: 2022-01-15 14:51:00
 img:
 coverImg:
 summary:
