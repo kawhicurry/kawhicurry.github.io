@@ -1,7 +1,9 @@
+---
 author: kawhicurry
 title: ROS学习笔记（0）
 tags:
   - linux
+  - ros
   - 专栏：ros学习笔记
 description: ROS学习笔记（0）
 top: 0
