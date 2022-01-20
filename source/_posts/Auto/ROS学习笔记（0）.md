@@ -9,7 +9,7 @@ description: ROS学习笔记（0）
 top: 0
 cover: 0
 categories:
-  - Project
+  - Auto
 date: 2022-01-15 14:51:00
 img:
 coverImg:

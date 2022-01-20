@@ -7,8 +7,9 @@ tags:
 description: ROS学习笔记（1）
 top: 0
 cover: 0
-date: 2022-01-20 09:55:13
 categories:
+  - Auto
+date: 2022-01-20 09:55:13
 img:
 coverImg:
 summary:
