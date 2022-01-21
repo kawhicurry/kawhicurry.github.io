@@ -342,7 +342,7 @@ verbose option
 rostopic list -v
 ```
 
-### rostopic type && rosmsg
+### rostopic type && rosmsg初探
 
 上面都是对node的查看，下面是对`ros message`的查看。
 
