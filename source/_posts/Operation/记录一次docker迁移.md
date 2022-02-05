@@ -11,7 +11,7 @@ categories:
   - Operation
 date: 2022-01-13 13:55:28
 img:
-coverImg:
+coverImg: https://cdn.jsdelivr.net/gh/kawhicurry/picgo/tech/docker0.jpeg
 summary:
 keywords:
 ---

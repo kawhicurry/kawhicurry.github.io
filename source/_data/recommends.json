@@ -6,5 +6,9 @@
     {
         "title": "给apollo的面对对象课",
         "path": "Language/oop-for-apollo"
+    },
+    {
+        "title": "专栏：重学linux",
+        "path": "Operation/重学linux（0）"
     }
 ]

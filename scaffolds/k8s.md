@@ -11,7 +11,7 @@ categories:
   - Operation
 date: {{ date }}
 img:
-coverImg:
+coverImg: https://cdn.jsdelivr.net/gh/kawhicurry/picgo@2022/2/5/tech/k8s0.png
 summary:
 keywords:
 ---
