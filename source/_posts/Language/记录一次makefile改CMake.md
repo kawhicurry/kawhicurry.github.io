@@ -1,21 +1,13 @@
 ---
-author: kawhicurry
 title: 记录一次makefile改CMake
 tags:
   - c
   - cpp
   - cmake
   - makefile
-description: 记录一次makefile改CMake
-top: 0
-cover: 0
 categories:
   - Language
 date: 2022-02-03 10:58:06
-img:
-coverImg:
-summary:
-keywords:
 ---
 
 # 前言

@@ -1,18 +1,11 @@
 ---
-author: kawhicurry
 title: 记录一次hexo生成的错误
 tags:
   - hexo
 description: 记录一次hexo生成的错误
-top: 0
-cover: 0
 categories:
   - Front-end
 date: 2022-01-29 15:17:20
-img:
-coverImg:
-summary:
-keywords:
 ---
 
 # 记录一次hexo生成的错误

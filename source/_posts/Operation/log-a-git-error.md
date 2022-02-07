@@ -1,9 +1,9 @@
 ---
-author: kawhicurry
 title: log-a-git-error
 categories:
   - Operation
-tags: git
+tags: 
+  - git
 date: 2021-11-10 20:01:01
 ---
 

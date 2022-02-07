@@ -1,10 +1,8 @@
 ---
-author: kawhicurry
 title: 给Apollo的面对对象课
-categories:
-  - Language
-tags: cpp
-cover: true
+categories: Language
+tags: 
+  - cpp
 date: 2021-11-21 19:21:13
 ---
 

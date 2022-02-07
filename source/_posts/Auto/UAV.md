@@ -1,5 +1,4 @@
 ---
-author: kawhicurry
 title: 记录从无人机上学到的东西
 categories:
   - Auto

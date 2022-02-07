@@ -1,5 +1,4 @@
 ---
-author: kawhicurry
 title: Magic-Macro
 categories:
 - Language

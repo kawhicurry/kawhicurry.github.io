@@ -1,9 +1,9 @@
 ---
 title: New-Start
-categories:
-  - Daily
+categories: Daily
 date: 2021-10-25 17:45:59
 tags:
+  - daily
 ---
 
 # New Start

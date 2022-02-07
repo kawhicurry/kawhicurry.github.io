@@ -1,9 +1,9 @@
 ---
 title: Qingyou_1
-categories:
-  - Daily
+categories: Daily
 date: 2021-10-27 09:01:06
 tags:
+  - qingyou
 ---
 # 青柚的这点事（1）
 

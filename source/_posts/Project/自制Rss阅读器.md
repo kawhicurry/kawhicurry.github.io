@@ -1,18 +1,14 @@
 ---
-author: kawhicurry
 title: 自制Rss阅读器
 categories:
   - Project
-top: 0
-cover: 0
-tags: rss
+tags: 
+  - rss
 date: 2021-12-20 21:48:06
-img:
-coverImg:
-summary:
-keywords:
 ---
 尝试自制了一个rss阅读器，现在还在开发中。
+
+*2022/2/7更新：暂时放弃了，互联网上还有可用的rss订阅方案*
 
 ## 想法
 

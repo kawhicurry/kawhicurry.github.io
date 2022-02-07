@@ -1,19 +1,12 @@
 ---
-author: kawhicurry
 title: Apollo文档的自动构建
 tags:
   - gitbook
   - apollo
 description: Apollo文档的自动构建
-top: 0
-cover: 0
 categories:
   - Auto
 date: 2022-01-29 09:27:38
-img:
-coverImg:
-summary:
-keywords:
 ---
 
 # Apollo文档的自动构建

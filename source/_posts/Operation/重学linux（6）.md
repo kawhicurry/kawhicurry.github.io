@@ -1,19 +1,11 @@
 ---
-author: kawhicurry
 title: 重学linux（6）
 tags:
   - 专栏：重学linux
   - linux
-description: 重学linux（6）
-top: 0
-cover: 0
 categories:
   - Operation
 date: 2022-01-26 10:42:04
-img:
-coverImg:
-summary:
-keywords:
 ---
 
 # Bash

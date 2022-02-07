@@ -1,20 +1,13 @@
 ---
-author: kawhicurry
 title: ROS学习笔记（3）
 tags:
   - linux
   - ros
   - 专栏：ros学习笔记
 description: ROS学习笔记（3）
-top: 0
-cover: 0
 categories:
   - Auto
 date: 2022-01-23 10:12:25
-img:
-coverImg:
-summary:
-keywords:
 ---
 
 # 写一个简单的publisher和subscriber

@@ -1,19 +1,11 @@
 ---
-author: kawhicurry
 title: 重学linux（3）.md
 tags:
   - 专栏：重学linux
   - linux
-description: 重学linux（3）.md
-top: 0
-cover: 0
 categories:
   - Operation
 date: 2022-01-21 09:48:31
-img:
-coverImg:
-summary:
-keywords:
 ---
 
 # Linux磁盘与文件系统管理

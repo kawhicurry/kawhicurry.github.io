@@ -1,0 +1,44 @@
+- class_name: 收藏
+  class_desc: 好东西要拿来分享
+  link_list:
+    - name: Github520
+      link: https://gitee.com/doshengl/GitHub520
+      avatar: https://gitee.com/doshengl/GitHub520
+      descr: 爱上github
+      
+
+- class_name: 友情链接
+  class_desc: 感谢陪伴！
+  link_list:
+    - avatar: 'https://sun482.github.io/images/apple-touch-icon-next.png'
+      name: 柳姐姐的blog
+      descr: 来自青柚的前端大佬
+      url: 'https://sun482.github.io/'
+      title: Visit him
+    - avatar: 'https://polo-0831.github.io/images/icons/stun-logo.svg'
+      name: 罗总的blog
+      descr: 来自自动化科协的大佬
+      url: 'https://polo-0831.github.io/'
+      title: Visit Blog
+    - avatar: 'https://nymrli.top/img/assets/favicon.ico'
+      name: 阿波罗的前辈
+      descr: 来自南邮apollo的大佬
+      url: 'https://nymrli.top'
+      title: Read More
+    - avatar: >-
+        http://apollo2d.shuihua.top/gitbook/images/apple-touch-icon-precomposed-152.png
+      name: Apollo2d 的文档
+      descr: 记录2d组的重建过程
+      url: 'http://apollo2d.shuihua.top'
+      title: Read More
+    - avatar: 'https://cfy73.github.io/img/%E7%BD%91%E7%AB%99%E5%9B%BE%E6%A0%87.jpg'
+      name: 飞洋giegie的blog
+      descr: 来自青柚的运营大佬
+      url: 'https://cfy73.github.io/'
+      title: Read More
+    - avatar: >-
+        https://carrynotkarry.com/wp-content/uploads/2022/01/cropped-%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_20220119162746.jpg
+      name: 竞赛大佬Carry的blog
+      descr: 总之就是非常大佬
+      url: 'https://carrynotkarry.com'
+      title: Read More

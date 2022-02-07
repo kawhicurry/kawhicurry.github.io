@@ -1,16 +1,9 @@
 ---
-author: kawhicurry
 title: 起一个mongodb
 categories:
   - Back-end
-top: 0
-cover: 0
 tags: mongodb
 date: 2021-12-23 12:58:30
-img:
-coverImg:
-summary:
-keywords:
 ---
 
 第一件事：`mongodb` , 不是

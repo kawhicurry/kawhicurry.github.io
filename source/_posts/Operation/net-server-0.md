@@ -1,9 +1,9 @@
 ---
-author: kawhicurry
 title: Situation of operation technology
 categories:
   - Operation
-tags: git
+tags: 
+  - cloud
 date: 2021-11-13 20:01:01
 ---
 # 一个软件的诞生

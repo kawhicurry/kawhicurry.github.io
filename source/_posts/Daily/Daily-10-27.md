@@ -1,9 +1,9 @@
 ---
 title: Daily-10-27
-tags: Daily
-categories:
-  - Daily
+categories: Daily
 date: 2021-10-27 18:57:04
+tags:
+  - daily
 ---
 
 # Daily-10-27

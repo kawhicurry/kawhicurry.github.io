@@ -1,19 +1,12 @@
 ---
-author: kawhicurry
 title: ROS学习笔记（1）
 tags:
   - tag1
   - tag2
 description: ROS学习笔记（1）
-top: 0
-cover: 0
 categories:
   - Auto
 date: 2022-01-20 09:55:13
-img:
-coverImg:
-summary:
-keywords:
 ---
 # ROS的环境和基本概念
 ros是一个基于linux的操作系统，它通过提供一套自己的工具，把linux变的像是另一套系统。ros也有众多发行版，我这里选择的是`melodic`。接下来会用`<distro>`来表示当前发行版

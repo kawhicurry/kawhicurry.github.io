@@ -1,20 +1,13 @@
 ---
-author: kawhicurry
 title: ROS学习笔记（2）
 tags:
   - linux
   - ros
   - 专栏：ros学习笔记
 description: ROS学习笔记（2）
-top: 0
-cover: 0
 categories:
   - Auto
 date: 2022-01-21 15:15:08
-img:
-coverImg:
-summary:
-keywords:
 ---
 
 # ROS Service

@@ -1,19 +1,10 @@
 ---
-author: kawhicurry
 title: image_test
 tags:
-  - tag1
-  - tag2
-description: image_test
-top: 0
-cover: 0
+  - test
 categories:
   - test
 date: 2022-01-27 13:35:31
-img:
-coverImg:
-summary:
-keywords:
 ---
 
 # 测试图床

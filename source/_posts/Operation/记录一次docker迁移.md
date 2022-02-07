@@ -1,19 +1,13 @@
 ---
-author: kawhicurry
 title: 记录一次docker迁移
 tags:
   - docker
   - mirror
 description: 记录一次docker迁移
-top: 0
-cover: 0
 categories:
   - Operation
 date: 2022-01-13 13:55:28
-img:
-coverImg: https://cdn.jsdelivr.net/gh/kawhicurry/picgo/tech/docker0.jpeg
-summary:
-keywords:
+cover: https://cdn.jsdelivr.net/gh/kawhicurry/picgo/tech/docker0.jpeg
 ---
 
 最近碰上一次小小的迁移任务，需要在新机器上起docker，并让原来的docker容器在新机器上跑起来。

@@ -1,19 +1,11 @@
 ---
-author: kawhicurry
 title: 重学linux（0）
 tags:
   - 专栏：重学linux
   - linux
-description: 重学linux
-top: 0
-cover: 0
 categories:
   - Operation
 date: 2022-01-18 10:12:01
-img:
-coverImg:
-summary:
-keywords:
 ---
 
 # 把linux的操作再学一遍！

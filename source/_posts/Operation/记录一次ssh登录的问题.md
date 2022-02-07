@@ -1,19 +1,11 @@
 ---
-author: kawhicurry
 title: 记录一次ssh登录的问题
 tags:
-  - tag1
-  - tag2
+  - ssh
 description: 记录一次ssh登录的问题
-top: 0
-cover: 0
 categories:
   - Operation
 date: 2022-01-12 13:22:03
-img:
-coverImg:
-summary:
-keywords:
 ---
 
 ## 问题描述

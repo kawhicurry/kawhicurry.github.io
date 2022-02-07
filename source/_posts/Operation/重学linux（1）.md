@@ -1,19 +1,11 @@
 ---
-author: kawhicurry
 title: 重学linux（1）
 tags:
   - 专栏：重学linux
   - linux
-description: 重学linux（1）
-top: 0
-cover: 0
 categories:
   - Operation
 date: 2022-01-18 10:58:15
-img:
-coverImg:
-summary:
-keywords:
 ---
 
 # 文件权限与目录配置

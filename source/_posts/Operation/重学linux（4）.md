@@ -1,19 +1,11 @@
 ---
-author: kawhicurry
 title: 重学linux（4）
 tags:
   - 专栏：重学linux
   - linux
-description: 重学linux（4）
-top: 0
-cover: 0
 categories:
   - Operation
 date: 2022-01-23 13:30:52
-img:
-coverImg:
-summary:
-keywords:
 ---
 
 # 文件与文件系统的压缩
