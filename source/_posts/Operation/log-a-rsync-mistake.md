@@ -2,8 +2,9 @@
 title: log-a-rsync-mistake
 categories:
   - Operation
-tags: 
+tags:
   - rsync
+abbrlink: 2571fbb2
 date: 2021-12-03 16:16:26
 ---
 

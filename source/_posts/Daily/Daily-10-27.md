@@ -1,9 +1,10 @@
 ---
 title: Daily-10-27
 categories: Daily
-date: 2021-10-27 18:57:04
 tags:
   - daily
+abbrlink: 8f47f88e
+date: 2021-10-27 18:57:04
 ---
 
 # Daily-10-27

@@ -2,8 +2,9 @@
 title: 自制Rss阅读器
 categories:
   - Project
-tags: 
+tags:
   - rss
+abbrlink: 9bf3fade
 date: 2021-12-20 21:48:06
 ---
 尝试自制了一个rss阅读器，现在还在开发中。

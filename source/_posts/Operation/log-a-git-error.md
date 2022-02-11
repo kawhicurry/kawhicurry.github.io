@@ -2,8 +2,9 @@
 title: log-a-git-error
 categories:
   - Operation
-tags: 
+tags:
   - git
+abbrlink: 1bfaedf6
 date: 2021-11-10 20:01:01
 ---
 

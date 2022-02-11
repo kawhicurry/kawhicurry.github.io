@@ -5,6 +5,7 @@ tags:
 description: 记录一次ssh登录的问题
 categories:
   - Operation
+abbrlink: 1b1593da
 date: 2022-01-12 13:22:03
 ---
 

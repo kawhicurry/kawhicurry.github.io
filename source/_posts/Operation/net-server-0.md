@@ -2,8 +2,9 @@
 title: Situation of operation technology
 categories:
   - Operation
-tags: 
+tags:
   - cloud
+abbrlink: a09255e2
 date: 2021-11-13 20:01:01
 ---
 # 一个软件的诞生

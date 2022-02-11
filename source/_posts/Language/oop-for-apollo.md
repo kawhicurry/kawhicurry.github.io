@@ -1,8 +1,9 @@
 ---
 title: 给Apollo的面对对象课
 categories: Language
-tags: 
+tags:
   - cpp
+abbrlink: '49144470'
 date: 2021-11-21 19:21:13
 ---
 

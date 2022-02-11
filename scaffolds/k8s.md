@@ -1,7 +1,6 @@
 ---
 title: {{ title }}
 date: {{ date }}
-updated:
 tags:
   - k8s权威指南学习笔记
   - k8s

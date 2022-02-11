@@ -1,9 +1,10 @@
 ---
 title: Magic-Macro
 categories:
-- Language
-date: 2021-11-07 20:28:58
+  - Language
 tags: C
+abbrlink: 17d8837d
+date: 2021-11-07 20:28:58
 ---
 
 # The magic of macro

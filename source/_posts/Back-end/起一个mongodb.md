@@ -3,6 +3,7 @@ title: 起一个mongodb
 categories:
   - Back-end
 tags: mongodb
+abbrlink: e9565578
 date: 2021-12-23 12:58:30
 ---
 

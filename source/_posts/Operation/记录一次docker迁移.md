@@ -6,8 +6,9 @@ tags:
 description: 记录一次docker迁移
 categories:
   - Operation
+cover: 'https://cdn.jsdelivr.net/gh/kawhicurry/picgo/tech/docker0.jpeg'
+abbrlink: 1ee5701f
 date: 2022-01-13 13:55:28
-cover: https://cdn.jsdelivr.net/gh/kawhicurry/picgo/tech/docker0.jpeg
 ---
 
 最近碰上一次小小的迁移任务，需要在新机器上起docker，并让原来的docker容器在新机器上跑起来。

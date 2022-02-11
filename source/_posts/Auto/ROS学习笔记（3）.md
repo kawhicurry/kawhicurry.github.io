@@ -7,6 +7,7 @@ tags:
 description: ROS学习笔记（3）
 categories:
   - Auto
+abbrlink: 4cdedcde
 date: 2022-01-23 10:12:25
 ---
 

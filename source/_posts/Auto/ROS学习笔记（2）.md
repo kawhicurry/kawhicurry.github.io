@@ -7,6 +7,7 @@ tags:
 description: ROS学习笔记（2）
 categories:
   - Auto
+abbrlink: f462bbbb
 date: 2022-01-21 15:15:08
 ---
 

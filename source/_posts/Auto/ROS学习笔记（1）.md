@@ -6,6 +6,7 @@ tags:
 description: ROS学习笔记（1）
 categories:
   - Auto
+abbrlink: e6d71455
 date: 2022-01-20 09:55:13
 ---
 # ROS的环境和基本概念

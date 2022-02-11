@@ -3,6 +3,7 @@ title: 记录从无人机上学到的东西
 categories:
   - Auto
 tags: auto
+abbrlink: 12263b9c
 date: 2021-11-16 20:54:45
 ---
 
