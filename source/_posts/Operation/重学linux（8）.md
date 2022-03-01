@@ -207,3 +207,94 @@ tar -cvf - /home | tar -xvf - -C /tmp/homework
 # 后一个tar的stdin来自pipe
 ```
 
+# 文件的格式化
+
+## 格式化打印
+
+### printf
+
+```bash
+printf 'format' content
+# 固定格式（表格形式
+printf '%10s %5i' content1 content2
+```
+
+过于高级，不再多说，现用现查
+
+## 数据处理
+
+### awk
+
+数据处理工具，适用于小型文本
+
+```bash
+awk 'condition_1{operation_1} condition_2{operation_2}' filename
+```
+
+awk以**行**为一次处理的单位，以**字段**为最小的处理单位。
+
+- \$1 \$2 分别表示一行中的第一和第二个字段（默认以空格或tab分割）
+- \$0表示**第一列**的所有数据
+
+关于数据总共有多少行多少列，可以用以下变量
+
+- NF：每一列拥有的字段数
+- NR：目前awk所处理的是第几段数据
+- FS：目前的分割字符，默认是空格
+
+awk的逻辑运算符与C一致
+
+awk的关键字
+
+- BEGIN从头开始
+- END从末尾开始
+
+## 文件比对
+
+### diff
+
+```bash
+dirr [-bBI] from-file to-file
+# -b 忽略空格差异
+# -B 忽略空白行差异
+# -i 忽略大小写差异
+
+# 以下为diff的输出
+
+3d2 # 左边的第三行被删除（d）了，基准是右边第二行
+< bin:x:2:2:bin:/bin:/usr/sbin/nologin # 这是左边（<)被删除的哪一行
+6c5 # 左边的第六行被替换（c）成了右边第五行
+< games:x:5:60:games:/usr/games:/usr/sbin/nologin # 左边（<）第六行的内容
+---
+> no six line # 接上面，这是右边（>）第五行的内容
+
+```
+
+### cmp
+
+```bash
+cmp [-l] file1 file2
+# -l 将所有不懂点全部标出来，默认只标出第一个
+# cmp可用于比较二进制文件
+```
+
+### patch
+
+使用`diff`制作补丁，然后使用`patch`更新
+
+```bash
+# 流程
+## 记录差异
+diff -Naur old_file new_file > file.patch
+## 更新
+patch -pN < patch_file
+## 还原
+patch -R -pN < patch_file
+
+# N 表示目录层级，新旧文件在同一目录下时使用-p0即可
+# 更详细的内容在后面y
+```
+
+### pr
+
+文件打印，鸟哥说这玩意参数太多
