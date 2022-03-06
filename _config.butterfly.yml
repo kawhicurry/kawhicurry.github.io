@@ -37,6 +37,7 @@ copy:
 social:
   fab fa-github: https://github.com/kawhicurry || Github
   fas fa-envelope: mailto:kawhicurry@foxmail.com || Email
+  fas fa-rss: https://kawhicurry.github.io/atom.xml || Rss
 
 # search (搜索)
 # --------------------------------------
