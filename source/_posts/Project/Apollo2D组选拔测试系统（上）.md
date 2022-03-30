@@ -1,5 +1,8 @@
 ---
 title: Apollo2D组选拔测试系统（上）
+tag:
+  - apollo
+  - robucup
 categories:
   - Project
 abbrlink: 99ae6e60
