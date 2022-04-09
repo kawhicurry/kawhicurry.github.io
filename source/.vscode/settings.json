@@ -1,0 +1,28 @@
+{
+  "cSpell.words": [
+    "abcdefghij",
+    "ABCDEFGHIJ",
+    "DUPFD",
+    "FDCWD",
+    "GETFD",
+    "GETFL",
+    "GETLK",
+    "GETOWN",
+    "nbytes",
+    "newfd",
+    "perror",
+    "pread",
+    "pwrite",
+    "RDONLY",
+    "RDWR",
+    "rwxr",
+    "SETFD",
+    "SETFL",
+    "SETLK",
+    "SETLKW",
+    "SETOWN",
+    "ssize",
+    "stdlib",
+    "WRONLY"
+  ]
+}
