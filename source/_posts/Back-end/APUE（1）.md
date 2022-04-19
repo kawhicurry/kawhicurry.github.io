@@ -48,7 +48,7 @@ openat主要用来解决两个问题，一个是多线程下的相对路径引�
 - 抛个异常
 - 返回一个截断的文件名
 
-这玩意要看os怎么想，但是posix给了个`_POSIX_NO_TRUNC`的宏来判断其行为。
+这玩意要看os怎么想，但是posix给了个`_POSIX_NO_TRUNC`的宏来判断其行为。这个macro在`<unistd.h>`里
 
 ### 实践
 
@@ -78,7 +78,7 @@ creat的第一个参数为路径，第二个为模式，与权限相关。
 
 众所周知，文件有开有关
 
-close在`<unistd.h>`下，woc，为啥不在一个头文件？
+close在`<unistd.h>`下，woc，为啥和open不在一个头文件？
 
 close只接受一个fd参数。如果ok，return 0.不过就算不手动调用，os也会在程序结束的时候自动回收fd的，除非想写daemon。
 
@@ -258,4 +258,17 @@ purpose:
 4. get/set asynchronous I/O ownership(cmd=F_GETOWN or F_SETOWN)
 5. get/set recode locks(cmd=F_GETLK,F_SETLK or F_SETLKW)
 
+## ioctl
 
+```c
+#include <unistd.h>
+#include <sys/ioctl.h>
+
+int ioctl(int fd,int request,...);
+```
+
+Terminal I/O
+
+## /dev/fd
+
+open the file in `/dev/fd` is equivalent to duplicating descriptor n,assuming that descriptor n is open

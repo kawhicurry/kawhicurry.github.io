@@ -5,6 +5,7 @@ tags:
   - aur
 categories:
   - Operation
+abbrlink: 8d703467
 date: 2022-04-09 20:53:59
 ---
 问：arch系和其他linux distribution最大的区别在哪？
