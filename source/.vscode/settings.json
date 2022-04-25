@@ -2,6 +2,7 @@
   "cSpell.words": [
     "abcdefghij",
     "ABCDEFGHIJ",
+    "archlinux",
     "DUPFD",
     "FDCWD",
     "GETFD",
@@ -23,6 +24,7 @@
     "SETOWN",
     "ssize",
     "stdlib",
+    "wlan",
     "WRONLY"
   ]
 }

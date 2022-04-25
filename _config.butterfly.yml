@@ -646,7 +646,7 @@ aside:
     button:
       enable: true
       icon: fab fa-github
-      text: 来gayhub找我耍
+      text: 来github找我耍
       link: https://github.com/kawhicurry
   card_announcement:
     enable: true
