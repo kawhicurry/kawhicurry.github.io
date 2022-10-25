@@ -1,0 +1,541 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>Kawhicurry&#39;s Blog</title>
+  <icon>https://kawhicurry.github.io/icon.png</icon>
+  <subtitle>Welcome to Kawhicurry&#39;s Blog</subtitle>
+  <link href="https://kawhicurry.github.io/atom.xml" rel="self"/>
+  
+  <link href="https://kawhicurry.github.io/"/>
+  <updated>2022-10-25T06:13:58.507Z</updated>
+  <id>https://kawhicurry.github.io/</id>
+  
+  <author>
+    <name>kawhicurry</name>
+    
+  </author>
+  
+  <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>ESP,GRUB与BTRFS</title>
+    <link href="https://kawhicurry.github.io/Operation/8f58554d/"/>
+    <id>https://kawhicurry.github.io/Operation/8f58554d/</id>
+    <published>2022-10-24T21:07:07.000Z</published>
+    <updated>2022-10-25T06:13:58.507Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;前言&quot;&gt;&lt;a href=&quot;#前言&quot; class=&quot;headerlink&quot; title=&quot;前言&quot;&gt;&lt;/a&gt;前言&lt;/h1&gt;&lt;blockquote&gt;
+&lt;p&gt;上一次装 arch 时我做的一个决定，让我爽到了现在。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;我用</summary>
+        
+      
+    
+    
+    
+    <category term="Operation" scheme="https://kawhicurry.github.io/categories/Operation/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>记录一次有趣的答辩经历</title>
+    <link href="https://kawhicurry.github.io/Daily/c687b02a/"/>
+    <id>https://kawhicurry.github.io/Daily/c687b02a/</id>
+    <published>2022-10-22T20:17:08.000Z</published>
+    <updated>2022-10-25T06:13:58.507Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;好久没更新了，来写一写博客。&lt;/p&gt;
+&lt;p&gt;前天的时候被 Apollo 的学弟喊去参加自动化院的挑战杯答辩，答辩是线上进行的。本来的打算是到时间了我喊学弟上来准备，但听了第一组的答辩之后，事情的性质发现了一点变化。怎么来答辩的项目都这么高端？怎么答辩的 ppt</summary>
+        
+      
+    
+    
+    
+    <category term="Daily" scheme="https://kawhicurry.github.io/categories/Daily/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>建立linux下完善的个人备份系统</title>
+    <link href="https://kawhicurry.github.io/Operation/63fa7eb5/"/>
+    <id>https://kawhicurry.github.io/Operation/63fa7eb5/</id>
+    <published>2022-04-25T19:11:04.000Z</published>
+    <updated>2022-10-25T06:13:58.507Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;前言&quot;&gt;&lt;a href=&quot;#前言&quot; class=&quot;headerlink&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="Operation" scheme="https://kawhicurry.github.io/categories/Operation/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>用树莓派搭建一个简单的跳板机</title>
+    <link href="https://kawhicurry.github.io/Back-end/ace6f1b7/"/>
+    <id>https://kawhicurry.github.io/Back-end/ace6f1b7/</id>
+    <published>2022-04-23T17:57:33.000Z</published>
+    <updated>2022-10-25T06:13:58.507Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;前言&quot;&gt;&lt;a href=&quot;#前言&quot; class=&quot;headerlink&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="Back-end" scheme="https://kawhicurry.github.io/categories/Back-end/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>折磨的ROS-in-arch（manjaro）</title>
+    <link href="https://kawhicurry.github.io/Auto/b84eee2e/"/>
+    <id>https://kawhicurry.github.io/Auto/b84eee2e/</id>
+    <published>2022-04-19T10:29:18.000Z</published>
+    <updated>2022-04-19T13:55:16.275Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;前言&quot;&gt;&lt;a href=&quot;#前言&quot; class=&quot;headerlink&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="Auto" scheme="https://kawhicurry.github.io/categories/Auto/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>APUE（2）</title>
+    <link href="https://kawhicurry.github.io/Back-end/a113ba1f/"/>
+    <id>https://kawhicurry.github.io/Back-end/a113ba1f/</id>
+    <published>2022-04-11T09:30:11.000Z</published>
+    <updated>2022-04-19T13:55:07.315Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;Chapter4&quot;&gt;&lt;a href=&quot;#Chapter4&quot; class=&quot;headerlink&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="Back-end" scheme="https://kawhicurry.github.io/categories/Back-end/"/>
+    
+    
+    <category term="linux" scheme="https://kawhicurry.github.io/tags/linux/"/>
+    
+    <category term="专栏：APUE" scheme="https://kawhicurry.github.io/tags/%E4%B8%93%E6%A0%8F%EF%BC%9AAPUE/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>维护自己的AUR源</title>
+    <link href="https://kawhicurry.github.io/Operation/8d703467/"/>
+    <id>https://kawhicurry.github.io/Operation/8d703467/</id>
+    <published>2022-04-09T12:53:59.000Z</published>
+    <updated>2022-04-19T13:55:07.312Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;问：arch系和其他linux</summary>
+        
+      
+    
+    
+    
+    <category term="Operation" scheme="https://kawhicurry.github.io/categories/Operation/"/>
+    
+    
+    <category term="linux" scheme="https://kawhicurry.github.io/tags/linux/"/>
+    
+    <category term="aur" scheme="https://kawhicurry.github.io/tags/aur/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>WebSoccerMonitor</title>
+    <link href="https://kawhicurry.github.io/Project/93340145/"/>
+    <id>https://kawhicurry.github.io/Project/93340145/</id>
+    <published>2022-04-09T11:50:18.000Z</published>
+    <updated>2022-04-09T12:47:42.600Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;之前看到了一个巴西小伙（也有可能是大哥？）的&lt;a href=&quot;https://github.com/robocin/WebSoccerMonitor&quot;&gt;项目&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;目的是做一个浏览器上的robocup</summary>
+        
+      
+    
+    
+    
+    <category term="Project" scheme="https://kawhicurry.github.io/categories/Project/"/>
+    
+    
+    <category term="robocup" scheme="https://kawhicurry.github.io/tags/robocup/"/>
+    
+    <category term="front" scheme="https://kawhicurry.github.io/tags/front/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>APUE（1）</title>
+    <link href="https://kawhicurry.github.io/Back-end/b3a615f1/"/>
+    <id>https://kawhicurry.github.io/Back-end/b3a615f1/</id>
+    <published>2022-04-06T04:53:34.000Z</published>
+    <updated>2022-04-10T10:51:48.295Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;3-File-I-x2F-O&quot;&gt;&lt;a href=&quot;#3-File-I-x2F-O&quot; class=&quot;headerlink&quot; title=&quot;3 File I&amp;#x2F;O&quot;&gt;&lt;/a&gt;3 File</summary>
+        
+      
+    
+    
+    
+    <category term="Back-end" scheme="https://kawhicurry.github.io/categories/Back-end/"/>
+    
+    
+    <category term="linux" scheme="https://kawhicurry.github.io/tags/linux/"/>
+    
+    <category term="专栏：APUE" scheme="https://kawhicurry.github.io/tags/%E4%B8%93%E6%A0%8F%EF%BC%9AAPUE/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>APUE（0）</title>
+    <link href="https://kawhicurry.github.io/Back-end/b1a7294/"/>
+    <id>https://kawhicurry.github.io/Back-end/b1a7294/</id>
+    <published>2022-04-06T04:52:35.000Z</published>
+    <updated>2022-04-09T12:46:29.793Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;开坑！&quot;&gt;&lt;a href=&quot;#开坑！&quot; class=&quot;headerlink&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="Back-end" scheme="https://kawhicurry.github.io/categories/Back-end/"/>
+    
+    
+    <category term="linux" scheme="https://kawhicurry.github.io/tags/linux/"/>
+    
+    <category term="专栏：APUE" scheme="https://kawhicurry.github.io/tags/%E4%B8%93%E6%A0%8F%EF%BC%9AAPUE/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>关于学习C++</title>
+    <link href="https://kawhicurry.github.io/Daily/eb74c786/"/>
+    <id>https://kawhicurry.github.io/Daily/eb74c786/</id>
+    <published>2022-04-06T04:46:22.000Z</published>
+    <updated>2022-04-09T12:46:58.980Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;记录下最近遇到的麻烦。&lt;/p&gt;
+&lt;p&gt;最近开始啃effective和apue。看effective的感觉就是，哇，好有道理，然后忘记。看apue的感觉就像是，嗷，有这么个api，然后忘记。&lt;/p&gt;
+&lt;p&gt;果然不写代码还是要出问题，还是得找点东西来写写。试一试好了。用设置ta</summary>
+        
+      
+    
+    
+    
+    <category term="Daily" scheme="https://kawhicurry.github.io/categories/Daily/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>effective（8）</title>
+    <link href="https://kawhicurry.github.io/Language/dd90e0f4/"/>
+    <id>https://kawhicurry.github.io/Language/dd90e0f4/</id>
+    <published>2022-04-06T04:27:03.000Z</published>
+    <updated>2022-04-09T12:46:29.796Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;49-了解new-handler的行为&quot;&gt;&lt;a href=&quot;#49-了解new-handler的行为&quot; class=&quot;headerlink&quot; title=&quot;49 了解new-handler的行为&quot;&gt;&lt;/a&gt;49</summary>
+        
+      
+    
+    
+    
+    <category term="Language" scheme="https://kawhicurry.github.io/categories/Language/"/>
+    
+    
+    <category term="cpp" scheme="https://kawhicurry.github.io/tags/cpp/"/>
+    
+    <category term="专栏：effective c++" scheme="https://kawhicurry.github.io/tags/%E4%B8%93%E6%A0%8F%EF%BC%9Aeffective-c/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>effective（7）</title>
+    <link href="https://kawhicurry.github.io/Language/85f3f0a2/"/>
+    <id>https://kawhicurry.github.io/Language/85f3f0a2/</id>
+    <published>2022-04-06T04:25:53.000Z</published>
+    <updated>2022-04-09T12:46:29.796Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;本章为模板编程内容，等决定要好好学模板了再来看看&quot;&gt;&lt;a href=&quot;#本章为模板编程内容，等决定要好好学模板了再来看看&quot; class=&quot;headerlink&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="Language" scheme="https://kawhicurry.github.io/categories/Language/"/>
+    
+    
+    <category term="cpp" scheme="https://kawhicurry.github.io/tags/cpp/"/>
+    
+    <category term="专栏：effective c++" scheme="https://kawhicurry.github.io/tags/%E4%B8%93%E6%A0%8F%EF%BC%9Aeffective-c/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>effective（6）</title>
+    <link href="https://kawhicurry.github.io/Language/3d4f97c7/"/>
+    <id>https://kawhicurry.github.io/Language/3d4f97c7/</id>
+    <published>2022-04-02T07:48:46.000Z</published>
+    <updated>2022-04-04T06:50:13.602Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;32-确定你的public继承塑膜出is-a关系&quot;&gt;&lt;a href=&quot;#32-确定你的public继承塑膜出is-a关系&quot; class=&quot;headerlink&quot; title=&quot;32 确定你的public继承塑膜出is-a关系&quot;&gt;&lt;/a&gt;32</summary>
+        
+      
+    
+    
+    
+    <category term="Language" scheme="https://kawhicurry.github.io/categories/Language/"/>
+    
+    
+    <category term="cpp" scheme="https://kawhicurry.github.io/tags/cpp/"/>
+    
+    <category term="专栏：effective c++" scheme="https://kawhicurry.github.io/tags/%E4%B8%93%E6%A0%8F%EF%BC%9Aeffective-c/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>effective（5）</title>
+    <link href="https://kawhicurry.github.io/Language/2ffa3829/"/>
+    <id>https://kawhicurry.github.io/Language/2ffa3829/</id>
+    <published>2022-04-01T06:54:56.000Z</published>
+    <updated>2022-04-01T08:02:07.820Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;26-尽可能延后变量定义式的出现时间&quot;&gt;&lt;a href=&quot;#26-尽可能延后变量定义式的出现时间&quot; class=&quot;headerlink&quot; title=&quot;26 尽可能延后变量定义式的出现时间&quot;&gt;&lt;/a&gt;26</summary>
+        
+      
+    
+    
+    
+    <category term="Language" scheme="https://kawhicurry.github.io/categories/Language/"/>
+    
+    
+    <category term="cpp" scheme="https://kawhicurry.github.io/tags/cpp/"/>
+    
+    <category term="专栏：effective c++" scheme="https://kawhicurry.github.io/tags/%E4%B8%93%E6%A0%8F%EF%BC%9Aeffective-c/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>effective（4）</title>
+    <link href="https://kawhicurry.github.io/Language/97465f4c/"/>
+    <id>https://kawhicurry.github.io/Language/97465f4c/</id>
+    <published>2022-03-31T08:52:50.000Z</published>
+    <updated>2022-03-31T11:44:26.312Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;18-让接口容易被正确使用，不容易被误用&quot;&gt;&lt;a href=&quot;#18-让接口容易被正确使用，不容易被误用&quot; class=&quot;headerlink&quot; title=&quot;18 让接口容易被正确使用，不容易被误用&quot;&gt;&lt;/a&gt;18</summary>
+        
+      
+    
+    
+    
+    <category term="Language" scheme="https://kawhicurry.github.io/categories/Language/"/>
+    
+    
+    <category term="cpp" scheme="https://kawhicurry.github.io/tags/cpp/"/>
+    
+    <category term="专栏：effective c++" scheme="https://kawhicurry.github.io/tags/%E4%B8%93%E6%A0%8F%EF%BC%9Aeffective-c/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>关于Apollo2D未来的一些思考</title>
+    <link href="https://kawhicurry.github.io/Project/a8ec5d07/"/>
+    <id>https://kawhicurry.github.io/Project/a8ec5d07/</id>
+    <published>2022-03-30T09:39:14.000Z</published>
+    <updated>2022-03-31T06:28:15.949Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;新队员终于选拔出来了，现在大二五个人，大一两个。按照林总的想法也推了些进度，不过总感觉哪里怪怪的。所以今天趁着安排了时间来做apollo相关的东西，决定来捋一捋哪里不对。&lt;/p&gt;
+&lt;h1 id=&quot;主要问题&quot;&gt;&lt;a href=&quot;#主要问题&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="Project" scheme="https://kawhicurry.github.io/categories/Project/"/>
+    
+    
+    <category term="apollo" scheme="https://kawhicurry.github.io/tags/apollo/"/>
+    
+    <category term="robucup" scheme="https://kawhicurry.github.io/tags/robucup/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>effective（3）</title>
+    <link href="https://kawhicurry.github.io/Language/a9167f5/"/>
+    <id>https://kawhicurry.github.io/Language/a9167f5/</id>
+    <published>2022-03-30T07:05:13.000Z</published>
+    <updated>2022-03-30T15:01:47.275Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;13-以对象管理资源&quot;&gt;&lt;a href=&quot;#13-以对象管理资源&quot; class=&quot;headerlink&quot; title=&quot;13 以对象管理资源&quot;&gt;&lt;/a&gt;13 以对象管理资源&lt;/h1&gt;&lt;ul&gt;
+&lt;li&gt;Resource Acquisition Is</summary>
+        
+      
+    
+    
+    
+    <category term="Language" scheme="https://kawhicurry.github.io/categories/Language/"/>
+    
+    
+    <category term="cpp" scheme="https://kawhicurry.github.io/tags/cpp/"/>
+    
+    <category term="专栏：effective c++" scheme="https://kawhicurry.github.io/tags/%E4%B8%93%E6%A0%8F%EF%BC%9Aeffective-c/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>又一次加入manjaro大家庭</title>
+    <link href="https://kawhicurry.github.io/Daily/512f04dd/"/>
+    <id>https://kawhicurry.github.io/Daily/512f04dd/</id>
+    <published>2022-03-24T13:41:56.000Z</published>
+    <updated>2022-03-24T14:25:19.464Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;没错，是又一次，之前装过一次manjaro了，然后好像是某次系统暴毙之后，再也没有抢救回来。&lt;/p&gt;
+&lt;p&gt;今天有个大一的姑娘装ubuntu环境，apt出问题了，来问我。我想起来，大概是一年前的这个时候，我也在宿舍兴奋地装着各种各样的发行版，从最开始常见的Ubuntu到后面</summary>
+        
+      
+    
+    
+    
+    <category term="Daily" scheme="https://kawhicurry.github.io/categories/Daily/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>Apollo2D组选拔测试系统（上）</title>
+    <link href="https://kawhicurry.github.io/Project/99ae6e60/"/>
+    <id>https://kawhicurry.github.io/Project/99ae6e60/</id>
+    <published>2022-03-18T08:34:02.000Z</published>
+    <updated>2022-03-30T09:41:14.768Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;起源&quot;&gt;&lt;a href=&quot;#起源&quot; class=&quot;headerlink&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="Project" scheme="https://kawhicurry.github.io/categories/Project/"/>
+    
+    
+    <category term="apollo" scheme="https://kawhicurry.github.io/tags/apollo/"/>
+    
+    <category term="robucup" scheme="https://kawhicurry.github.io/tags/robucup/"/>
+    
+  </entry>
+  
+</feed>

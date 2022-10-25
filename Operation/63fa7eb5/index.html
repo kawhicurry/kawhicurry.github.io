@@ -1,0 +1,200 @@
+<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"><title>分类: Operation | Kawhicurry's Blog</title><meta name="author" content="kawhicurry"><meta name="copyright" content="kawhicurry"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta name="description" content="前言众所周知，linux的桌面版非常的“易碎”。比如我在过去几个月里，多次经历kde崩溃。kde崩溃毕竟是小事，换个tty用kstart重启一下又能接着用，但python脚本能把我卡到tty都换不了，这就多多少少有点抽象了。虽然说大多数桌面系统的不稳定都是因为我这样的用户“菜且作死”，虽然说我没有以"><link rel="shortcut icon" href="https://cdn.jsdelivr.net/gh/kawhicurry/picgo/profile/favicon.jpg"><link rel="canonical" href="https://kawhicurry.github.io/Operation/63fa7eb5/"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//www.google-analytics.com" crossorigin=""/><link rel="preconnect" href="//busuanzi.ibruce.info"/><meta name="baidu-site-verification" content="code-UXVbU6tNCR"/><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.min.css" media="print" onload="this.media='all'"><script async="async" src="https://www.googletagmanager.com/gtag/js?id=G-70WJTE71NM"></script><script>window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', 'G-70WJTE71NM');
+</script><script>const GLOBAL_CONFIG = { 
+  root: '/',
+  algolia: undefined,
+  localSearch: {"path":"/search.xml","preload":false,"languages":{"hits_empty":"找不到您查询的内容：${query}"}},
+  translate: undefined,
+  noticeOutdate: undefined,
+  highlight: {"plugin":"prismjs","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":1000},
+  copy: {
+    success: '复制成功',
+    error: '复制错误',
+    noSupport: '浏览器不支持'
+  },
+  relativeDate: {
+    homepage: false,
+    post: false
+  },
+  runtime: '天',
+  date_suffix: {
+    just: '刚刚',
+    min: '分钟前',
+    hour: '小时前',
+    day: '天前',
+    month: '个月前'
+  },
+  copyright: {"limitCount":50,"languages":{"author":"作者: kawhicurry","link":"链接: ","source":"来源: Kawhicurry's Blog","info":"著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。"}},
+  lightbox: 'fancybox',
+  Snackbar: undefined,
+  source: {
+    justifiedGallery: {
+      js: 'https://cdn.jsdelivr.net/npm/flickr-justified-gallery/dist/fjGallery.min.js',
+      css: 'https://cdn.jsdelivr.net/npm/flickr-justified-gallery/dist/fjGallery.min.css'
+    }
+  },
+  isPhotoFigcaption: false,
+  islazyload: false,
+  isAnchor: 
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: '分类: Operation',
+  isPost: true,
+  isHome: false,
+  isHighlightShrink: false,
+  isToc: true,
+  postUpdate: '2022-10-25 06:13:58'
+}</script><noscript><style type="text/css">
+  #nav {
+    opacity: 1
+  }
+  .justified-gallery img {
+    opacity: 1
+  }
+
+  #recent-posts time,
+  #post-meta time {
+    display: inline !important
+  }
+</style></noscript><script>(win=>{
+    win.saveToLocal = {
+      set: function setWithExpiry(key, value, ttl) {
+        if (ttl === 0) return
+        const now = new Date()
+        const expiryDay = ttl * 86400000
+        const item = {
+          value: value,
+          expiry: now.getTime() + expiryDay,
+        }
+        localStorage.setItem(key, JSON.stringify(item))
+      },
+
+      get: function getWithExpiry(key) {
+        const itemStr = localStorage.getItem(key)
+
+        if (!itemStr) {
+          return undefined
+        }
+        const item = JSON.parse(itemStr)
+        const now = new Date()
+
+        if (now.getTime() > item.expiry) {
+          localStorage.removeItem(key)
+          return undefined
+        }
+        return item.value
+      }
+    }
+  
+    win.getScript = url => new Promise((resolve, reject) => {
+      const script = document.createElement('script')
+      script.src = url
+      script.async = true
+      script.onerror = reject
+      script.onload = script.onreadystatechange = function() {
+        const loadState = this.readyState
+        if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+        script.onload = script.onreadystatechange = null
+        resolve()
+      }
+      document.head.appendChild(script)
+    })
+  
+      win.activateDarkMode = function () {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+        }
+      }
+      win.activateLightMode = function () {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#ffffff')
+        }
+      }
+      const t = saveToLocal.get('theme')
+    
+          const now = new Date()
+          const hour = now.getHours()
+          const isNight = hour <= 6 || hour >= 18
+          if (t === undefined) isNight ? activateDarkMode() : activateLightMode()
+          else if (t === 'light') activateLightMode()
+          else activateDarkMode()
+        
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        if (asideStatus === 'hide') {
+          document.documentElement.classList.add('hide-aside')
+        } else {
+          document.documentElement.classList.remove('hide-aside')
+        }
+      }
+    
+    const detectApple = () => {
+      if(/iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)){
+        document.documentElement.classList.add('apple')
+      }
+    }
+    detectApple()
+    })(window)</script><meta name="generator" content="Hexo 6.3.0"><link rel="alternate" href="/atom.xml" title="Kawhicurry's Blog" type="application/atom+xml">
+</head><body><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img is-center"><img src="https://cdn.jsdelivr.net/gh/kawhicurry/picgo/profile/avatar.jpg" onerror="onerror=null;src='/img/404.jpg'" alt="avatar"/></div><div class="sidebar-site-data site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">75</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">38</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">9</div></a></div><hr/><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> Home</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> Archives</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> Tags</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> Categories</span></a></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> Link</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> About</span></a></div></div></div></div><div class="post" id="body-wrap"><header class="post-bg" id="page-header" style="background-image: url('https://cdn.jsdelivr.net/gh/kawhicurry/picgo/anime/bingguo0.jpg')"><nav id="nav"><span id="blog_name"><a id="site-name" href="/">Kawhicurry's Blog</a></span><div id="menus"><div id="search-button"><a class="site-page social-icon search"><i class="fas fa-search fa-fw"></i><span> 搜索</span></a></div><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> Home</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> Archives</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> Tags</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> Categories</span></a></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> Link</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> About</span></a></div></div><div id="toggle-menu"><a class="site-page"><i class="fas fa-bars fa-fw"></i></a></div></div></nav><div id="post-info"><h1 class="post-title">建立linux下完善的个人备份系统</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">发表于</span><time class="post-meta-date-created" datetime="2022-04-25T19:11:04.000Z" title="发表于 2022-04-25 19:11:04">2022-04-25</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2022-10-25T06:13:58.507Z" title="更新于 2022-10-25 06:13:58">2022-10-25</time></span><span class="post-meta-categories"><span class="post-meta-separator">|</span><i class="fas fa-inbox fa-fw post-meta-icon"></i><a class="post-meta-categories" href="/categories/Operation/">Operation</a></span></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span class="post-meta-wordcount"><i class="far fa-file-word fa-fw post-meta-icon"></i><span class="post-meta-label">字数总计:</span><span class="word-count">970</span><span class="post-meta-separator">|</span><i class="far fa-clock fa-fw post-meta-icon"></i><span class="post-meta-label">阅读时长:</span><span>2分钟</span></span><span class="post-meta-separator">|</span><span class="post-meta-pv-cv" id="" data-flag-title="建立linux下完善的个人备份系统"><i class="far fa-eye fa-fw post-meta-icon"></i><span class="post-meta-label">阅读量:</span><span id="busuanzi_value_page_pv"><i class="fa-solid fa-spinner fa-spin"></i></span></span></div></div></div></header><main class="layout" id="content-inner"><div id="post"><article class="post-content" id="article-container"><h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p>众所周知，linux的桌面版非常的“易碎”。比如我在过去几个月里，多次经历kde崩溃。kde崩溃毕竟是小事，换个tty用kstart重启一下又能接着用，但python脚本能把我卡到tty都换不了，这就多多少少有点抽象了。虽然说大多数桌面系统的不稳定都是因为我这样的用户“菜且作死”，虽然说我没有以前刚开始使用双系统linux的时候那么菜了，虽然说我以后肯定会好好学的，但我觉得备份和日志这两件事现在还是要好好做一做了。</p>
+<p>这篇文章的主要目的就是记录下对各种东西的备份过程，并不打算一口气写完，打算是边备份边记录。</p>
+<h1 id="备份策略"><a href="#备份策略" class="headerlink" title="备份策略"></a>备份策略</h1><p>我的备份打算分为三部分：本地、云端、硬件。</p>
+<h2 id="本地"><a href="#本地" class="headerlink" title="本地"></a>本地</h2><p>在本地端，对极短时间内的操作进行备份，主要防止偶发的极端失误操作。</p>
+<p>具体方案很简单，使用timeshift每隔1个小时对整个系统进行1次备份，只保留5次备份（可保证在误操作之后立刻回退）。相对应的还有每天1次备份（防止夜晚关机后按小时回退的文件丢失）保留最近两天的备份，每周1次备份（保证短期内的回退），保留最近两周的备份。</p>
+<h2 id="云端"><a href="#云端" class="headerlink" title="云端"></a>云端</h2><p>云端备份为备份的重点。主要目的是保证物理媒介全部丢失后，可在一台全新的机器上快速完成环境配置，要求要能完整适应各种个人使用习惯并保证所有重要文件和大部分个人文件存活。</p>
+<p>云端备份主要是针对配置文件，因此<a target="_blank" rel="noopener" href="https://wiki.archlinux.org/title/Dotfiles">dotfile项目</a>是这种做法的不二之选。</p>
+<p>因为已经看了很多教程了，所以就简单暴力一点好了，直接在家目录下建git仓库。然后敲一个<code>git status</code>，把里面的文件复制到<code>.gitignore</code>里，从而快速排除掉不需要的文件。</p>
+<p>然后就是第一次使用<code>git add .</code>来添加所有文件。后面就要用<code>git add -u</code>来保证不添加没有变动的文件，如果有个别文件要添加，就直接add该文件。</p>
+<p>下面是一些特殊的操作。</p>
+<h3 id="nvim配置文件"><a href="#nvim配置文件" class="headerlink" title="nvim配置文件"></a>nvim配置文件</h3><p>我的nvim配置文件在<code>~/.config/nvim/</code>下，因此我需要将整个文件夹添加到我家目录的git追踪之下。我的nvim配置其实是从别人的配置那里魔改过来的，所以其实是可以直接用submodule的，但因为平时使用频率不那么高，但又偶尔要用，所以我简单暴力地把.git文件删掉，直接将该文件加入到了我的家目录git管理下。</p>
+<h3 id="各种软件"><a href="#各种软件" class="headerlink" title="各种软件"></a>各种软件</h3><p>确实，有时候会记不得自己到底装了什么软件，虽然说确实可以“想起来再装”，但是有个记录总是好的，于是我决定写个脚本记录下自己都装了啥。那脚本放在哪里呢？我决定在家目录下建一个<code>.backup/</code>的文件夹，然后写入脚本。</p>
+<p>关于yay的跳过回复，可以参考<code>https://github.com/Jguer/yay/issues/1033</code>。</p>
+<h3 id="修改配置文件"><a href="#修改配置文件" class="headerlink" title="修改配置文件"></a>修改配置文件</h3><p>有的文件可能是会更新的，随时更新是一方面，但有的文件是软件安装好后自动生成的，而我需要对这个生成好的文件对一些修改。这里我打算用linux自带的patch来做。</p>
+<h2 id="硬件"><a href="#硬件" class="headerlink" title="硬件"></a>硬件</h2><p>硬件备份除了备份普通文件，如我看的书，还有一大重点就是各种私钥。这些都是只能通过硬件来备份的。</p>
+<p>先写到这里，想起来再加</p>
+</article><div class="post-copyright"><div class="post-copyright__author"><span class="post-copyright-meta">文章作者: </span><span class="post-copyright-info"><a href="https://kawhicurry.github.io">kawhicurry</a></span></div><div class="post-copyright__type"><span class="post-copyright-meta">文章链接: </span><span class="post-copyright-info"><a href="https://kawhicurry.github.io/Operation/63fa7eb5/">https://kawhicurry.github.io/Operation/63fa7eb5/</a></span></div><div class="post-copyright__notice"><span class="post-copyright-meta">版权声明: </span><span class="post-copyright-info">本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">CC BY-NC-SA 4.0</a> 许可协议。转载请注明来自 <a href="https://kawhicurry.github.io" target="_blank">Kawhicurry's Blog</a>！</span></div></div><div class="tag_share"><div class="post-meta__tag-list"></div><div class="post_share"><div class="addthis_inline_share_toolbox"></div><script src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-62037f9d1c65c8d1" async="async"></script></div></div><nav class="pagination-post" id="pagination"><div class="prev-post pull-left"><a href="/Daily/c687b02a/"><img class="prev-cover" src="https://cdn.jsdelivr.net/gh/kawhicurry/picgo/anime/bingguo1.jpg" onerror="onerror=null;src='/img/404.jpg'" alt="cover of previous post"><div class="pagination-info"><div class="label">上一篇</div><div class="prev_info">记录一次有趣的答辩经历</div></div></a></div><div class="next-post pull-right"><a href="/Back-end/ace6f1b7/"><img class="next-cover" src="https://cdn.jsdelivr.net/gh/kawhicurry/picgo/anime/luren0.jpg" onerror="onerror=null;src='/img/404.jpg'" alt="cover of next post"><div class="pagination-info"><div class="label">下一篇</div><div class="next_info">用树莓派搭建一个简单的跳板机</div></div></a></div></nav><hr/><div id="post-comment"><div class="comment-head"><div class="comment-headline"><i class="fas fa-comments fa-fw"></i><span> 评论</span></div></div><div class="comment-wrap"><div><div id="gitalk-container"></div></div></div></div></div><div class="aside-content" id="aside-content"><div class="card-widget card-info"><div class="is-center"><div class="avatar-img"><img src="https://cdn.jsdelivr.net/gh/kawhicurry/picgo/profile/avatar.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="avatar"/></div><div class="author-info__name">kawhicurry</div><div class="author-info__description">An student aiming to be an operation engineer.</div></div><div class="card-info-data site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">75</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">38</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">9</div></a></div><a id="card-info-btn" target="_blank" rel="noopener" href="https://github.com/kawhicurry"><i class="fab fa-github"></i><span>来github找我耍</span></a><div class="card-info-social-icons is-center"><a class="social-icon" href="https://github.com/kawhicurry" target="_blank" title="Github"><i class="fab fa-github"></i></a><a class="social-icon" href="mailto:kawhicurry@foxmail.com" target="_blank" title="Email"><i class="fas fa-envelope"></i></a><a class="social-icon" href="https://kawhicurry.github.io/atom.xml" target="_blank" title="Rss"><i class="fas fa-rss"></i></a></div></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn fa-shake"></i><span>公告</span></div><div class="announcement_content">恭喜你发现了一个啥用没有的blog！</div></div><div class="sticky_layout"><div class="card-widget" id="card-toc"><div class="item-headline"><i class="fas fa-stream"></i><span>目录</span><span class="toc-percentage"></span></div><div class="toc-content"><ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#%E5%89%8D%E8%A8%80"><span class="toc-number">1.</span> <span class="toc-text">前言</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E5%A4%87%E4%BB%BD%E7%AD%96%E7%95%A5"><span class="toc-number">2.</span> <span class="toc-text">备份策略</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%9C%AC%E5%9C%B0"><span class="toc-number">2.1.</span> <span class="toc-text">本地</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%BA%91%E7%AB%AF"><span class="toc-number">2.2.</span> <span class="toc-text">云端</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#nvim%E9%85%8D%E7%BD%AE%E6%96%87%E4%BB%B6"><span class="toc-number">2.2.1.</span> <span class="toc-text">nvim配置文件</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%90%84%E7%A7%8D%E8%BD%AF%E4%BB%B6"><span class="toc-number">2.2.2.</span> <span class="toc-text">各种软件</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%BF%AE%E6%94%B9%E9%85%8D%E7%BD%AE%E6%96%87%E4%BB%B6"><span class="toc-number">2.2.3.</span> <span class="toc-text">修改配置文件</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%A1%AC%E4%BB%B6"><span class="toc-number">2.3.</span> <span class="toc-text">硬件</span></a></li></ol></li></ol></div></div><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>最新文章</span></div><div class="aside-list"><div class="aside-list-item"><a class="thumbnail" href="/Operation/8f58554d/" title="ESP,GRUB与BTRFS"><img src="https://cdn.jsdelivr.net/gh/kawhicurry/picgo/anime/chaopao3.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="ESP,GRUB与BTRFS"/></a><div class="content"><a class="title" href="/Operation/8f58554d/" title="ESP,GRUB与BTRFS">ESP,GRUB与BTRFS</a><time datetime="2022-10-24T21:07:07.000Z" title="发表于 2022-10-24 21:07:07">2022-10-24</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/Daily/c687b02a/" title="记录一次有趣的答辩经历"><img src="https://cdn.jsdelivr.net/gh/kawhicurry/picgo/anime/bingguo1.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="记录一次有趣的答辩经历"/></a><div class="content"><a class="title" href="/Daily/c687b02a/" title="记录一次有趣的答辩经历">记录一次有趣的答辩经历</a><time datetime="2022-10-22T20:17:08.000Z" title="发表于 2022-10-22 20:17:08">2022-10-22</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/Operation/63fa7eb5/" title="建立linux下完善的个人备份系统"><img src="https://cdn.jsdelivr.net/gh/kawhicurry/picgo/anime/bingguo0.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="建立linux下完善的个人备份系统"/></a><div class="content"><a class="title" href="/Operation/63fa7eb5/" title="建立linux下完善的个人备份系统">建立linux下完善的个人备份系统</a><time datetime="2022-04-25T19:11:04.000Z" title="发表于 2022-04-25 19:11:04">2022-04-25</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/Back-end/ace6f1b7/" title="用树莓派搭建一个简单的跳板机"><img src="https://cdn.jsdelivr.net/gh/kawhicurry/picgo/anime/luren0.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="用树莓派搭建一个简单的跳板机"/></a><div class="content"><a class="title" href="/Back-end/ace6f1b7/" title="用树莓派搭建一个简单的跳板机">用树莓派搭建一个简单的跳板机</a><time datetime="2022-04-23T17:57:33.000Z" title="发表于 2022-04-23 17:57:33">2022-04-23</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/Auto/b84eee2e/" title="折磨的ROS-in-arch（manjaro）"><img src="https://cdn.jsdelivr.net/gh/kawhicurry/picgo/anime/re03.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="折磨的ROS-in-arch（manjaro）"/></a><div class="content"><a class="title" href="/Auto/b84eee2e/" title="折磨的ROS-in-arch（manjaro）">折磨的ROS-in-arch（manjaro）</a><time datetime="2022-04-19T10:29:18.000Z" title="发表于 2022-04-19 10:29:18">2022-04-19</time></div></div></div></div></div></div></main><footer id="footer" style="background-image: url('https://cdn.jsdelivr.net/gh/kawhicurry/picgo/anime/daily1.jpg')"><div id="footer-wrap"><div class="copyright">&copy;2021 - 2022 By kawhicurry</div><div class="framework-info"><span>框架 </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo</a><span class="footer-separator">|</span><span>主题 </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly</a></div><div class="footer_custom_text">Welcome to the world of an operation engineer.</div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="readmode" type="button" title="阅读模式"><i class="fas fa-book-open"></i></button><button id="darkmode" type="button" title="浅色和深色模式转换"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="单栏和双栏切换"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside_config" type="button" title="设置"><i class="fas fa-cog fa-spin"></i></button><button class="close" id="mobile-toc-button" type="button" title="目录"><i class="fas fa-list-ul"></i></button><a id="to_comment" href="#post-comment" title="直达评论"><i class="fas fa-comments"></i></a><button id="go-up" type="button" title="回到顶部"><i class="fas fa-arrow-up"></i></button></div></div><div id="local-search"><div class="search-dialog"><nav class="search-nav"><span class="search-dialog-title">搜索</span><span id="loading-status"></span><button class="search-close-button"><i class="fas fa-times"></i></button></nav><div class="is-center" id="loading-database"><i class="fas fa-spinner fa-pulse"></i><span>  数据库加载中</span></div><div class="search-wrap"><div id="local-search-input"><div class="local-search-box"><input class="local-search-box--input" placeholder="搜索文章" type="text"/></div></div><hr/><div id="local-search-results"></div></div></div><div id="search-mask"></div></div><div><script src="/js/utils.js"></script><script src="/js/main.js"></script><script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.umd.min.js"></script><script src="/js/search/local-search.js"></script><div class="js-pjax"><script>function addGitalkSource () {
+  const ele = document.createElement('link')
+  ele.rel = 'stylesheet'
+  ele.href= 'https://cdn.jsdelivr.net/npm/gitalk/dist/gitalk.min.css'
+  document.getElementsByTagName('head')[0].appendChild(ele)
+}
+
+function loadGitalk () {
+  function initGitalk () {
+    var gitalk = new Gitalk(Object.assign({
+      clientID: '528affc74d9344c23daf',
+      clientSecret: '41afe1cad2849c60940bd386fe0bbda659a73a16',
+      repo: 'kawhicurry.github.io.comment',
+      owner: 'kawhicurry',
+      admin: ['kawhicurry'],
+      id: '291b278a24ef3ad164c1ff0971872af7',
+      updateCountCallback: commentCount
+    },null))
+
+    gitalk.render('gitalk-container')
+  }
+
+  if (typeof Gitalk === 'function') initGitalk()
+  else {
+    addGitalkSource()
+    getScript('https://cdn.jsdelivr.net/npm/gitalk/dist/gitalk.min.js').then(initGitalk)
+  }
+}
+
+function commentCount(n){
+  let isCommentCount = document.querySelector('#post-meta .gitalk-comment-count')
+  if (isCommentCount) {
+    isCommentCount.innerHTML= n
+  }
+}
+
+if ('Gitalk' === 'Gitalk' || !false) {
+  if (false) btf.loadComment(document.getElementById('gitalk-container'), loadGitalk)
+  else loadGitalk()
+} else {
+  function loadOtherComment () {
+    loadGitalk()
+  }
+}</script></div><script id="canvas_nest" defer="defer" color="0,0,255" opacity="0.7" zIndex="-1" count="99" mobile="false" src="https://cdn.jsdelivr.net/npm/butterfly-extsrc/dist/canvas-nest.min.js"></script><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script></div></body></html>

@@ -1,0 +1,266 @@
+<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"><title>分类: Operation | Kawhicurry's Blog</title><meta name="author" content="kawhicurry"><meta name="copyright" content="kawhicurry"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta name="description" content="问：arch系和其他linux distribution最大的区别在哪？ 答：arch有超棒的社区 其实也可以换个思路，arch系怕是只有社区，哈哈哈哈。当然，本文重点要提到的是arch的aur仓库。包管理工具家家都有，RHEL系的yum，deb系的apt，arch系同样也有pacman。但这种仓库"><link rel="shortcut icon" href="https://cdn.jsdelivr.net/gh/kawhicurry/picgo/profile/favicon.jpg"><link rel="canonical" href="https://kawhicurry.github.io/Operation/8d703467/"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//www.google-analytics.com" crossorigin=""/><link rel="preconnect" href="//busuanzi.ibruce.info"/><meta name="baidu-site-verification" content="code-UXVbU6tNCR"/><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.min.css" media="print" onload="this.media='all'"><script async="async" src="https://www.googletagmanager.com/gtag/js?id=G-70WJTE71NM"></script><script>window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', 'G-70WJTE71NM');
+</script><script>const GLOBAL_CONFIG = { 
+  root: '/',
+  algolia: undefined,
+  localSearch: {"path":"/search.xml","preload":false,"languages":{"hits_empty":"找不到您查询的内容：${query}"}},
+  translate: undefined,
+  noticeOutdate: undefined,
+  highlight: {"plugin":"prismjs","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":1000},
+  copy: {
+    success: '复制成功',
+    error: '复制错误',
+    noSupport: '浏览器不支持'
+  },
+  relativeDate: {
+    homepage: false,
+    post: false
+  },
+  runtime: '天',
+  date_suffix: {
+    just: '刚刚',
+    min: '分钟前',
+    hour: '小时前',
+    day: '天前',
+    month: '个月前'
+  },
+  copyright: {"limitCount":50,"languages":{"author":"作者: kawhicurry","link":"链接: ","source":"来源: Kawhicurry's Blog","info":"著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。"}},
+  lightbox: 'fancybox',
+  Snackbar: undefined,
+  source: {
+    justifiedGallery: {
+      js: 'https://cdn.jsdelivr.net/npm/flickr-justified-gallery/dist/fjGallery.min.js',
+      css: 'https://cdn.jsdelivr.net/npm/flickr-justified-gallery/dist/fjGallery.min.css'
+    }
+  },
+  isPhotoFigcaption: false,
+  islazyload: false,
+  isAnchor: 
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: '分类: Operation',
+  isPost: true,
+  isHome: false,
+  isHighlightShrink: false,
+  isToc: true,
+  postUpdate: '2022-04-19 13:55:07'
+}</script><noscript><style type="text/css">
+  #nav {
+    opacity: 1
+  }
+  .justified-gallery img {
+    opacity: 1
+  }
+
+  #recent-posts time,
+  #post-meta time {
+    display: inline !important
+  }
+</style></noscript><script>(win=>{
+    win.saveToLocal = {
+      set: function setWithExpiry(key, value, ttl) {
+        if (ttl === 0) return
+        const now = new Date()
+        const expiryDay = ttl * 86400000
+        const item = {
+          value: value,
+          expiry: now.getTime() + expiryDay,
+        }
+        localStorage.setItem(key, JSON.stringify(item))
+      },
+
+      get: function getWithExpiry(key) {
+        const itemStr = localStorage.getItem(key)
+
+        if (!itemStr) {
+          return undefined
+        }
+        const item = JSON.parse(itemStr)
+        const now = new Date()
+
+        if (now.getTime() > item.expiry) {
+          localStorage.removeItem(key)
+          return undefined
+        }
+        return item.value
+      }
+    }
+  
+    win.getScript = url => new Promise((resolve, reject) => {
+      const script = document.createElement('script')
+      script.src = url
+      script.async = true
+      script.onerror = reject
+      script.onload = script.onreadystatechange = function() {
+        const loadState = this.readyState
+        if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+        script.onload = script.onreadystatechange = null
+        resolve()
+      }
+      document.head.appendChild(script)
+    })
+  
+      win.activateDarkMode = function () {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+        }
+      }
+      win.activateLightMode = function () {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#ffffff')
+        }
+      }
+      const t = saveToLocal.get('theme')
+    
+          const now = new Date()
+          const hour = now.getHours()
+          const isNight = hour <= 6 || hour >= 18
+          if (t === undefined) isNight ? activateDarkMode() : activateLightMode()
+          else if (t === 'light') activateLightMode()
+          else activateDarkMode()
+        
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        if (asideStatus === 'hide') {
+          document.documentElement.classList.add('hide-aside')
+        } else {
+          document.documentElement.classList.remove('hide-aside')
+        }
+      }
+    
+    const detectApple = () => {
+      if(/iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)){
+        document.documentElement.classList.add('apple')
+      }
+    }
+    detectApple()
+    })(window)</script><meta name="generator" content="Hexo 6.3.0"><link rel="alternate" href="/atom.xml" title="Kawhicurry's Blog" type="application/atom+xml">
+</head><body><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img is-center"><img src="https://cdn.jsdelivr.net/gh/kawhicurry/picgo/profile/avatar.jpg" onerror="onerror=null;src='/img/404.jpg'" alt="avatar"/></div><div class="sidebar-site-data site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">75</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">38</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">9</div></a></div><hr/><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> Home</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> Archives</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> Tags</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> Categories</span></a></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> Link</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> About</span></a></div></div></div></div><div class="post" id="body-wrap"><header class="post-bg" id="page-header" style="background-image: url('https://cdn.jsdelivr.net/gh/kawhicurry/picgo/anime/bingguo0.jpg')"><nav id="nav"><span id="blog_name"><a id="site-name" href="/">Kawhicurry's Blog</a></span><div id="menus"><div id="search-button"><a class="site-page social-icon search"><i class="fas fa-search fa-fw"></i><span> 搜索</span></a></div><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> Home</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> Archives</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> Tags</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> Categories</span></a></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> Link</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> About</span></a></div></div><div id="toggle-menu"><a class="site-page"><i class="fas fa-bars fa-fw"></i></a></div></div></nav><div id="post-info"><h1 class="post-title">维护自己的AUR源</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">发表于</span><time class="post-meta-date-created" datetime="2022-04-09T12:53:59.000Z" title="发表于 2022-04-09 12:53:59">2022-04-09</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2022-04-19T13:55:07.312Z" title="更新于 2022-04-19 13:55:07">2022-04-19</time></span><span class="post-meta-categories"><span class="post-meta-separator">|</span><i class="fas fa-inbox fa-fw post-meta-icon"></i><a class="post-meta-categories" href="/categories/Operation/">Operation</a></span></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span class="post-meta-wordcount"><i class="far fa-file-word fa-fw post-meta-icon"></i><span class="post-meta-label">字数总计:</span><span class="word-count">1.9k</span><span class="post-meta-separator">|</span><i class="far fa-clock fa-fw post-meta-icon"></i><span class="post-meta-label">阅读时长:</span><span>6分钟</span></span><span class="post-meta-separator">|</span><span class="post-meta-pv-cv" id="" data-flag-title="维护自己的AUR源"><i class="far fa-eye fa-fw post-meta-icon"></i><span class="post-meta-label">阅读量:</span><span id="busuanzi_value_page_pv"><i class="fa-solid fa-spinner fa-spin"></i></span></span></div></div></div></header><main class="layout" id="content-inner"><div id="post"><article class="post-content" id="article-container"><p>问：arch系和其他linux distribution最大的区别在哪？</p>
+<p>答：arch有超棒的社区</p>
+<p>其实也可以换个思路，arch系怕是只有社区，哈哈哈哈。当然，本文重点要提到的是arch的aur仓库。包管理工具家家都有，RHEL系的yum，deb系的apt，arch系同样也有pacman。但这种仓库一般都是官方维护，如果要添加自己的包的话，就有不少麻烦，之前了解过apt的自建ppa源，但是那玩意还要自己搭服务器，还有一堆认证，给我人整麻了。</p>
+<p>这里就得看看aur了，aur有一个官方维护的<a target="_blank" rel="noopener" href="https://aur.archlinux.org/">网站</a>。允许用户注册并上传自己的aur包。我在官网上查了查我的robocup2d项目，发现有人提过相关的包，比如核心组件<a target="_blank" rel="noopener" href="https://aur.archlinux.org/packages/rcssserver">rcssserver</a>。但是看它的版本是15.5的版本，而现在rcssserver已经迭代到17了。这个包在官网上最新的comment是2015年，这个包最后一次更新在2018年，在2020年被标记为过期。然后这种包是通过二进制代码直接更新的，因此就要求更新人员每次更新都手动去下载新的包，这也让我萌生了去维护一个自己的源的想法。</p>
+<p>翻了翻arch wiki，然后开干。</p>
+<h2 id="准备工作"><a href="#准备工作" class="headerlink" title="准备工作"></a>准备工作</h2><p>先从“表面工作”开始吧，首先注册好arch账号然后登录，然后上传自己的ssh公钥。然后clone自己希望的包的地址，比如我想维护的包取名，就可以填<a href="ssh://aur@aur.archlinux.org/rcssserver-git.git">ssh://aur@aur.archlinux.org/rcssserver-git.git</a>。后面那个名字可以自己取，不过还是注意规范，因为我这个包是打算通过git自动更新的，所以就以<code>-git</code>结尾，这点在arch wiki上是有规范的。</p>
+<p>clone成功的话，应该会得到一个空仓库，然后就是建立一个<code>PKGBUILD</code>文件。</p>
+<h2 id="构建软件包"><a href="#构建软件包" class="headerlink" title="构建软件包"></a>构建软件包</h2><p>可以说任何一个aur源，甚至pacman源，都是通过这个叫<code>PKGBUILD</code>的文件定义的，官网wiki:<a target="_blank" rel="noopener" href="https://wiki.archlinux.org/title/PKGBUILD_(%E7%AE%80%E4%BD%93%E4%B8%AD%E6%96%87)">https://wiki.archlinux.org/title/PKGBUILD_(%E7%AE%80%E4%BD%93%E4%B8%AD%E6%96%87)</a>。可以说是非常详细了，挑几个要点说明一下，以下是rcssserver-git的pkgbuild文件：</p>
+<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token comment"># This is an example PKGBUILD file. Use this as a start to creating your own,</span>
+<span class="token comment"># and remove these comments. For more information, see 'man PKGBUILD'.</span>
+<span class="token comment"># NOTE: Please fill out the license field for your package! If it is unknown,</span>
+<span class="token comment"># then please put 'unknown'.</span>
+
+<span class="token comment"># The following guidelines are specific to BZR, GIT, HG and SVN packages.</span>
+<span class="token comment"># Other VCS sources are not natively supported by makepkg yet.</span>
+
+<span class="token comment"># Maintainer: Your Name &lt;youremail@domain.com></span>
+<span class="token assign-left variable">pkgname</span><span class="token operator">=</span>rcssserver-git <span class="token comment"># '-bzr', '-git', '-hg' or '-svn'</span>
+<span class="token assign-left variable">pkgver</span><span class="token operator">=</span><span class="token number">17.0</span>.1
+<span class="token assign-left variable">pkgrel</span><span class="token operator">=</span><span class="token number">1</span>
+<span class="token assign-left variable">pkgdesc</span><span class="token operator">=</span><span class="token string">"Robocup 2D simulator."</span>
+<span class="token assign-left variable">arch</span><span class="token operator">=</span><span class="token punctuation">(</span><span class="token string">'any'</span><span class="token punctuation">)</span>
+<span class="token assign-left variable">url</span><span class="token operator">=</span><span class="token string">"https://github.com/rcsoccersim/rcssserver"</span>
+<span class="token assign-left variable">license</span><span class="token operator">=</span><span class="token punctuation">(</span><span class="token string">'GPL'</span><span class="token punctuation">)</span>
+<span class="token assign-left variable">groups</span><span class="token operator">=</span><span class="token punctuation">(</span><span class="token string">'rcss'</span><span class="token punctuation">)</span>
+<span class="token assign-left variable">depends</span><span class="token operator">=</span><span class="token punctuation">(</span><span class="token string">'boost-libs>=1.44'</span> <span class="token string">'bison'</span> <span class="token string">'flex'</span><span class="token punctuation">)</span>
+<span class="token assign-left variable">makedepends</span><span class="token operator">=</span><span class="token punctuation">(</span><span class="token string">'git'</span><span class="token punctuation">)</span> <span class="token comment"># 'bzr', 'git', 'mercurial' or 'subversion'</span>
+<span class="token assign-left variable">provides</span><span class="token operator">=</span><span class="token punctuation">(</span><span class="token string">"<span class="token variable">$&#123;pkgname<span class="token operator">%</span>-VCS&#125;</span>"</span><span class="token punctuation">)</span>
+<span class="token assign-left variable">conflicts</span><span class="token operator">=</span><span class="token punctuation">(</span><span class="token string">"<span class="token variable">$&#123;pkgname<span class="token operator">%</span>-VCS&#125;</span>"</span><span class="token punctuation">)</span>
+<span class="token assign-left variable">replaces</span><span class="token operator">=</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+<span class="token assign-left variable">backup</span><span class="token operator">=</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+<span class="token assign-left variable">options</span><span class="token operator">=</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+<span class="token assign-left variable">install</span><span class="token operator">=</span>
+<span class="token assign-left variable">source</span><span class="token operator">=</span><span class="token punctuation">(</span><span class="token string">'rcssserver-git::git+https://github.com/rcsoccersim/rcssserver.git'</span><span class="token punctuation">)</span>
+<span class="token assign-left variable">noextract</span><span class="token operator">=</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+<span class="token assign-left variable">md5sums</span><span class="token operator">=</span><span class="token punctuation">(</span><span class="token string">'SKIP'</span><span class="token punctuation">)</span>
+
+<span class="token comment"># Please refer to the 'USING VCS SOURCES' section of the PKGBUILD man page for</span>
+<span class="token comment"># a description of each element in the source array.</span>
+
+<span class="token function-name function">pkgver</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">&#123;</span>
+	<span class="token builtin class-name">cd</span> <span class="token string">"<span class="token variable">$srcdir</span>/<span class="token variable">$&#123;pkgname<span class="token operator">%</span>-VCS&#125;</span>"</span>
+<span class="token comment"># Git, tags available</span>
+	<span class="token builtin class-name">printf</span> <span class="token string">"%s"</span> <span class="token string">"<span class="token variable"><span class="token variable">$(</span><span class="token function">git</span> describe --tags <span class="token operator">|</span> <span class="token function">sed</span> <span class="token string">'s/rcssserver-//'</span><span class="token variable">)</span></span>"</span>
+<span class="token punctuation">&#125;</span>
+
+<span class="token function-name function">build</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">&#123;</span>
+	<span class="token builtin class-name">cd</span> <span class="token string">"<span class="token variable">$srcdir</span>/<span class="token variable">$&#123;pkgname<span class="token operator">%</span>-VCS&#125;</span>"</span>
+	./bootstrap
+	./configure --prefix<span class="token operator">=</span>/usr
+	<span class="token function">make</span>
+<span class="token punctuation">&#125;</span>
+
+<span class="token function-name function">check</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">&#123;</span>
+	<span class="token builtin class-name">cd</span> <span class="token string">"<span class="token variable">$srcdir</span>/<span class="token variable">$&#123;pkgname<span class="token operator">%</span>-VCS&#125;</span>"</span>
+	<span class="token function">make</span> -k check
+<span class="token punctuation">&#125;</span>
+
+<span class="token function-name function">package</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">&#123;</span>
+	<span class="token builtin class-name">cd</span> <span class="token string">"<span class="token variable">$srcdir</span>/<span class="token variable">$&#123;pkgname<span class="token operator">%</span>-VCS&#125;</span>"</span>
+	<span class="token function">make</span> <span class="token assign-left variable">DESTDIR</span><span class="token operator">=</span><span class="token string">"<span class="token variable">$pkgdir</span>/"</span> <span class="token function">install</span>
+<span class="token punctuation">&#125;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<p>先谈下怎么创建这个文件，如果是arch系用户，比如我是manjaro用户，在<code>/usr/share/pacman/</code>下有一堆模板文件，都可以看看。尤其对于我这种打算从VCS(version control system,like <code>git</code>)构建的，可以直接套<code>PKGBUILD-vsc.proto</code>，然后照着模板一步一步来就是了。然后注意这个文件的语法遵循bash语法，所以脚本人表示写的很开心。</p>
+<p>指定多个依赖时，注意用空格隔开，因为这是奇奇怪怪没有脑袋的bash语法。就像这样<code>(&#39;git&#39; &#39;svn&#39;)</code></p>
+<p>重点要提到的是版本号的问题，现在都推荐使用pkgver函数来更新版本了，只要在pkgver里想办法print出version number就行了。至于要print出什么样的版本号，那就可以自由发挥了，官方给的例子是使用<code>git describe --long</code>，但我实际写起来用了<code>git describe --tags</code>或者直接搜索<code>configure.ac</code>和<code>CMakeLists.txt</code>中的版本号。还有就是使用VCS模板的话，上面的<code>$&#123;pkgname%-VCS&#125;</code>是不用动的，会自动替换。</p>
+<p>然后就是构建过程，有几个预定义的函数，用于在构建的不同阶段做不同的事情，只要其中有一步有error，整个构建过程都会结束，关于构建过程中的工作目录问题，建议自己看看wiki，有讲到各种目录的切换，以及目录的变量名。</p>
+<h2 id="构建"><a href="#构建" class="headerlink" title="构建"></a>构建</h2><p>写好<code>PKGBUILD</code>之后就可以试试能不能编译过了，和<code>PKGBUILD</code>文件搭配的是<code>makepkg</code>指令。啥都不想的话，直接敲<code>makepkg</code>就完事了。<code>makepkg</code>有几个参数可以一块用一用。</p>
+<p>然后就是makepkg会“假装”执行安装这一步，这步很精彩，建议细读wiki。makepkg会伪造一个root环境，然后把包安装进去，此时包并没有真正被安装到系统中去，而是被打包成了一个<code>.pkg.tar.zst</code>文件。接下来使用<code>sudo pacman -U *.pkg.tar.zst</code>就可以真正地把包安装到系统中去。这样安装的包是受<code>pacman</code>管理的。</p>
+<h2 id="上传"><a href="#上传" class="headerlink" title="上传"></a>上传</h2><p>上传到aur仓库之前需要自己读一读arch wiki，看满足要求没有。这里写一写简洁的上传流程。</p>
+<p>首先是使用<code>makepkg --printsrcinfo &gt; .SRCINFO</code>。这个<code>.SRCINFO</code>是上传必须的，也是由<code>makepkg</code>读<code>PKGBUILD</code>自动生成的。如果你听了上面说的，用pkgver来自动更新版本号的话，你还得先跑一跑<code>makepkg -si</code>来调用pkgver更新<code>PKGBUILD</code>中的版本号，然后再生成<code>.SRCINFO</code>文件。接下来就可以<code>git add PKGBUILD .SRCINFO</code>然后<code>commit</code>并push，如果条件都满足，自然会上传成功的。如果失败，无非就那么几个原因：</p>
+<ul>
+<li>ssh公钥</li>
+<li><code>.SRCINFO</code>格式</li>
+<li>git add了奇奇怪怪的东西</li>
+</ul>
+<p><em>注意：<code>.SRCINFO</code>必须存在于每一次commit（尤其是第一次commit）里。</em></p>
+<h2 id="使用"><a href="#使用" class="headerlink" title="使用"></a>使用</h2><p>aur的收录速度应该是非常快的，很快就可以用aur工具，比如yay来更新自己的包了，就像我现在只需<code>yay -S rcssserver-git</code>就可以安装或者更新这款软件了。在aur官网上，你也可以看看别人提交了什么好玩的包，并给别人留下评论，或是给某个好用的社区包投票（vote），也可以看看别人的<code>PKGBUILD</code>是怎么写的，看看别人的规范，甚至可以绕过pacman，参考<code>PKGBUILD</code>来直接构建软件。更多社区包的机制可以参考arch wiki，比如投票够多就可以从aur选入community之类的</p>
+<h2 id="结语"><a href="#结语" class="headerlink" title="结语"></a>结语</h2><p>贴上我的aur包，如果有使用arch系来运行Robocup2D项目的小伙伴（应该没有，哈哈哈），欢迎使用下面这些包：</p>
+<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">yay -S librcsc-git rcssserver-git rcssmonitor soccerwindow2-git fedit2-git<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<p>都是git源码构建，所以安装的时候再看看版本号好了，总之永远都是最新的，不打算做回滚。</p>
+<p>最后感慨一句，aur真好用，我反正已经将我的所有软件都用pacman管理起来了，这样升级也好，卸载也好，都很方便。这次只是拿冷门项目练练手，以后如果有自己的软件要认真维护的话，还要考虑更新日志和自动更新之类的一系列功能。</p>
+</article><div class="post-copyright"><div class="post-copyright__author"><span class="post-copyright-meta">文章作者: </span><span class="post-copyright-info"><a href="https://kawhicurry.github.io">kawhicurry</a></span></div><div class="post-copyright__type"><span class="post-copyright-meta">文章链接: </span><span class="post-copyright-info"><a href="https://kawhicurry.github.io/Operation/8d703467/">https://kawhicurry.github.io/Operation/8d703467/</a></span></div><div class="post-copyright__notice"><span class="post-copyright-meta">版权声明: </span><span class="post-copyright-info">本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">CC BY-NC-SA 4.0</a> 许可协议。转载请注明来自 <a href="https://kawhicurry.github.io" target="_blank">Kawhicurry's Blog</a>！</span></div></div><div class="tag_share"><div class="post-meta__tag-list"><a class="post-meta__tags" href="/tags/linux/">linux</a><a class="post-meta__tags" href="/tags/aur/">aur</a></div><div class="post_share"><div class="addthis_inline_share_toolbox"></div><script src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-62037f9d1c65c8d1" async="async"></script></div></div><nav class="pagination-post" id="pagination"><div class="prev-post pull-left"><a href="/Back-end/a113ba1f/"><img class="prev-cover" src="https://cdn.jsdelivr.net/gh/kawhicurry/picgo/anime/re05.jpg" onerror="onerror=null;src='/img/404.jpg'" alt="cover of previous post"><div class="pagination-info"><div class="label">上一篇</div><div class="prev_info">APUE（2）</div></div></a></div><div class="next-post pull-right"><a href="/Project/93340145/"><img class="next-cover" src="https://cdn.jsdelivr.net/gh/kawhicurry/picgo/anime/luren1.jpg" onerror="onerror=null;src='/img/404.jpg'" alt="cover of next post"><div class="pagination-info"><div class="label">下一篇</div><div class="next_info">WebSoccerMonitor</div></div></a></div></nav><div class="relatedPosts"><div class="headline"><i class="fas fa-thumbs-up fa-fw"></i><span>相关推荐</span></div><div class="relatedPosts-list"><div><a href="/Auto/5e6b7330/" title="ROS学习笔记（0）"><img class="cover" src="https://cdn.jsdelivr.net/gh/kawhicurry/picgo/anime/chaopao2.jpg" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2022-01-15</div><div class="title">ROS学习笔记（0）</div></div></a></div><div><a href="/Auto/f462bbbb/" title="ROS学习笔记（2）"><img class="cover" src="https://cdn.jsdelivr.net/gh/kawhicurry/picgo/anime/chaopao3.jpg" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2022-01-21</div><div class="title">ROS学习笔记（2）</div></div></a></div><div><a href="/Auto/4cdedcde/" title="ROS学习笔记（3）"><img class="cover" src="https://cdn.jsdelivr.net/gh/kawhicurry/picgo/anime/chaopao2.jpg" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2022-01-23</div><div class="title">ROS学习笔记（3）</div></div></a></div><div><a href="/Operation/f7220f82/" title="基于虚拟机的开发机搭建"><img class="cover" src="https://cdn.jsdelivr.net/gh/kawhicurry/picgo/anime/re02.jpg" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2021-12-28</div><div class="title">基于虚拟机的开发机搭建</div></div></a></div><div><a href="/Operation/f7aa4615/" title="重学linux（0）"><img class="cover" src="https://cdn.jsdelivr.net/gh/kawhicurry/picgo/anime/chaopao3.jpg" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2022-01-18</div><div class="title">重学linux（0）</div></div></a></div><div><a href="/Operation/a4d04884/" title="重学linux（10）"><img class="cover" src="https://cdn.jsdelivr.net/gh/kawhicurry/picgo/anime/kon1.jpg" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2022-03-02</div><div class="title">重学linux（10）</div></div></a></div></div></div><hr/><div id="post-comment"><div class="comment-head"><div class="comment-headline"><i class="fas fa-comments fa-fw"></i><span> 评论</span></div></div><div class="comment-wrap"><div><div id="gitalk-container"></div></div></div></div></div><div class="aside-content" id="aside-content"><div class="card-widget card-info"><div class="is-center"><div class="avatar-img"><img src="https://cdn.jsdelivr.net/gh/kawhicurry/picgo/profile/avatar.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="avatar"/></div><div class="author-info__name">kawhicurry</div><div class="author-info__description">An student aiming to be an operation engineer.</div></div><div class="card-info-data site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">75</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">38</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">9</div></a></div><a id="card-info-btn" target="_blank" rel="noopener" href="https://github.com/kawhicurry"><i class="fab fa-github"></i><span>来github找我耍</span></a><div class="card-info-social-icons is-center"><a class="social-icon" href="https://github.com/kawhicurry" target="_blank" title="Github"><i class="fab fa-github"></i></a><a class="social-icon" href="mailto:kawhicurry@foxmail.com" target="_blank" title="Email"><i class="fas fa-envelope"></i></a><a class="social-icon" href="https://kawhicurry.github.io/atom.xml" target="_blank" title="Rss"><i class="fas fa-rss"></i></a></div></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn fa-shake"></i><span>公告</span></div><div class="announcement_content">恭喜你发现了一个啥用没有的blog！</div></div><div class="sticky_layout"><div class="card-widget" id="card-toc"><div class="item-headline"><i class="fas fa-stream"></i><span>目录</span><span class="toc-percentage"></span></div><div class="toc-content"><ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%87%86%E5%A4%87%E5%B7%A5%E4%BD%9C"><span class="toc-number">1.</span> <span class="toc-text">准备工作</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%9E%84%E5%BB%BA%E8%BD%AF%E4%BB%B6%E5%8C%85"><span class="toc-number">2.</span> <span class="toc-text">构建软件包</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%9E%84%E5%BB%BA"><span class="toc-number">3.</span> <span class="toc-text">构建</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%B8%8A%E4%BC%A0"><span class="toc-number">4.</span> <span class="toc-text">上传</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%BD%BF%E7%94%A8"><span class="toc-number">5.</span> <span class="toc-text">使用</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%BB%93%E8%AF%AD"><span class="toc-number">6.</span> <span class="toc-text">结语</span></a></li></ol></div></div><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>最新文章</span></div><div class="aside-list"><div class="aside-list-item"><a class="thumbnail" href="/Operation/8f58554d/" title="ESP,GRUB与BTRFS"><img src="https://cdn.jsdelivr.net/gh/kawhicurry/picgo/anime/chaopao3.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="ESP,GRUB与BTRFS"/></a><div class="content"><a class="title" href="/Operation/8f58554d/" title="ESP,GRUB与BTRFS">ESP,GRUB与BTRFS</a><time datetime="2022-10-24T21:07:07.000Z" title="发表于 2022-10-24 21:07:07">2022-10-24</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/Daily/c687b02a/" title="记录一次有趣的答辩经历"><img src="https://cdn.jsdelivr.net/gh/kawhicurry/picgo/anime/bingguo1.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="记录一次有趣的答辩经历"/></a><div class="content"><a class="title" href="/Daily/c687b02a/" title="记录一次有趣的答辩经历">记录一次有趣的答辩经历</a><time datetime="2022-10-22T20:17:08.000Z" title="发表于 2022-10-22 20:17:08">2022-10-22</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/Operation/63fa7eb5/" title="建立linux下完善的个人备份系统"><img src="https://cdn.jsdelivr.net/gh/kawhicurry/picgo/anime/bingguo0.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="建立linux下完善的个人备份系统"/></a><div class="content"><a class="title" href="/Operation/63fa7eb5/" title="建立linux下完善的个人备份系统">建立linux下完善的个人备份系统</a><time datetime="2022-04-25T19:11:04.000Z" title="发表于 2022-04-25 19:11:04">2022-04-25</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/Back-end/ace6f1b7/" title="用树莓派搭建一个简单的跳板机"><img src="https://cdn.jsdelivr.net/gh/kawhicurry/picgo/anime/luren0.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="用树莓派搭建一个简单的跳板机"/></a><div class="content"><a class="title" href="/Back-end/ace6f1b7/" title="用树莓派搭建一个简单的跳板机">用树莓派搭建一个简单的跳板机</a><time datetime="2022-04-23T17:57:33.000Z" title="发表于 2022-04-23 17:57:33">2022-04-23</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/Auto/b84eee2e/" title="折磨的ROS-in-arch（manjaro）"><img src="https://cdn.jsdelivr.net/gh/kawhicurry/picgo/anime/re03.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="折磨的ROS-in-arch（manjaro）"/></a><div class="content"><a class="title" href="/Auto/b84eee2e/" title="折磨的ROS-in-arch（manjaro）">折磨的ROS-in-arch（manjaro）</a><time datetime="2022-04-19T10:29:18.000Z" title="发表于 2022-04-19 10:29:18">2022-04-19</time></div></div></div></div></div></div></main><footer id="footer" style="background-image: url('https://cdn.jsdelivr.net/gh/kawhicurry/picgo/anime/daily1.jpg')"><div id="footer-wrap"><div class="copyright">&copy;2021 - 2022 By kawhicurry</div><div class="framework-info"><span>框架 </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo</a><span class="footer-separator">|</span><span>主题 </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly</a></div><div class="footer_custom_text">Welcome to the world of an operation engineer.</div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="readmode" type="button" title="阅读模式"><i class="fas fa-book-open"></i></button><button id="darkmode" type="button" title="浅色和深色模式转换"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="单栏和双栏切换"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside_config" type="button" title="设置"><i class="fas fa-cog fa-spin"></i></button><button class="close" id="mobile-toc-button" type="button" title="目录"><i class="fas fa-list-ul"></i></button><a id="to_comment" href="#post-comment" title="直达评论"><i class="fas fa-comments"></i></a><button id="go-up" type="button" title="回到顶部"><i class="fas fa-arrow-up"></i></button></div></div><div id="local-search"><div class="search-dialog"><nav class="search-nav"><span class="search-dialog-title">搜索</span><span id="loading-status"></span><button class="search-close-button"><i class="fas fa-times"></i></button></nav><div class="is-center" id="loading-database"><i class="fas fa-spinner fa-pulse"></i><span>  数据库加载中</span></div><div class="search-wrap"><div id="local-search-input"><div class="local-search-box"><input class="local-search-box--input" placeholder="搜索文章" type="text"/></div></div><hr/><div id="local-search-results"></div></div></div><div id="search-mask"></div></div><div><script src="/js/utils.js"></script><script src="/js/main.js"></script><script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.umd.min.js"></script><script src="/js/search/local-search.js"></script><div class="js-pjax"><script>function addGitalkSource () {
+  const ele = document.createElement('link')
+  ele.rel = 'stylesheet'
+  ele.href= 'https://cdn.jsdelivr.net/npm/gitalk/dist/gitalk.min.css'
+  document.getElementsByTagName('head')[0].appendChild(ele)
+}
+
+function loadGitalk () {
+  function initGitalk () {
+    var gitalk = new Gitalk(Object.assign({
+      clientID: '528affc74d9344c23daf',
+      clientSecret: '41afe1cad2849c60940bd386fe0bbda659a73a16',
+      repo: 'kawhicurry.github.io.comment',
+      owner: 'kawhicurry',
+      admin: ['kawhicurry'],
+      id: 'b8b5cbaa5ad031240989898127d65175',
+      updateCountCallback: commentCount
+    },null))
+
+    gitalk.render('gitalk-container')
+  }
+
+  if (typeof Gitalk === 'function') initGitalk()
+  else {
+    addGitalkSource()
+    getScript('https://cdn.jsdelivr.net/npm/gitalk/dist/gitalk.min.js').then(initGitalk)
+  }
+}
+
+function commentCount(n){
+  let isCommentCount = document.querySelector('#post-meta .gitalk-comment-count')
+  if (isCommentCount) {
+    isCommentCount.innerHTML= n
+  }
+}
+
+if ('Gitalk' === 'Gitalk' || !false) {
+  if (false) btf.loadComment(document.getElementById('gitalk-container'), loadGitalk)
+  else loadGitalk()
+} else {
+  function loadOtherComment () {
+    loadGitalk()
+  }
+}</script></div><script id="canvas_nest" defer="defer" color="0,0,255" opacity="0.7" zIndex="-1" count="99" mobile="false" src="https://cdn.jsdelivr.net/npm/butterfly-extsrc/dist/canvas-nest.min.js"></script><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script></div></body></html>

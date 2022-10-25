@@ -1,0 +1,665 @@
+<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"><title>分类: Language | Kawhicurry's Blog</title><meta name="author" content="kawhicurry"><meta name="copyright" content="kawhicurry"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta name="description" content="课前提醒（给我自己的） 打开vscode，准备源码 准备好使用g++  多文件编程Why非结构化与结构化：goto满天飞的后果 How&amp;#x2F;&amp;#x2F;fun.h void func();  &amp;#x2F;&amp;#x2F;fun.cpp #include &amp;quot;fun.h&amp;quot; void func()&amp;amp;#123; 	std::cout&amp;lt;&amp;amp;l"><link rel="shortcut icon" href="https://cdn.jsdelivr.net/gh/kawhicurry/picgo/profile/favicon.jpg"><link rel="canonical" href="https://kawhicurry.github.io/Language/49144470/"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//www.google-analytics.com" crossorigin=""/><link rel="preconnect" href="//busuanzi.ibruce.info"/><meta name="baidu-site-verification" content="code-UXVbU6tNCR"/><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.min.css" media="print" onload="this.media='all'"><script async="async" src="https://www.googletagmanager.com/gtag/js?id=G-70WJTE71NM"></script><script>window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', 'G-70WJTE71NM');
+</script><script>const GLOBAL_CONFIG = { 
+  root: '/',
+  algolia: undefined,
+  localSearch: {"path":"/search.xml","preload":false,"languages":{"hits_empty":"找不到您查询的内容：${query}"}},
+  translate: undefined,
+  noticeOutdate: undefined,
+  highlight: {"plugin":"prismjs","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":1000},
+  copy: {
+    success: '复制成功',
+    error: '复制错误',
+    noSupport: '浏览器不支持'
+  },
+  relativeDate: {
+    homepage: false,
+    post: false
+  },
+  runtime: '天',
+  date_suffix: {
+    just: '刚刚',
+    min: '分钟前',
+    hour: '小时前',
+    day: '天前',
+    month: '个月前'
+  },
+  copyright: {"limitCount":50,"languages":{"author":"作者: kawhicurry","link":"链接: ","source":"来源: Kawhicurry's Blog","info":"著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。"}},
+  lightbox: 'fancybox',
+  Snackbar: undefined,
+  source: {
+    justifiedGallery: {
+      js: 'https://cdn.jsdelivr.net/npm/flickr-justified-gallery/dist/fjGallery.min.js',
+      css: 'https://cdn.jsdelivr.net/npm/flickr-justified-gallery/dist/fjGallery.min.css'
+    }
+  },
+  isPhotoFigcaption: false,
+  islazyload: false,
+  isAnchor: 
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: '分类: Language',
+  isPost: true,
+  isHome: false,
+  isHighlightShrink: false,
+  isToc: true,
+  postUpdate: '2022-02-11 05:17:56'
+}</script><noscript><style type="text/css">
+  #nav {
+    opacity: 1
+  }
+  .justified-gallery img {
+    opacity: 1
+  }
+
+  #recent-posts time,
+  #post-meta time {
+    display: inline !important
+  }
+</style></noscript><script>(win=>{
+    win.saveToLocal = {
+      set: function setWithExpiry(key, value, ttl) {
+        if (ttl === 0) return
+        const now = new Date()
+        const expiryDay = ttl * 86400000
+        const item = {
+          value: value,
+          expiry: now.getTime() + expiryDay,
+        }
+        localStorage.setItem(key, JSON.stringify(item))
+      },
+
+      get: function getWithExpiry(key) {
+        const itemStr = localStorage.getItem(key)
+
+        if (!itemStr) {
+          return undefined
+        }
+        const item = JSON.parse(itemStr)
+        const now = new Date()
+
+        if (now.getTime() > item.expiry) {
+          localStorage.removeItem(key)
+          return undefined
+        }
+        return item.value
+      }
+    }
+  
+    win.getScript = url => new Promise((resolve, reject) => {
+      const script = document.createElement('script')
+      script.src = url
+      script.async = true
+      script.onerror = reject
+      script.onload = script.onreadystatechange = function() {
+        const loadState = this.readyState
+        if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+        script.onload = script.onreadystatechange = null
+        resolve()
+      }
+      document.head.appendChild(script)
+    })
+  
+      win.activateDarkMode = function () {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+        }
+      }
+      win.activateLightMode = function () {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#ffffff')
+        }
+      }
+      const t = saveToLocal.get('theme')
+    
+          const now = new Date()
+          const hour = now.getHours()
+          const isNight = hour <= 6 || hour >= 18
+          if (t === undefined) isNight ? activateDarkMode() : activateLightMode()
+          else if (t === 'light') activateLightMode()
+          else activateDarkMode()
+        
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        if (asideStatus === 'hide') {
+          document.documentElement.classList.add('hide-aside')
+        } else {
+          document.documentElement.classList.remove('hide-aside')
+        }
+      }
+    
+    const detectApple = () => {
+      if(/iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)){
+        document.documentElement.classList.add('apple')
+      }
+    }
+    detectApple()
+    })(window)</script><meta name="generator" content="Hexo 6.3.0"><link rel="alternate" href="/atom.xml" title="Kawhicurry's Blog" type="application/atom+xml">
+</head><body><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img is-center"><img src="https://cdn.jsdelivr.net/gh/kawhicurry/picgo/profile/avatar.jpg" onerror="onerror=null;src='/img/404.jpg'" alt="avatar"/></div><div class="sidebar-site-data site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">75</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">38</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">9</div></a></div><hr/><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> Home</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> Archives</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> Tags</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> Categories</span></a></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> Link</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> About</span></a></div></div></div></div><div class="post" id="body-wrap"><header class="post-bg" id="page-header" style="background-image: url('https://cdn.jsdelivr.net/gh/kawhicurry/picgo/anime/luren0.jpg')"><nav id="nav"><span id="blog_name"><a id="site-name" href="/">Kawhicurry's Blog</a></span><div id="menus"><div id="search-button"><a class="site-page social-icon search"><i class="fas fa-search fa-fw"></i><span> 搜索</span></a></div><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> Home</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> Archives</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> Tags</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> Categories</span></a></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> Link</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> About</span></a></div></div><div id="toggle-menu"><a class="site-page"><i class="fas fa-bars fa-fw"></i></a></div></div></nav><div id="post-info"><h1 class="post-title">给Apollo的面对对象课</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">发表于</span><time class="post-meta-date-created" datetime="2021-11-21T11:21:13.000Z" title="发表于 2021-11-21 11:21:13">2021-11-21</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2022-02-11T05:17:56.300Z" title="更新于 2022-02-11 05:17:56">2022-02-11</time></span><span class="post-meta-categories"><span class="post-meta-separator">|</span><i class="fas fa-inbox fa-fw post-meta-icon"></i><a class="post-meta-categories" href="/categories/Language/">Language</a></span></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span class="post-meta-wordcount"><i class="far fa-file-word fa-fw post-meta-icon"></i><span class="post-meta-label">字数总计:</span><span class="word-count">2.5k</span><span class="post-meta-separator">|</span><i class="far fa-clock fa-fw post-meta-icon"></i><span class="post-meta-label">阅读时长:</span><span>10分钟</span></span><span class="post-meta-separator">|</span><span class="post-meta-pv-cv" id="" data-flag-title="给Apollo的面对对象课"><i class="far fa-eye fa-fw post-meta-icon"></i><span class="post-meta-label">阅读量:</span><span id="busuanzi_value_page_pv"><i class="fa-solid fa-spinner fa-spin"></i></span></span></div></div></div></header><main class="layout" id="content-inner"><div id="post"><article class="post-content" id="article-container"><h1 id="课前提醒（给我自己的）"><a href="#课前提醒（给我自己的）" class="headerlink" title="课前提醒（给我自己的）"></a>课前提醒（给我自己的）</h1><ol>
+<li>打开vscode，准备源码</li>
+<li>准备好使用g++</li>
+</ol>
+<h1 id="多文件编程"><a href="#多文件编程" class="headerlink" title="多文件编程"></a>多文件编程</h1><h2 id="Why"><a href="#Why" class="headerlink" title="Why"></a>Why</h2><p>非结构化与结构化：<code>goto</code>满天飞的后果</p>
+<h2 id="How"><a href="#How" class="headerlink" title="How"></a>How</h2><pre class="line-numbers language-cpp" data-language="cpp"><code class="language-cpp"><span class="token comment">//fun.h</span>
+<span class="token keyword">void</span> <span class="token function">func</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token comment">//fun.cpp</span>
+<span class="token macro property"><span class="token directive-hash">#</span><span class="token directive keyword">include</span> <span class="token string">"fun.h"</span></span>
+<span class="token keyword">void</span> <span class="token function">func</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">&#123;</span>
+	std<span class="token double-colon punctuation">::</span>cout<span class="token operator">&lt;&lt;</span><span class="token string">"hello"</span><span class="token operator">&lt;&lt;</span>std<span class="token double-colon punctuation">::</span>endl<span class="token punctuation">;</span><span class="token comment">//?</span>
+<span class="token punctuation">&#125;</span>
+
+<span class="token comment">//main.cpp</span>
+<span class="token macro property"><span class="token directive-hash">#</span><span class="token directive keyword">include</span> <span class="token string">&lt;stdio.h></span></span>
+<span class="token macro property"><span class="token directive-hash">#</span><span class="token directive keyword">inlcude</span> <span class="token string">"fun.h"</span></span>
+<span class="token keyword">using</span> <span class="token keyword">namespace</span> std<span class="token punctuation">;</span>
+<span class="token keyword">int</span> <span class="token function">main</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">&#123;</span>
+    <span class="token function">printf</span><span class="token punctuation">(</span><span class="token string">"hi\n"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+	<span class="token function">func</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+	<span class="token keyword">return</span> <span class="token number">0</span><span class="token punctuation">;</span>
+<span class="token punctuation">&#125;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<p><strong>提问</strong>：<code>iostream</code>头文件应该放在哪？</p>
+<pre class="line-numbers language-cpp" data-language="cpp"><code class="language-cpp"><span class="token comment">//fun.h</span>
+<span class="token macro property"><span class="token directive-hash">#</span><span class="token directive keyword">include</span> <span class="token string">&lt;iostream></span></span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
+
+<p><strong>提问</strong>：<code>main.cpp</code> 如何找到func()的实现？</p>
+<p>VS（IDE）的编译过程：</p>
+<ul>
+<li>预处理</li>
+<li>编译，生成中间可执行文件</li>
+<li><strong>链接</strong></li>
+<li>生成最终可执行文件</li>
+</ul>
+<hr>
+<p>演示：<a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/106781089">https://zhuanlan.zhihu.com/p/106781089</a></p>
+<hr>
+<p>更进一步：Make</p>
+<p><strong>提问</strong>：如果把上面的<code>stdio.h</code>改成<code>iostream</code>，会怎么样</p>
+<pre class="line-numbers language-cpp" data-language="cpp"><code class="language-cpp"><span class="token comment">//fun.h</span>
+<span class="token macro property"><span class="token directive-hash">#</span><span class="token directive keyword">ifndef</span> <span class="token expression">_fun</span></span>
+<span class="token macro property"><span class="token directive-hash">#</span><span class="token directive keyword">define</span> <span class="token macro-name">_fun</span></span>
+
+<span class="token macro property"><span class="token directive-hash">#</span><span class="token directive keyword">include</span> <span class="token string">&lt;iostream></span></span>
+
+<span class="token macro property"><span class="token directive-hash">#</span><span class="token directive keyword">endif</span></span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<h1 id="面对对象"><a href="#面对对象" class="headerlink" title="面对对象"></a>面对对象</h1><p><strong>提问</strong>：计算机是用来干啥的？为何计算机今天能为我们带来如此多好处？一个词语，两个汉字。</p>
+<ol>
+<li>面向过程：我让机器干啥就干啥</li>
+<li>面向对象：以对象为中心，把问题分解成对象</li>
+</ol>
+<p><em>举例</em>：卖书</p>
+<h2 id="C的对象"><a href="#C的对象" class="headerlink" title="C的对象"></a>C的对象</h2><pre class="line-numbers language-c" data-language="c"><code class="language-c"><span class="token keyword">struct</span> <span class="token class-name">book</span><span class="token punctuation">&#123;</span>
+    <span class="token keyword">char</span> name<span class="token punctuation">[</span><span class="token number">10</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
+    <span class="token keyword">char</span> ISBN<span class="token punctuation">[</span><span class="token number">20</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
+    <span class="token keyword">double</span> price<span class="token punctuation">;</span>
+<span class="token punctuation">&#125;</span>
+
+<span class="token keyword">double</span> <span class="token function">getPrice</span><span class="token punctuation">(</span><span class="token keyword">struct</span> <span class="token class-name">book</span><span class="token operator">*</span> theBook<span class="token punctuation">)</span><span class="token punctuation">&#123;</span>
+    <span class="token keyword">return</span> theBook<span class="token operator">-></span>price<span class="token punctuation">;</span>
+<span class="token punctuation">&#125;</span>
+<span class="token keyword">void</span> <span class="token function">showPrice</span><span class="token punctuation">(</span><span class="token keyword">struct</span> <span class="token class-name">book</span><span class="token operator">*</span> theBook<span class="token punctuation">)</span><span class="token punctuation">&#123;</span>
+    <span class="token function">printf</span><span class="token punctuation">(</span><span class="token string">"%lf"</span><span class="token punctuation">,</span>theBook<span class="token operator">-></span>price<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">&#125;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<p><strong>提问</strong>：考虑一另一把剑🗡</p>
+<pre class="line-numbers language-c" data-language="c"><code class="language-c"><span class="token keyword">struct</span> <span class="token class-name">sword</span><span class="token punctuation">&#123;</span>
+    <span class="token keyword">char</span> name<span class="token punctuation">[</span><span class="token number">10</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
+    <span class="token keyword">double</span> price<span class="token punctuation">;</span>
+<span class="token punctuation">&#125;</span>
+<span class="token keyword">double</span> <span class="token function">getPrice</span><span class="token punctuation">(</span><span class="token keyword">struct</span> <span class="token class-name">sword</span><span class="token operator">*</span> theSword<span class="token punctuation">)</span><span class="token punctuation">&#123;</span>
+    <span class="token keyword">return</span> theSword<span class="token operator">-></span>price<span class="token punctuation">;</span>
+<span class="token punctuation">&#125;</span>
+<span class="token keyword">void</span> <span class="token function">showPrice</span><span class="token punctuation">(</span><span class="token keyword">struct</span> <span class="token class-name">book</span><span class="token operator">*</span> theSword<span class="token punctuation">)</span><span class="token punctuation">&#123;</span>
+    <span class="token function">printf</span><span class="token punctuation">(</span><span class="token string">"%lf"</span><span class="token punctuation">,</span>theSword<span class="token operator">-></span>price<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">&#125;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<p>C不允许同名函数，即使允许，你也不知道show了谁的price。如何解决这个问题？（其实可以同名，在后面的重载会讲到）</p>
+<p>把函数写在struct里面，让函数成为struct的“专属函数”。C不许我们这么做，但是C++可以</p>
+<pre class="line-numbers language-cpp" data-language="cpp"><code class="language-cpp"><span class="token keyword">struct</span> <span class="token class-name">Book</span><span class="token punctuation">&#123;</span>
+    <span class="token keyword">char</span> name<span class="token punctuation">[</span><span class="token number">10</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
+    <span class="token keyword">char</span> ISBN<span class="token punctuation">[</span><span class="token number">20</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
+    <span class="token keyword">double</span> price<span class="token punctuation">;</span>
+    
+    <span class="token keyword">double</span> <span class="token function">getPrice</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">&#123;</span>
+    	<span class="token keyword">return</span> price<span class="token punctuation">;</span>
+	<span class="token punctuation">&#125;</span>
+	<span class="token keyword">void</span> <span class="token function">showPrice</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">&#123;</span>
+    	<span class="token function">printf</span><span class="token punctuation">(</span><span class="token string">"%lf"</span><span class="token punctuation">,</span>price<span class="token punctuation">)</span><span class="token punctuation">;</span>
+	<span class="token punctuation">&#125;</span>
+    <span class="token comment">//...</span>
+<span class="token punctuation">&#125;</span><span class="token punctuation">;</span>
+
+<span class="token keyword">struct</span> <span class="token class-name">Book</span> theBook<span class="token operator">=</span><span class="token comment">/*...*/</span><span class="token punctuation">;</span>
+theBook<span class="token punctuation">.</span><span class="token function">showPrice</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<p><strong>提问</strong>：考虑price的合理性，如何正确的为price赋值？（price&gt;0)</p>
+<pre class="line-numbers language-cpp" data-language="cpp"><code class="language-cpp"><span class="token comment">//考虑这种用法</span>
+theBook<span class="token punctuation">.</span>price<span class="token operator">=</span><span class="token number">100</span><span class="token punctuation">;</span>
+
+<span class="token keyword">int</span> <span class="token function">setPrice</span><span class="token punctuation">(</span><span class="token keyword">double</span> value<span class="token punctuation">)</span><span class="token punctuation">&#123;</span>
+    <span class="token keyword">if</span><span class="token punctuation">(</span>value<span class="token operator">&lt;</span><span class="token number">0</span><span class="token punctuation">)</span><span class="token punctuation">&#123;</span>
+        <span class="token keyword">return</span> <span class="token operator">-</span><span class="token number">1</span><span class="token punctuation">;</span>
+    <span class="token punctuation">&#125;</span><span class="token keyword">else</span><span class="token punctuation">&#123;</span>
+        price<span class="token operator">=</span>value<span class="token punctuation">;</span>
+        <span class="token keyword">return</span> <span class="token number">0</span><span class="token punctuation">;</span>
+    <span class="token punctuation">&#125;</span>
+<span class="token punctuation">&#125;</span>
+<span class="token comment">//还是没有解决问题，依然可以</span>
+theBook<span class="token punctuation">.</span>price<span class="token operator">=</span><span class="token number">100</span><span class="token punctuation">;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<p>封装的必要性</p>
+<pre class="line-numbers language-cpp" data-language="cpp"><code class="language-cpp"><span class="token keyword">class</span> <span class="token class-name">Book</span><span class="token punctuation">&#123;</span>
+<span class="token keyword">private</span><span class="token operator">:</span>
+    <span class="token keyword">char</span> name<span class="token punctuation">[</span><span class="token number">10</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
+    <span class="token keyword">char</span> ISBN<span class="token punctuation">[</span><span class="token number">20</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
+    <span class="token keyword">double</span> price<span class="token punctuation">;</span>
+<span class="token keyword">public</span><span class="token operator">:</span>
+	<span class="token keyword">int</span> <span class="token function">setPrice</span><span class="token punctuation">(</span><span class="token keyword">double</span> value<span class="token punctuation">)</span><span class="token punctuation">&#123;</span>
+    	<span class="token keyword">if</span><span class="token punctuation">(</span>value<span class="token operator">&lt;</span><span class="token number">0</span><span class="token punctuation">)</span><span class="token punctuation">&#123;</span>
+        	<span class="token keyword">return</span> <span class="token operator">-</span><span class="token number">1</span><span class="token punctuation">;</span>
+    	<span class="token punctuation">&#125;</span><span class="token keyword">else</span><span class="token punctuation">&#123;</span>
+        	price<span class="token operator">=</span>value<span class="token punctuation">;</span>
+    	<span class="token punctuation">&#125;</span>
+	<span class="token punctuation">&#125;</span>
+    <span class="token keyword">double</span> <span class="token function">getPrice</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">&#123;</span>
+    	<span class="token keyword">return</span> price<span class="token punctuation">;</span>
+	<span class="token punctuation">&#125;</span>
+	<span class="token keyword">void</span> <span class="token function">showPrice</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">&#123;</span>
+    	<span class="token function">printf</span><span class="token punctuation">(</span><span class="token string">"%lf"</span><span class="token punctuation">,</span>price<span class="token punctuation">)</span><span class="token punctuation">;</span>
+	<span class="token punctuation">&#125;</span>
+    <span class="token comment">//...</span>
+<span class="token punctuation">&#125;</span><span class="token punctuation">;</span>
+
+<span class="token comment">//无法直接修改price，必须通过公共成员函数</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<h2 id="构造函数"><a href="#构造函数" class="headerlink" title="构造函数"></a>构造函数</h2><p>C中的<code>struct</code>如何创建对象？</p>
+<pre class="line-numbers language-c" data-language="c"><code class="language-c"><span class="token keyword">typedef</span> <span class="token keyword">struct</span><span class="token punctuation">&#123;</span>
+	<span class="token keyword">int</span> num<span class="token punctuation">;</span>
+<span class="token punctuation">&#125;</span>Book<span class="token punctuation">;</span>
+
+Book b<span class="token punctuation">;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<p>考虑 <code>int a=1</code>，我们能不能<code>Book b</code>？</p>
+<p>我们可以如何创建一个对象？我们需要Constructor，构造函数。</p>
+<pre class="line-numbers language-cpp" data-language="cpp"><code class="language-cpp"><span class="token keyword">class</span> <span class="token class-name">Book</span><span class="token punctuation">&#123;</span>
+<span class="token keyword">public</span><span class="token operator">:</span>
+    <span class="token function">Book</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">&#123;</span><span class="token punctuation">&#125;</span>
+    <span class="token comment">//Book(double the_price):price(the_price)&#123;&#125;</span>
+    <span class="token function">Book</span><span class="token punctuation">(</span><span class="token keyword">double</span> the_price<span class="token punctuation">)</span><span class="token punctuation">&#123;</span><span class="token function">setPrice</span><span class="token punctuation">(</span>the_price<span class="token punctuation">)</span><span class="token punctuation">;</span><span class="token punctuation">&#125;</span>
+    <span class="token function">Book</span><span class="token punctuation">(</span><span class="token keyword">double</span> the_price<span class="token punctuation">,</span><span class="token keyword">char</span><span class="token operator">*</span> the_name<span class="token punctuation">)</span><span class="token punctuation">&#123;</span>
+        <span class="token function">Book</span><span class="token punctuation">(</span>the_price<span class="token punctuation">,</span>the_name<span class="token punctuation">,</span><span class="token string">"0000"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">&#125;</span>
+    <span class="token function">Book</span><span class="token punctuation">(</span><span class="token keyword">double</span> the_price<span class="token operator">=</span><span class="token number">10.0</span><span class="token punctuation">,</span><span class="token keyword">char</span><span class="token operator">*</span> the_name<span class="token operator">=</span><span class="token string">"none"</span><span class="token punctuation">,</span><span class="token keyword">char</span><span class="token operator">*</span> ISBN<span class="token punctuation">)</span><span class="token punctuation">&#123;</span>
+        <span class="token function">setPrice</span><span class="token punctuation">(</span>the_price<span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token function">memcpy</span><span class="token punctuation">(</span>name<span class="token punctuation">,</span>the_name<span class="token punctuation">,</span><span class="token number">10</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token function">memcpy</span><span class="token punctuation">(</span>ISBN<span class="token punctuation">,</span>the_ISBN<span class="token punctuation">,</span><span class="token number">20</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">&#125;</span>
+    
+<span class="token keyword">private</span><span class="token operator">:</span>
+    <span class="token keyword">double</span> price<span class="token punctuation">;</span>
+    <span class="token keyword">char</span> name<span class="token punctuation">[</span><span class="token number">10</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
+    <span class="token keyword">char</span> ISBN<span class="token punctuation">[</span><span class="token number">20</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
+    <span class="token comment">//...</span>
+<span class="token punctuation">&#125;</span><span class="token punctuation">;</span>
+
+Book b0<span class="token punctuation">;</span>
+Book <span class="token function">b1</span><span class="token punctuation">(</span><span class="token number">10</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+Book <span class="token function">b2</span><span class="token punctuation">(</span><span class="token number">10</span><span class="token punctuation">,</span><span class="token string">"Apollo"</span><span class="token punctuation">)</span><span class="token punctuation">;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<p>参考：</p>
+<ol>
+<li>拷贝构造</li>
+<li>移动构造</li>
+<li>合成构造</li>
+</ol>
+<h2 id="继承与多态"><a href="#继承与多态" class="headerlink" title="继承与多态"></a>继承与多态</h2><p><strong>提问</strong>：我希望有一个科幻书，科幻书有一个别人没有的成员：科幻程度(depth)。同时有一种传记，有一个独有的值来记录传记主人公的名字(person)。</p>
+<pre class="line-numbers language-cpp" data-language="cpp"><code class="language-cpp"><span class="token keyword">class</span> <span class="token class-name">Book</span><span class="token punctuation">&#123;</span>
+<span class="token keyword">public</span><span class="token operator">:</span>
+    <span class="token comment">//...</span>
+<span class="token keyword">private</span><span class="token operator">:</span>
+    <span class="token keyword">double</span> price<span class="token punctuation">;</span>
+    <span class="token keyword">char</span> name<span class="token punctuation">[</span><span class="token number">10</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
+    <span class="token keyword">char</span> ISBN<span class="token punctuation">[</span><span class="token number">20</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
+    <span class="token keyword">int</span> depth<span class="token punctuation">;</span>
+    <span class="token keyword">char</span><span class="token operator">*</span> person<span class="token punctuation">;</span>
+    <span class="token comment">//...</span>
+    
+    <span class="token comment">//...</span>
+<span class="token punctuation">&#125;</span><span class="token punctuation">;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<p>有公共属性，也有独有的属性(attribute)</p>
+<pre class="line-numbers language-cpp" data-language="cpp"><code class="language-cpp"><span class="token keyword">class</span> <span class="token class-name">Fiction</span><span class="token operator">:</span><span class="token base-clause"><span class="token keyword">public</span> <span class="token class-name">Book</span></span><span class="token punctuation">&#123;</span>
+<span class="token keyword">public</span><span class="token operator">:</span>
+    <span class="token function">Fiction</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    
+    <span class="token keyword">int</span> <span class="token function">setPrice</span><span class="token punctuation">(</span><span class="token keyword">double</span> value<span class="token punctuation">)</span><span class="token punctuation">&#123;</span>
+    	<span class="token keyword">if</span><span class="token punctuation">(</span>value<span class="token operator">&lt;</span><span class="token number">10</span><span class="token punctuation">)</span><span class="token punctuation">&#123;</span>
+        	<span class="token keyword">return</span> <span class="token operator">-</span><span class="token number">1</span><span class="token punctuation">;</span>
+    	<span class="token punctuation">&#125;</span><span class="token keyword">else</span><span class="token punctuation">&#123;</span>
+        	price<span class="token operator">=</span>value<span class="token punctuation">;</span>
+    	<span class="token punctuation">&#125;</span>
+	<span class="token punctuation">&#125;</span>
+<span class="token keyword">private</span><span class="token operator">:</span>
+    <span class="token comment">//不用写，都继承过来了</span>
+    <span class="token comment">//...</span>
+<span class="token punctuation">&#125;</span><span class="token punctuation">;</span>
+<span class="token keyword">class</span> <span class="token class-name">biography</span><span class="token operator">:</span><span class="token base-clause"><span class="token keyword">public</span> <span class="token class-name">Book</span></span><span class="token punctuation">&#123;</span>
+  <span class="token comment">//现场要求写一个  </span>
+<span class="token punctuation">&#125;</span><span class="token punctuation">;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<p>继承的方式有三种：</p>
+<blockquote>
+<p>当一个类派生自基类，该基类可以被继承为 <strong>public、protected</strong> 或 <strong>private</strong> 几种类型。继承类型是通过上面讲解的访问修饰符 access-specifier 来指定的。</p>
+<p>我们几乎不使用 <strong>protected</strong> 或 <strong>private</strong> 继承，通常使用 <strong>public</strong> 继承。当使用不同类型的继承时，遵循以下几个规则：</p>
+<ul>
+<li><strong>公有继承（public）：</strong>当一个类派生自<strong>公有</strong>基类时，基类的<strong>公有</strong>成员也是派生类的<strong>公有</strong>成员，基类的<strong>保护</strong>成员也是派生类的<strong>保护</strong>成员，基类的<strong>私有</strong>成员不能直接被派生类访问，但是可以通过调用基类的<strong>公有</strong>和<strong>保护</strong>成员来访问。</li>
+<li><strong>保护继承（protected）：</strong> 当一个类派生自<strong>保护</strong>基类时，基类的<strong>公有</strong>和<strong>保护</strong>成员将成为派生类的<strong>保护</strong>成员。</li>
+<li><strong>私有继承（private）：</strong>当一个类派生自<strong>私有</strong>基类时，基类的<strong>公有</strong>和<strong>保护</strong>成员将成为派生类的<strong>私有</strong>成员。</li>
+</ul>
+</blockquote>
+<p>现在，我希望所有书都是被分了类的（如果不知道怎么分，就分到“未知分类”里面去），我们现在不允许直接创建一个Book对象，必须要先从Book继承一个专门的分类，再创建该分类的对象。</p>
+<pre class="line-numbers language-cpp" data-language="cpp"><code class="language-cpp"><span class="token keyword">class</span> <span class="token class-name">Book</span><span class="token punctuation">&#123;</span>
+<span class="token keyword">public</span><span class="token operator">:</span>
+    <span class="token keyword">virtual</span> <span class="token function">Book</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token keyword">virtual</span> <span class="token function">Book</span><span class="token punctuation">(</span><span class="token keyword">double</span> the_price<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token keyword">virtual</span> <span class="token function">Book</span><span class="token punctuation">(</span><span class="token keyword">double</span> the_price<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    
+    <span class="token keyword">virtual</span> <span class="token keyword">int</span> <span class="token function">setPrice</span><span class="token punctuation">(</span><span class="token keyword">double</span> value<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    
+<span class="token keyword">private</span><span class="token operator">:</span>
+    <span class="token keyword">char</span> name<span class="token punctuation">[</span><span class="token number">10</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
+    <span class="token keyword">char</span> ISBN<span class="token punctuation">[</span><span class="token number">20</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
+    <span class="token keyword">double</span> price<span class="token punctuation">;</span>
+    <span class="token comment">//...</span>
+<span class="token punctuation">&#125;</span><span class="token punctuation">;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<p><code>virtual</code>意味着必须由子类来实现这些函数。这叫纯虚函数，关于virtual，还有更多用法。</p>
+<h2 id="重载"><a href="#重载" class="headerlink" title="重载"></a>重载</h2><p><code>virtual</code>要求必须由子类来实现，这就是重载。重载允许同名，但必须接受不同参数。</p>
+<pre class="line-numbers language-cpp" data-language="cpp"><code class="language-cpp"><span class="token macro property"><span class="token directive-hash">#</span><span class="token directive keyword">include</span> <span class="token string">&lt;iostream></span></span>
+<span class="token keyword">using</span> <span class="token keyword">namespace</span> std<span class="token punctuation">;</span>
+
+<span class="token keyword">void</span> <span class="token function">func</span><span class="token punctuation">(</span><span class="token keyword">int</span> a<span class="token punctuation">)</span> <span class="token punctuation">&#123;</span> cout <span class="token operator">&lt;&lt;</span> <span class="token string">"1"</span> <span class="token operator">&lt;&lt;</span> endl<span class="token punctuation">;</span> <span class="token punctuation">&#125;</span>
+<span class="token keyword">void</span> <span class="token function">func</span><span class="token punctuation">(</span><span class="token keyword">char</span> b<span class="token punctuation">)</span> <span class="token punctuation">&#123;</span> cout <span class="token operator">&lt;&lt;</span> <span class="token string">"2"</span> <span class="token operator">&lt;&lt;</span> endl<span class="token punctuation">;</span> <span class="token punctuation">&#125;</span>
+
+<span class="token keyword">int</span> <span class="token function">main</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">&#123;</span>
+  <span class="token function">func</span><span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token function">func</span><span class="token punctuation">(</span><span class="token char">'a'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">&#125;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<p><strong>提问</strong>：</p>
+<pre class="line-numbers language-cpp" data-language="cpp"><code class="language-cpp"><span class="token comment">//已经有了这个函数</span>
+<span class="token function">Book</span><span class="token punctuation">(</span><span class="token keyword">double</span> the_price<span class="token punctuation">,</span><span class="token keyword">char</span><span class="token operator">*</span> the_name<span class="token punctuation">)</span><span class="token punctuation">&#123;</span>
+   <span class="token function">setPrice</span><span class="token punctuation">(</span>the_price<span class="token punctuation">)</span><span class="token punctuation">;</span>
+   <span class="token function">memcpy</span><span class="token punctuation">(</span>name<span class="token punctuation">,</span>the_name<span class="token punctuation">,</span><span class="token number">10</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">&#125;</span>
+<span class="token comment">//又有了这个</span>
+<span class="token function">Book</span><span class="token punctuation">(</span><span class="token keyword">double</span> the_price<span class="token punctuation">,</span><span class="token keyword">char</span><span class="token operator">*</span> the_ISBN<span class="token punctuation">)</span><span class="token punctuation">&#123;</span>
+   <span class="token function">setPrice</span><span class="token punctuation">(</span>the_price<span class="token punctuation">)</span><span class="token punctuation">;</span>
+   <span class="token function">memcpy</span><span class="token punctuation">(</span>name<span class="token punctuation">,</span>the_ISBN<span class="token punctuation">,</span><span class="token number">10</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">&#125;</span>
+
+Book <span class="token function">b3</span><span class="token punctuation">(</span><span class="token number">10</span><span class="token punctuation">,</span><span class="token string">"Apollo"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token comment">//Apollo 会变成name还是ISBN？</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<p>C++编译器不允许这样的事情发生，会出现redefinition报错，编译器认为这两个是同一函数。因此，参数的类型应该有所区别。</p>
+<p>更进一步，考虑Book&#x3D;&#x3D;Book</p>
+<pre class="line-numbers language-cpp" data-language="cpp"><code class="language-cpp">Book <span class="token function">a</span><span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">,</span><span class="token string">"apollo"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+Book <span class="token function">b</span><span class="token punctuation">(</span><span class="token number">10</span><span class="token punctuation">,</span><span class="token string">"apollo"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token comment">//a.equal(b);</span>
+<span class="token keyword">if</span><span class="token punctuation">(</span>a<span class="token operator">==</span>b<span class="token punctuation">)</span><span class="token punctuation">&#123;</span><span class="token punctuation">&#125;</span>
+
+<span class="token keyword">class</span> <span class="token class-name">Book</span><span class="token punctuation">&#123;</span>
+<span class="token keyword">public</span><span class="token operator">:</span>
+    <span class="token comment">//...</span>
+    <span class="token keyword">bool</span> <span class="token keyword">operator</span><span class="token operator">==</span><span class="token punctuation">(</span><span class="token keyword">const</span> Book<span class="token punctuation">)</span> <span class="token punctuation">&#123;</span>
+      <span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token keyword">this</span><span class="token operator">-></span>name <span class="token operator">==</span> Book<span class="token double-colon punctuation">::</span>name<span class="token punctuation">)</span>
+        <span class="token keyword">return</span> <span class="token boolean">true</span><span class="token punctuation">;</span>
+      <span class="token keyword">else</span>
+        <span class="token keyword">return</span> <span class="token boolean">false</span><span class="token punctuation">;</span>
+    <span class="token punctuation">&#125;</span>
+    
+<span class="token keyword">private</span><span class="token operator">:</span>
+    <span class="token keyword">char</span> name<span class="token punctuation">[</span><span class="token number">10</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
+    <span class="token keyword">char</span> ISBN<span class="token punctuation">[</span><span class="token number">20</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
+    <span class="token keyword">double</span> price<span class="token punctuation">;</span>
+    <span class="token comment">//...</span>
+<span class="token punctuation">&#125;</span><span class="token punctuation">;</span>
+<span class="token comment">//写一个重载+，当两本书相同时，价格相加</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<h2 id="析构函数"><a href="#析构函数" class="headerlink" title="析构函数"></a>析构函数</h2><p>一个对象创建完成后，也要销毁，我们应当定义它如何被销毁。</p>
+<h2 id="两种风格的对象"><a href="#两种风格的对象" class="headerlink" title="两种风格的对象"></a>两种风格的对象</h2><ul>
+<li>使这个对象像个“东西”，示例如上</li>
+<li>使这个对象像个“指针”，先看看内存管理</li>
+</ul>
+<h1 id="内存管理"><a href="#内存管理" class="headerlink" title="内存管理"></a>内存管理</h1><p><strong>提问</strong>：a+b中的内存是如何分配的？</p>
+<blockquote>
+<p><strong>栈区（stack）：</strong>指那些由编译器在需要的时候分配，不需要时自动清除的变量所在的储存区，如函数执行时，函数的形参以及函数内的局部变量分配在栈区，函数运行结束后，形参和局部变量去栈（自动释放）。栈内存分配运算内置与处理器的指令集中，效率高但是分配的内存空间有限。</p>
+<p><strong>堆区（heap）：</strong>指哪些由程序员手动分配释放的储存区，如果程序员不释放这块内存，内存将一直被占用，直到程序运行结束由系统自动收回，c语言中使用malloc，free申请和释放空间。</p>
+<p><strong>静态储存区（static）：</strong>全局变量和静态变量的储存是放在一块的，其中初始化的全局变量和静态变量在一个区域，这块空间当程序运行结束后由系统释放。</p>
+<p><strong>常量储存区（const）：</strong>常量字符串就是储存在这里的，如“ABC”字符串就储存在常量区，储存在常量区的只读不可写。const修饰的全局变量也储存在常量区，const修饰的局部变量依然在栈上。</p>
+<p><strong>程序代码区：</strong>存放源程序的二进制代码。</p>
+</blockquote>
+<p><strong>提问</strong>：如何创建一个长度不定的数组</p>
+<p>错误示范：</p>
+<pre class="line-numbers language-c" data-language="c"><code class="language-c"><span class="token keyword">int</span> <span class="token function">main</span><span class="token punctuation">(</span><span class="token keyword">void</span><span class="token punctuation">)</span> <span class="token punctuation">&#123;</span>
+    <span class="token keyword">int</span> N <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span>
+
+    <span class="token function">printf</span><span class="token punctuation">(</span><span class="token string">"请输入数组的大小\n"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token function">scanf</span><span class="token punctuation">(</span><span class="token string">"%d"</span><span class="token punctuation">,</span> <span class="token operator">&amp;</span>N<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token keyword">int</span> arr<span class="token punctuation">[</span>N<span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token punctuation">&#123;</span> <span class="token number">0</span> <span class="token punctuation">&#125;</span><span class="token punctuation">;</span>
+<span class="token punctuation">&#125;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<p>正确示范：</p>
+<pre class="line-numbers language-c" data-language="c"><code class="language-c"><span class="token keyword">int</span> <span class="token function">main</span><span class="token punctuation">(</span><span class="token keyword">void</span><span class="token punctuation">)</span> <span class="token punctuation">&#123;</span>
+
+    <span class="token keyword">int</span> arr<span class="token punctuation">[</span><span class="token number">1000</span><span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token punctuation">&#123;</span> <span class="token number">0</span> <span class="token punctuation">&#125;</span><span class="token punctuation">;</span>
+    <span class="token keyword">int</span> N <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span>
+    <span class="token keyword">int</span> i <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span>
+
+    <span class="token function">printf</span><span class="token punctuation">(</span><span class="token string">"请输入数组的大小\n"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token function">scanf</span><span class="token punctuation">(</span><span class="token string">"%d"</span><span class="token punctuation">,</span> <span class="token operator">&amp;</span>N<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+    <span class="token function">printf</span><span class="token punctuation">(</span><span class="token string">"请输入%d个数\n"</span><span class="token punctuation">,</span> N<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token keyword">for</span> <span class="token punctuation">(</span>i <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span> i <span class="token operator">&lt;</span> N<span class="token punctuation">;</span> i<span class="token operator">++</span><span class="token punctuation">)</span>
+        <span class="token function">scanf</span><span class="token punctuation">(</span><span class="token string">"%d"</span><span class="token punctuation">,</span> <span class="token operator">&amp;</span>arr<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+    <span class="token keyword">return</span> <span class="token number">0</span><span class="token punctuation">;</span>
+<span class="token punctuation">&#125;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<h2 id="手动内存管理"><a href="#手动内存管理" class="headerlink" title="手动内存管理"></a>手动内存管理</h2><p>C 使用malloc 分配内存和 free释放内存。</p>
+<pre class="line-numbers language-c" data-language="c"><code class="language-c"><span class="token macro property"><span class="token directive-hash">#</span><span class="token directive keyword">include</span><span class="token string">&lt;stdlib.h></span></span>
+
+<span class="token keyword">int</span> <span class="token function">main</span><span class="token punctuation">(</span><span class="token keyword">void</span><span class="token punctuation">)</span> <span class="token punctuation">&#123;</span>
+
+    <span class="token keyword">int</span> i <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span>
+    <span class="token keyword">int</span> N <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span>
+    <span class="token keyword">int</span><span class="token operator">*</span> arr<span class="token punctuation">;</span>
+
+    <span class="token function">printf</span><span class="token punctuation">(</span><span class="token string">"请输入数组的大小\n"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token function">scanf</span><span class="token punctuation">(</span><span class="token string">"%d"</span><span class="token punctuation">,</span> <span class="token operator">&amp;</span>N<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+    arr <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token keyword">int</span><span class="token operator">*</span><span class="token punctuation">)</span><span class="token function">malloc</span><span class="token punctuation">(</span><span class="token keyword">sizeof</span><span class="token punctuation">(</span><span class="token keyword">int</span><span class="token punctuation">)</span> <span class="token operator">*</span> N<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+    <span class="token function">printf</span><span class="token punctuation">(</span><span class="token string">"请输入%d个数\n"</span><span class="token punctuation">,</span> N<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token keyword">for</span> <span class="token punctuation">(</span>i <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span> i <span class="token operator">&lt;</span> N<span class="token punctuation">;</span> i<span class="token operator">++</span><span class="token punctuation">)</span>
+        <span class="token function">scanf</span><span class="token punctuation">(</span><span class="token string">"%d"</span><span class="token punctuation">,</span> <span class="token operator">&amp;</span>arr<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+    <span class="token function">free</span><span class="token punctuation">(</span>arr<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token keyword">return</span> <span class="token number">0</span><span class="token punctuation">;</span>
+<span class="token punctuation">&#125;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<p>C++ 使用封装好的new 和delete</p>
+<pre class="line-numbers language-cpp" data-language="cpp"><code class="language-cpp"><span class="token keyword">int</span> <span class="token function">main</span><span class="token punctuation">(</span><span class="token keyword">void</span><span class="token punctuation">)</span> <span class="token punctuation">&#123;</span>
+
+    <span class="token keyword">int</span> i <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span>
+    <span class="token keyword">int</span> N <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span>
+
+    <span class="token function">printf</span><span class="token punctuation">(</span><span class="token string">"请输入数组的大小\n"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    cin<span class="token operator">&lt;&lt;</span>N<span class="token punctuation">;</span>
+
+    <span class="token keyword">int</span> <span class="token operator">*</span>arr <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token keyword">int</span><span class="token punctuation">[</span>N<span class="token punctuation">]</span><span class="token punctuation">;</span>
+
+    cin<span class="token operator">&lt;&lt;</span><span class="token string">"请输入%d个数\n"</span><span class="token operator">&lt;&lt;</span>endl<span class="token punctuation">;</span>
+    <span class="token keyword">for</span> <span class="token punctuation">(</span>i <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span> i <span class="token operator">&lt;</span> N<span class="token punctuation">;</span> i<span class="token operator">++</span><span class="token punctuation">)</span>
+        cin<span class="token operator">&lt;&lt;</span> arr<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+    <span class="token keyword">delete</span><span class="token punctuation">[</span><span class="token punctuation">]</span> p<span class="token punctuation">;</span>
+    <span class="token keyword">return</span> <span class="token number">0</span><span class="token punctuation">;</span>
+<span class="token punctuation">&#125;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<p> <strong>提问</strong>：为什么不是delete p?</p>
+<h2 id="内存泄漏"><a href="#内存泄漏" class="headerlink" title="内存泄漏"></a>内存泄漏</h2><p>画图</p>
+<p><em>share_ptr</em> 的原理：对指针进行计数</p>
+<h1 id="使用STL库"><a href="#使用STL库" class="headerlink" title="使用STL库"></a>使用STL库</h1><h2 id="String"><a href="#String" class="headerlink" title="String"></a>String</h2><ul>
+<li>创建string</li>
+<li>string+</li>
+<li>insert</li>
+<li>substr</li>
+</ul>
+<h2 id="Vector"><a href="#Vector" class="headerlink" title="Vector"></a>Vector</h2><ul>
+<li>创建vector</li>
+<li>size</li>
+<li>begin</li>
+<li>end</li>
+<li>resize</li>
+</ul>
+<h2 id="Algorithm"><a href="#Algorithm" class="headerlink" title="Algorithm"></a>Algorithm</h2><ul>
+<li>find</li>
+<li>rotate</li>
+<li>sort</li>
+<li>min</li>
+<li>max</li>
+</ul>
+<h2 id="Utility"><a href="#Utility" class="headerlink" title="Utility"></a>Utility</h2><ul>
+<li>swap</li>
+<li>pari</li>
+<li>tuple</li>
+</ul>
+<h1 id="完整示例"><a href="#完整示例" class="headerlink" title="完整示例"></a>完整示例</h1><pre class="line-numbers language-cpp" data-language="cpp"><code class="language-cpp"><span class="token comment">//book.h</span>
+<span class="token macro property"><span class="token directive-hash">#</span><span class="token directive keyword">ifndef</span> <span class="token expression">_book</span></span>
+<span class="token macro property"><span class="token directive-hash">#</span><span class="token directive keyword">define</span> <span class="token macro-name">_book</span></span>
+
+<span class="token macro property"><span class="token directive-hash">#</span><span class="token directive keyword">include</span> <span class="token string">&lt;string></span></span>
+<span class="token macro property"><span class="token directive-hash">#</span><span class="token directive keyword">include</span> <span class="token string">"show.hpp"</span></span>
+
+<span class="token keyword">class</span> <span class="token class-name">Book</span><span class="token punctuation">&#123;</span>
+<span class="token keyword">public</span><span class="token operator">:</span>
+    <span class="token function">Book</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">&#123;</span><span class="token function">init</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span><span class="token punctuation">&#125;</span><span class="token punctuation">;</span>
+    <span class="token comment">//Book(double the_price):price(the_price)&#123;&#125;</span>
+    <span class="token function">Book</span><span class="token punctuation">(</span><span class="token keyword">double</span> the_price<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token function">Book</span><span class="token punctuation">(</span>std<span class="token double-colon punctuation">::</span>string the_name<span class="token punctuation">)</span><span class="token operator">=</span><span class="token keyword">delete</span><span class="token punctuation">;</span>
+    <span class="token comment">//Book(double the_price,std::string the_name);</span>
+    <span class="token function">Book</span><span class="token punctuation">(</span><span class="token keyword">double</span> the_price<span class="token punctuation">,</span>std<span class="token double-colon punctuation">::</span>string the_name<span class="token punctuation">,</span>std<span class="token double-colon punctuation">::</span>string ISBN<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    
+    <span class="token function">Book</span><span class="token punctuation">(</span>Book<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    
+    <span class="token function">Book</span><span class="token punctuation">(</span>Book b<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    
+    <span class="token keyword">int</span> <span class="token function">set_price</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token keyword">int</span> <span class="token function">set_name</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token keyword">int</span> <span class="token function">set_ISBN</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    
+    <span class="token keyword">friend</span> <span class="token keyword">void</span> <span class="token function">show_price</span><span class="token punctuation">(</span>Book<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    
+<span class="token keyword">private</span><span class="token operator">:</span>
+    <span class="token keyword">double</span> price<span class="token punctuation">;</span>
+    std<span class="token double-colon punctuation">::</span>string name<span class="token punctuation">;</span>
+    std<span class="token double-colon punctuation">::</span>string ISBN<span class="token punctuation">;</span>
+    
+    <span class="token keyword">int</span> <span class="token function">init</span><span class="token punctuation">(</span><span class="token keyword">double</span> the_price<span class="token operator">=</span><span class="token number">0</span><span class="token punctuation">,</span>std<span class="token double-colon punctuation">::</span>string the_name<span class="token operator">=</span><span class="token string">""</span><span class="token punctuation">,</span>std<span class="token double-colon punctuation">::</span>string ISBN<span class="token operator">=</span><span class="token string">""</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">&#125;</span><span class="token punctuation">;</span>
+<span class="token macro property"><span class="token directive-hash">#</span><span class="token directive keyword">endif</span></span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<pre class="line-numbers language-cpp" data-language="cpp"><code class="language-cpp"><span class="token comment">//book.cpp</span>
+<span class="token macro property"><span class="token directive-hash">#</span><span class="token directive keyword">include</span> <span class="token string">"book.h"</span></span>
+
+<span class="token class-name">Book</span><span class="token double-colon punctuation">::</span><span class="token function">Book</span><span class="token punctuation">(</span><span class="token keyword">double</span> the_price<span class="token punctuation">)</span><span class="token punctuation">&#123;</span><span class="token function">Book</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">&#125;</span>
+<span class="token comment">//Book::Book(double the_price=0,std::string the_name):Book(the_price,the_name,"")&#123;&#125;</span>
+<span class="token class-name">Book</span><span class="token double-colon punctuation">::</span><span class="token function">Book</span><span class="token punctuation">(</span><span class="token keyword">double</span> the_price<span class="token operator">=</span><span class="token number">0</span><span class="token punctuation">,</span>std<span class="token double-colon punctuation">::</span>string the_name<span class="token operator">=</span><span class="token string">""</span><span class="token punctuation">,</span>std<span class="token double-colon punctuation">::</span>string the_ISBN<span class="token operator">=</span><span class="token string">""</span><span class="token punctuation">)</span><span class="token punctuation">&#123;</span>
+    <span class="token class-name">Book</span><span class="token double-colon punctuation">::</span><span class="token function">init</span><span class="token punctuation">(</span>the_price<span class="token punctuation">,</span>the_name<span class="token punctuation">,</span>the_ISBN<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">&#125;</span>
+<span class="token class-name">Book</span><span class="token double-colon punctuation">::</span><span class="token function">Book</span><span class="token punctuation">(</span>Book the_book<span class="token punctuation">)</span><span class="token punctuation">&#123;</span><span class="token punctuation">&#125;</span>
+
+<span class="token keyword">int</span> <span class="token class-name">Book</span><span class="token double-colon punctuation">::</span><span class="token function">init</span><span class="token punctuation">(</span><span class="token keyword">double</span> the_price<span class="token punctuation">,</span>std<span class="token double-colon punctuation">::</span>string the_name<span class="token punctuation">,</span>std<span class="token double-colon punctuation">::</span>string the_ISBN<span class="token punctuation">)</span><span class="token punctuation">&#123;</span>
+    <span class="token keyword">return</span> <span class="token function">set_price</span><span class="token punctuation">(</span>the_price<span class="token punctuation">)</span> <span class="token operator">&amp;&amp;</span> <span class="token function">set_name</span><span class="token punctuation">(</span>the_name<span class="token punctuation">)</span> <span class="token operator">&amp;&amp;</span> <span class="token function">set_ISBN</span><span class="token punctuation">(</span>the_ISBN<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">&#125;</span>
+<span class="token keyword">int</span> <span class="token class-name">Book</span><span class="token double-colon punctuation">::</span><span class="token function">set_price</span><span class="token punctuation">(</span><span class="token keyword">double</span> the_price<span class="token punctuation">)</span><span class="token punctuation">&#123;</span>
+    <span class="token keyword">if</span><span class="token punctuation">(</span>the_price<span class="token operator">>=</span><span class="token number">0</span><span class="token punctuation">)</span><span class="token punctuation">&#123;</span>
+        <span class="token keyword">this</span><span class="token operator">-></span>price<span class="token operator">=</span>the_price<span class="token punctuation">;</span>
+        <span class="token keyword">return</span> <span class="token number">1</span><span class="token punctuation">;</span>
+    <span class="token punctuation">&#125;</span><span class="token keyword">else</span><span class="token punctuation">&#123;</span>
+        <span class="token keyword">return</span> <span class="token number">0</span><span class="token punctuation">;</span>
+    <span class="token punctuation">&#125;</span>
+<span class="token punctuation">&#125;</span>
+<span class="token comment">//set_name 和 set_ISBN 略</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<pre class="line-numbers language-cpp" data-language="cpp"><code class="language-cpp"><span class="token comment">//show.hpp</span>
+<span class="token keyword">void</span> <span class="token function">show_price</span><span class="token punctuation">(</span>Book the_book<span class="token punctuation">)</span><span class="token punctuation">&#123;</span>
+    std<span class="token double-colon punctuation">::</span>cout<span class="token operator">&lt;&lt;</span>the_book<span class="token punctuation">.</span>price<span class="token operator">&lt;&lt;</span>std<span class="token double-colon punctuation">::</span>endl<span class="token punctuation">;</span>
+<span class="token punctuation">&#125;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre>
+
+<pre class="line-numbers language-cpp" data-language="cpp"><code class="language-cpp"><span class="token comment">//main.cpp</span>
+<span class="token macro property"><span class="token directive-hash">#</span><span class="token directive keyword">include</span> <span class="token string">"book.hpp"</span></span>
+
+<span class="token keyword">int</span> <span class="token function">main</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">&#123;</span>
+    Book b<span class="token punctuation">;</span>
+    b<span class="token punctuation">.</span><span class="token function">set_price</span><span class="token punctuation">(</span><span class="token number">10</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token function">show_price</span><span class="token punctuation">(</span>b<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    Book <span class="token function">bb</span><span class="token punctuation">(</span>b<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token comment">//Book bb=b;</span>
+    <span class="token comment">//Book bb&#123;b&#125;;</span>
+<span class="token punctuation">&#125;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+
+
+<h1 id="Apollo2D"><a href="#Apollo2D" class="headerlink" title="Apollo2D"></a>Apollo2D</h1><p>&#x2F;&#x2F;这里是Agent2d中的WorldModel</p>
+</article><div class="post-copyright"><div class="post-copyright__author"><span class="post-copyright-meta">文章作者: </span><span class="post-copyright-info"><a href="https://kawhicurry.github.io">kawhicurry</a></span></div><div class="post-copyright__type"><span class="post-copyright-meta">文章链接: </span><span class="post-copyright-info"><a href="https://kawhicurry.github.io/Language/49144470/">https://kawhicurry.github.io/Language/49144470/</a></span></div><div class="post-copyright__notice"><span class="post-copyright-meta">版权声明: </span><span class="post-copyright-info">本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">CC BY-NC-SA 4.0</a> 许可协议。转载请注明来自 <a href="https://kawhicurry.github.io" target="_blank">Kawhicurry's Blog</a>！</span></div></div><div class="tag_share"><div class="post-meta__tag-list"><a class="post-meta__tags" href="/tags/cpp/">cpp</a></div><div class="post_share"><div class="addthis_inline_share_toolbox"></div><script src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-62037f9d1c65c8d1" async="async"></script></div></div><nav class="pagination-post" id="pagination"><div class="prev-post pull-left"><a href="/Project/9bb627a/"><img class="prev-cover" src="https://cdn.jsdelivr.net/gh/kawhicurry/picgo/anime/kon1.jpg" onerror="onerror=null;src='/img/404.jpg'" alt="cover of previous post"><div class="pagination-info"><div class="label">上一篇</div><div class="prev_info">0xCalculator 16进制计算器</div></div></a></div><div class="next-post pull-right"><a href="/Auto/12263b9c/"><img class="next-cover" src="https://cdn.jsdelivr.net/gh/kawhicurry/picgo/anime/luren2.jpg" onerror="onerror=null;src='/img/404.jpg'" alt="cover of next post"><div class="pagination-info"><div class="label">下一篇</div><div class="next_info">记录从无人机上学到的东西</div></div></a></div></nav><div class="relatedPosts"><div class="headline"><i class="fas fa-thumbs-up fa-fw"></i><span>相关推荐</span></div><div class="relatedPosts-list"><div><a href="/Language/147c20ee/" title="记录一次makefile改CMake"><img class="cover" src="https://cdn.jsdelivr.net/gh/kawhicurry/picgo/anime/chaopao2.jpg" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2022-02-03</div><div class="title">记录一次makefile改CMake</div></div></a></div><div><a href="/Project/9bb627a/" title="0xCalculator 16进制计算器"><img class="cover" src="https://cdn.jsdelivr.net/gh/kawhicurry/picgo/anime/kon1.jpg" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2021-11-28</div><div class="title">0xCalculator 16进制计算器</div></div></a></div><div><a href="/Language/1824c81b/" title="effective（0）"><img class="cover" src="https://cdn.jsdelivr.net/gh/kawhicurry/picgo/anime/luren2.jpg" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2022-03-07</div><div class="title">effective（0）</div></div></a></div><div><a href="/Language/a098af7e/" title="effective（1）"><img class="cover" src="https://cdn.jsdelivr.net/gh/kawhicurry/picgo/anime/kon2.jpg" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2022-03-07</div><div class="title">effective（1）</div></div></a></div><div><a href="/Language/b22d0090/" title="effective（2）"><img class="cover" src="https://cdn.jsdelivr.net/gh/kawhicurry/picgo/anime/bingguo1.jpg" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2022-03-10</div><div class="title">effective（2）</div></div></a></div><div><a href="/Language/a9167f5/" title="effective（3）"><img class="cover" src="https://cdn.jsdelivr.net/gh/kawhicurry/picgo/anime/re00.jpg" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2022-03-30</div><div class="title">effective（3）</div></div></a></div></div></div><hr/><div id="post-comment"><div class="comment-head"><div class="comment-headline"><i class="fas fa-comments fa-fw"></i><span> 评论</span></div></div><div class="comment-wrap"><div><div id="gitalk-container"></div></div></div></div></div><div class="aside-content" id="aside-content"><div class="card-widget card-info"><div class="is-center"><div class="avatar-img"><img src="https://cdn.jsdelivr.net/gh/kawhicurry/picgo/profile/avatar.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="avatar"/></div><div class="author-info__name">kawhicurry</div><div class="author-info__description">An student aiming to be an operation engineer.</div></div><div class="card-info-data site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">75</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">38</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">9</div></a></div><a id="card-info-btn" target="_blank" rel="noopener" href="https://github.com/kawhicurry"><i class="fab fa-github"></i><span>来github找我耍</span></a><div class="card-info-social-icons is-center"><a class="social-icon" href="https://github.com/kawhicurry" target="_blank" title="Github"><i class="fab fa-github"></i></a><a class="social-icon" href="mailto:kawhicurry@foxmail.com" target="_blank" title="Email"><i class="fas fa-envelope"></i></a><a class="social-icon" href="https://kawhicurry.github.io/atom.xml" target="_blank" title="Rss"><i class="fas fa-rss"></i></a></div></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn fa-shake"></i><span>公告</span></div><div class="announcement_content">恭喜你发现了一个啥用没有的blog！</div></div><div class="sticky_layout"><div class="card-widget" id="card-toc"><div class="item-headline"><i class="fas fa-stream"></i><span>目录</span><span class="toc-percentage"></span></div><div class="toc-content"><ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#%E8%AF%BE%E5%89%8D%E6%8F%90%E9%86%92%EF%BC%88%E7%BB%99%E6%88%91%E8%87%AA%E5%B7%B1%E7%9A%84%EF%BC%89"><span class="toc-number">1.</span> <span class="toc-text">课前提醒（给我自己的）</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E5%A4%9A%E6%96%87%E4%BB%B6%E7%BC%96%E7%A8%8B"><span class="toc-number">2.</span> <span class="toc-text">多文件编程</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#Why"><span class="toc-number">2.1.</span> <span class="toc-text">Why</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#How"><span class="toc-number">2.2.</span> <span class="toc-text">How</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E9%9D%A2%E5%AF%B9%E5%AF%B9%E8%B1%A1"><span class="toc-number">3.</span> <span class="toc-text">面对对象</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#C%E7%9A%84%E5%AF%B9%E8%B1%A1"><span class="toc-number">3.1.</span> <span class="toc-text">C的对象</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%9E%84%E9%80%A0%E5%87%BD%E6%95%B0"><span class="toc-number">3.2.</span> <span class="toc-text">构造函数</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%BB%A7%E6%89%BF%E4%B8%8E%E5%A4%9A%E6%80%81"><span class="toc-number">3.3.</span> <span class="toc-text">继承与多态</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E9%87%8D%E8%BD%BD"><span class="toc-number">3.4.</span> <span class="toc-text">重载</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%9E%90%E6%9E%84%E5%87%BD%E6%95%B0"><span class="toc-number">3.5.</span> <span class="toc-text">析构函数</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%B8%A4%E7%A7%8D%E9%A3%8E%E6%A0%BC%E7%9A%84%E5%AF%B9%E8%B1%A1"><span class="toc-number">3.6.</span> <span class="toc-text">两种风格的对象</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E5%86%85%E5%AD%98%E7%AE%A1%E7%90%86"><span class="toc-number">4.</span> <span class="toc-text">内存管理</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%89%8B%E5%8A%A8%E5%86%85%E5%AD%98%E7%AE%A1%E7%90%86"><span class="toc-number">4.1.</span> <span class="toc-text">手动内存管理</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%86%85%E5%AD%98%E6%B3%84%E6%BC%8F"><span class="toc-number">4.2.</span> <span class="toc-text">内存泄漏</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E4%BD%BF%E7%94%A8STL%E5%BA%93"><span class="toc-number">5.</span> <span class="toc-text">使用STL库</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#String"><span class="toc-number">5.1.</span> <span class="toc-text">String</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Vector"><span class="toc-number">5.2.</span> <span class="toc-text">Vector</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Algorithm"><span class="toc-number">5.3.</span> <span class="toc-text">Algorithm</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Utility"><span class="toc-number">5.4.</span> <span class="toc-text">Utility</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E5%AE%8C%E6%95%B4%E7%A4%BA%E4%BE%8B"><span class="toc-number">6.</span> <span class="toc-text">完整示例</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#Apollo2D"><span class="toc-number">7.</span> <span class="toc-text">Apollo2D</span></a></li></ol></div></div><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>最新文章</span></div><div class="aside-list"><div class="aside-list-item"><a class="thumbnail" href="/Operation/8f58554d/" title="ESP,GRUB与BTRFS"><img src="https://cdn.jsdelivr.net/gh/kawhicurry/picgo/anime/chaopao3.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="ESP,GRUB与BTRFS"/></a><div class="content"><a class="title" href="/Operation/8f58554d/" title="ESP,GRUB与BTRFS">ESP,GRUB与BTRFS</a><time datetime="2022-10-24T21:07:07.000Z" title="发表于 2022-10-24 21:07:07">2022-10-24</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/Daily/c687b02a/" title="记录一次有趣的答辩经历"><img src="https://cdn.jsdelivr.net/gh/kawhicurry/picgo/anime/bingguo1.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="记录一次有趣的答辩经历"/></a><div class="content"><a class="title" href="/Daily/c687b02a/" title="记录一次有趣的答辩经历">记录一次有趣的答辩经历</a><time datetime="2022-10-22T20:17:08.000Z" title="发表于 2022-10-22 20:17:08">2022-10-22</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/Operation/63fa7eb5/" title="建立linux下完善的个人备份系统"><img src="https://cdn.jsdelivr.net/gh/kawhicurry/picgo/anime/bingguo0.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="建立linux下完善的个人备份系统"/></a><div class="content"><a class="title" href="/Operation/63fa7eb5/" title="建立linux下完善的个人备份系统">建立linux下完善的个人备份系统</a><time datetime="2022-04-25T19:11:04.000Z" title="发表于 2022-04-25 19:11:04">2022-04-25</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/Back-end/ace6f1b7/" title="用树莓派搭建一个简单的跳板机"><img src="https://cdn.jsdelivr.net/gh/kawhicurry/picgo/anime/luren0.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="用树莓派搭建一个简单的跳板机"/></a><div class="content"><a class="title" href="/Back-end/ace6f1b7/" title="用树莓派搭建一个简单的跳板机">用树莓派搭建一个简单的跳板机</a><time datetime="2022-04-23T17:57:33.000Z" title="发表于 2022-04-23 17:57:33">2022-04-23</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/Auto/b84eee2e/" title="折磨的ROS-in-arch（manjaro）"><img src="https://cdn.jsdelivr.net/gh/kawhicurry/picgo/anime/re03.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="折磨的ROS-in-arch（manjaro）"/></a><div class="content"><a class="title" href="/Auto/b84eee2e/" title="折磨的ROS-in-arch（manjaro）">折磨的ROS-in-arch（manjaro）</a><time datetime="2022-04-19T10:29:18.000Z" title="发表于 2022-04-19 10:29:18">2022-04-19</time></div></div></div></div></div></div></main><footer id="footer" style="background-image: url('https://cdn.jsdelivr.net/gh/kawhicurry/picgo/anime/daily1.jpg')"><div id="footer-wrap"><div class="copyright">&copy;2021 - 2022 By kawhicurry</div><div class="framework-info"><span>框架 </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo</a><span class="footer-separator">|</span><span>主题 </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly</a></div><div class="footer_custom_text">Welcome to the world of an operation engineer.</div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="readmode" type="button" title="阅读模式"><i class="fas fa-book-open"></i></button><button id="darkmode" type="button" title="浅色和深色模式转换"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="单栏和双栏切换"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside_config" type="button" title="设置"><i class="fas fa-cog fa-spin"></i></button><button class="close" id="mobile-toc-button" type="button" title="目录"><i class="fas fa-list-ul"></i></button><a id="to_comment" href="#post-comment" title="直达评论"><i class="fas fa-comments"></i></a><button id="go-up" type="button" title="回到顶部"><i class="fas fa-arrow-up"></i></button></div></div><div id="local-search"><div class="search-dialog"><nav class="search-nav"><span class="search-dialog-title">搜索</span><span id="loading-status"></span><button class="search-close-button"><i class="fas fa-times"></i></button></nav><div class="is-center" id="loading-database"><i class="fas fa-spinner fa-pulse"></i><span>  数据库加载中</span></div><div class="search-wrap"><div id="local-search-input"><div class="local-search-box"><input class="local-search-box--input" placeholder="搜索文章" type="text"/></div></div><hr/><div id="local-search-results"></div></div></div><div id="search-mask"></div></div><div><script src="/js/utils.js"></script><script src="/js/main.js"></script><script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.umd.min.js"></script><script src="/js/search/local-search.js"></script><div class="js-pjax"><script>function addGitalkSource () {
+  const ele = document.createElement('link')
+  ele.rel = 'stylesheet'
+  ele.href= 'https://cdn.jsdelivr.net/npm/gitalk/dist/gitalk.min.css'
+  document.getElementsByTagName('head')[0].appendChild(ele)
+}
+
+function loadGitalk () {
+  function initGitalk () {
+    var gitalk = new Gitalk(Object.assign({
+      clientID: '528affc74d9344c23daf',
+      clientSecret: '41afe1cad2849c60940bd386fe0bbda659a73a16',
+      repo: 'kawhicurry.github.io.comment',
+      owner: 'kawhicurry',
+      admin: ['kawhicurry'],
+      id: '8bcf4d274e86d3e9cfad65b9e9bd08b4',
+      updateCountCallback: commentCount
+    },null))
+
+    gitalk.render('gitalk-container')
+  }
+
+  if (typeof Gitalk === 'function') initGitalk()
+  else {
+    addGitalkSource()
+    getScript('https://cdn.jsdelivr.net/npm/gitalk/dist/gitalk.min.js').then(initGitalk)
+  }
+}
+
+function commentCount(n){
+  let isCommentCount = document.querySelector('#post-meta .gitalk-comment-count')
+  if (isCommentCount) {
+    isCommentCount.innerHTML= n
+  }
+}
+
+if ('Gitalk' === 'Gitalk' || !false) {
+  if (false) btf.loadComment(document.getElementById('gitalk-container'), loadGitalk)
+  else loadGitalk()
+} else {
+  function loadOtherComment () {
+    loadGitalk()
+  }
+}</script></div><script id="canvas_nest" defer="defer" color="0,0,255" opacity="0.7" zIndex="-1" count="99" mobile="false" src="https://cdn.jsdelivr.net/npm/butterfly-extsrc/dist/canvas-nest.min.js"></script><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script></div></body></html>

@@ -1,0 +1,424 @@
+<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"><title>分类: Auto | Kawhicurry's Blog</title><meta name="author" content="kawhicurry"><meta name="copyright" content="kawhicurry"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta name="description" content="Apollo文档的自动构建"><link rel="shortcut icon" href="https://cdn.jsdelivr.net/gh/kawhicurry/picgo/profile/favicon.jpg"><link rel="canonical" href="https://kawhicurry.github.io/Auto/8d15f7e6/"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//www.google-analytics.com" crossorigin=""/><link rel="preconnect" href="//busuanzi.ibruce.info"/><meta name="baidu-site-verification" content="code-UXVbU6tNCR"/><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.min.css" media="print" onload="this.media='all'"><script async="async" src="https://www.googletagmanager.com/gtag/js?id=G-70WJTE71NM"></script><script>window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', 'G-70WJTE71NM');
+</script><script>const GLOBAL_CONFIG = { 
+  root: '/',
+  algolia: undefined,
+  localSearch: {"path":"/search.xml","preload":false,"languages":{"hits_empty":"找不到您查询的内容：${query}"}},
+  translate: undefined,
+  noticeOutdate: undefined,
+  highlight: {"plugin":"prismjs","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":1000},
+  copy: {
+    success: '复制成功',
+    error: '复制错误',
+    noSupport: '浏览器不支持'
+  },
+  relativeDate: {
+    homepage: false,
+    post: false
+  },
+  runtime: '天',
+  date_suffix: {
+    just: '刚刚',
+    min: '分钟前',
+    hour: '小时前',
+    day: '天前',
+    month: '个月前'
+  },
+  copyright: {"limitCount":50,"languages":{"author":"作者: kawhicurry","link":"链接: ","source":"来源: Kawhicurry's Blog","info":"著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。"}},
+  lightbox: 'fancybox',
+  Snackbar: undefined,
+  source: {
+    justifiedGallery: {
+      js: 'https://cdn.jsdelivr.net/npm/flickr-justified-gallery/dist/fjGallery.min.js',
+      css: 'https://cdn.jsdelivr.net/npm/flickr-justified-gallery/dist/fjGallery.min.css'
+    }
+  },
+  isPhotoFigcaption: false,
+  islazyload: false,
+  isAnchor: 
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: '分类: Auto',
+  isPost: true,
+  isHome: false,
+  isHighlightShrink: false,
+  isToc: true,
+  postUpdate: '2022-02-11 05:17:56'
+}</script><noscript><style type="text/css">
+  #nav {
+    opacity: 1
+  }
+  .justified-gallery img {
+    opacity: 1
+  }
+
+  #recent-posts time,
+  #post-meta time {
+    display: inline !important
+  }
+</style></noscript><script>(win=>{
+    win.saveToLocal = {
+      set: function setWithExpiry(key, value, ttl) {
+        if (ttl === 0) return
+        const now = new Date()
+        const expiryDay = ttl * 86400000
+        const item = {
+          value: value,
+          expiry: now.getTime() + expiryDay,
+        }
+        localStorage.setItem(key, JSON.stringify(item))
+      },
+
+      get: function getWithExpiry(key) {
+        const itemStr = localStorage.getItem(key)
+
+        if (!itemStr) {
+          return undefined
+        }
+        const item = JSON.parse(itemStr)
+        const now = new Date()
+
+        if (now.getTime() > item.expiry) {
+          localStorage.removeItem(key)
+          return undefined
+        }
+        return item.value
+      }
+    }
+  
+    win.getScript = url => new Promise((resolve, reject) => {
+      const script = document.createElement('script')
+      script.src = url
+      script.async = true
+      script.onerror = reject
+      script.onload = script.onreadystatechange = function() {
+        const loadState = this.readyState
+        if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+        script.onload = script.onreadystatechange = null
+        resolve()
+      }
+      document.head.appendChild(script)
+    })
+  
+      win.activateDarkMode = function () {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+        }
+      }
+      win.activateLightMode = function () {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#ffffff')
+        }
+      }
+      const t = saveToLocal.get('theme')
+    
+          const now = new Date()
+          const hour = now.getHours()
+          const isNight = hour <= 6 || hour >= 18
+          if (t === undefined) isNight ? activateDarkMode() : activateLightMode()
+          else if (t === 'light') activateLightMode()
+          else activateDarkMode()
+        
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        if (asideStatus === 'hide') {
+          document.documentElement.classList.add('hide-aside')
+        } else {
+          document.documentElement.classList.remove('hide-aside')
+        }
+      }
+    
+    const detectApple = () => {
+      if(/iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)){
+        document.documentElement.classList.add('apple')
+      }
+    }
+    detectApple()
+    })(window)</script><meta name="generator" content="Hexo 6.3.0"><link rel="alternate" href="/atom.xml" title="Kawhicurry's Blog" type="application/atom+xml">
+</head><body><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img is-center"><img src="https://cdn.jsdelivr.net/gh/kawhicurry/picgo/profile/avatar.jpg" onerror="onerror=null;src='/img/404.jpg'" alt="avatar"/></div><div class="sidebar-site-data site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">75</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">38</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">9</div></a></div><hr/><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> Home</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> Archives</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> Tags</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> Categories</span></a></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> Link</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> About</span></a></div></div></div></div><div class="post" id="body-wrap"><header class="post-bg" id="page-header" style="background-image: url('https://cdn.jsdelivr.net/gh/kawhicurry/picgo/anime/re00.jpg')"><nav id="nav"><span id="blog_name"><a id="site-name" href="/">Kawhicurry's Blog</a></span><div id="menus"><div id="search-button"><a class="site-page social-icon search"><i class="fas fa-search fa-fw"></i><span> 搜索</span></a></div><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> Home</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> Archives</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> Tags</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> Categories</span></a></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> Link</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> About</span></a></div></div><div id="toggle-menu"><a class="site-page"><i class="fas fa-bars fa-fw"></i></a></div></div></nav><div id="post-info"><h1 class="post-title">Apollo文档的自动构建</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">发表于</span><time class="post-meta-date-created" datetime="2022-01-29T01:27:38.000Z" title="发表于 2022-01-29 01:27:38">2022-01-29</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2022-02-11T05:17:56.197Z" title="更新于 2022-02-11 05:17:56">2022-02-11</time></span><span class="post-meta-categories"><span class="post-meta-separator">|</span><i class="fas fa-inbox fa-fw post-meta-icon"></i><a class="post-meta-categories" href="/categories/Auto/">Auto</a></span></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span class="post-meta-wordcount"><i class="far fa-file-word fa-fw post-meta-icon"></i><span class="post-meta-label">字数总计:</span><span class="word-count">2.1k</span><span class="post-meta-separator">|</span><i class="far fa-clock fa-fw post-meta-icon"></i><span class="post-meta-label">阅读时长:</span><span>7分钟</span></span><span class="post-meta-separator">|</span><span class="post-meta-pv-cv" id="" data-flag-title="Apollo文档的自动构建"><i class="far fa-eye fa-fw post-meta-icon"></i><span class="post-meta-label">阅读量:</span><span id="busuanzi_value_page_pv"><i class="fa-solid fa-spinner fa-spin"></i></span></span></div></div></div></header><main class="layout" id="content-inner"><div id="post"><article class="post-content" id="article-container"><h1 id="Apollo文档的自动构建"><a href="#Apollo文档的自动构建" class="headerlink" title="Apollo文档的自动构建"></a>Apollo文档的自动构建</h1><p>加入apollo2d组后发现，这个社团除了一份年代久远的代码，啥都没有了。上上任学长不写注释，指导老师在摸鱼，上任学长老惨了，就他一个人搞这些。Thus，我觉得把apollo的文档体系建立起来。</p>
+<p>根据先前的经验，也为了让我的队友们了解一些规范，我选择了gitbook+gitlab+CI&#x2F;CD的方案。这样大家可以熟悉下git、md，同时生成的网页也方便大家阅读。</p>
+<h2 id="gitbook配置"><a href="#gitbook配置" class="headerlink" title="gitbook配置"></a>gitbook配置</h2><p>从gitlab中创建了一个gitbook的模板，然后对它做一些配置和修改。</p>
+<h3 id="目录格式"><a href="#目录格式" class="headerlink" title="目录格式"></a>目录格式</h3><pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">README.md		<span class="token comment">#仓库的说明</span>
+book.json		<span class="token comment">#书籍的设置</span>
+doc/			<span class="token comment">#文档正文</span>
+	01-abaaba/		<span class="token comment">#正式章节</span>
+		README.md		<span class="token comment">#章节的封面</span>
+		<span class="token number">1</span>.md
+	02-balabala/	<span class="token comment">#数字用于排序</span>
+	README.md		<span class="token comment">#文档封面</span>
+	SUMMARY.md		<span class="token comment">#目录</span>
+	GLORSSARY.md	<span class="token comment">#词汇表</span>
+scripts/		<span class="token comment">#用于自动部署的脚本</span>
+styles/			<span class="token comment">#用于渲染网页的css文件</span>
+template/		<span class="token comment">#写文档时的模板</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<h3 id="book-json的配置"><a href="#book-json的配置" class="headerlink" title="book.json的配置"></a><code>book.json</code>的配置</h3><p><code>book.json</code>使用json格式配置书籍的各种信息</p>
+<pre class="line-numbers language-json" data-language="json"><code class="language-json"><span class="token punctuation">&#123;</span>
+    <span class="token property">"title"</span><span class="token operator">:</span> <span class="token string">"Apollo2d-learning"</span><span class="token punctuation">,</span>
+    <span class="token property">"root"</span><span class="token operator">:</span> <span class="token string">"./doc"</span><span class="token punctuation">,</span>
+    <span class="token property">"description"</span><span class="token operator">:</span> <span class="token string">"来自南邮Apllo2d的2d仿真教程"</span><span class="token punctuation">,</span>
+    <span class="token property">"author"</span><span class="token operator">:</span> <span class="token string">"teammates from apollo2d@2021"</span><span class="token punctuation">,</span>
+    <span class="token property">"language"</span><span class="token operator">:</span> <span class="token string">"zh-hans"</span><span class="token punctuation">,</span>
+    <span class="token property">"disableTitleFormatting"</span><span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+    <span class="token property">"styles"</span><span class="token operator">:</span> <span class="token punctuation">&#123;</span>
+        <span class="token property">"website"</span><span class="token operator">:</span> <span class="token null keyword">null</span><span class="token punctuation">,</span>
+    <span class="token punctuation">&#125;</span><span class="token punctuation">,</span>
+    <span class="token property">"variables"</span><span class="token operator">:</span> <span class="token punctuation">&#123;</span>
+        <span class="token property">"apollo"</span><span class="token operator">:</span> <span class="token number">0</span>
+    <span class="token punctuation">&#125;</span><span class="token punctuation">,</span>
+    <span class="token property">"plugins"</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+        <span class="token string">"theme-default"</span><span class="token punctuation">,</span>
+        <span class="token string">"fontsettings"</span><span class="token punctuation">,</span>
+        <span class="token string">"flexible-alerts"</span><span class="token punctuation">,</span>
+        <span class="token string">"anchors"</span><span class="token punctuation">,</span>
+        <span class="token string">"-anchor-navigation-ex"</span><span class="token punctuation">,</span>
+        <span class="token string">"back-to-top-button"</span><span class="token punctuation">,</span>
+        <span class="token string">"chapter-fold"</span><span class="token punctuation">,</span>
+        <span class="token string">"code"</span><span class="token punctuation">,</span>
+        <span class="token string">"expandable-chapters-small"</span><span class="token punctuation">,</span>
+        <span class="token string">"book-summary-scroll-position-saver"</span><span class="token punctuation">,</span>
+        <span class="token string">"tbfed-pagefooter"</span><span class="token punctuation">,</span>
+        <span class="token string">"-page-copyright"</span><span class="token punctuation">,</span>
+        <span class="token string">"pageview-count"</span><span class="token punctuation">,</span>
+        <span class="token string">"-lunr"</span><span class="token punctuation">,</span>
+        <span class="token string">"-search"</span><span class="token punctuation">,</span>
+        <span class="token string">"search-pro"</span><span class="token punctuation">,</span>
+        <span class="token string">"-sharing"</span><span class="token punctuation">,</span>
+        <span class="token string">"splitter"</span><span class="token punctuation">,</span>
+        <span class="token string">"intopic-toc"</span><span class="token punctuation">,</span>
+        <span class="token string">"-toc2"</span><span class="token punctuation">,</span>
+        <span class="token string">"prism"</span><span class="token punctuation">,</span>
+        <span class="token string">"prism-themes"</span><span class="token punctuation">,</span>
+        <span class="token string">"-highlight"</span>
+    <span class="token punctuation">]</span><span class="token punctuation">,</span>
+    <span class="token property">"pluginsConfig"</span><span class="token operator">:</span> <span class="token punctuation">&#123;</span>
+        <span class="token property">"theme-default"</span><span class="token operator">:</span> <span class="token punctuation">&#123;</span>
+            <span class="token property">"showLevel"</span><span class="token operator">:</span> <span class="token boolean">false</span>
+        <span class="token punctuation">&#125;</span><span class="token punctuation">,</span>
+        <span class="token property">"anchor-navigation-ex"</span><span class="token operator">:</span> <span class="token punctuation">&#123;</span>
+            <span class="token property">"showLevel"</span><span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+            <span class="token property">"associatedWithSummary"</span><span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+            <span class="token property">"printLog"</span><span class="token operator">:</span> <span class="token boolean">false</span><span class="token punctuation">,</span>
+            <span class="token property">"multipleH1"</span><span class="token operator">:</span> <span class="token boolean">false</span><span class="token punctuation">,</span>
+            <span class="token property">"mode"</span><span class="token operator">:</span> <span class="token string">""</span><span class="token punctuation">,</span>
+            <span class="token property">"showGoTop"</span><span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+            <span class="token property">"float"</span><span class="token operator">:</span> <span class="token punctuation">&#123;</span>
+                <span class="token property">"floatIcon"</span><span class="token operator">:</span> <span class="token string">"fa fa-navicon"</span><span class="token punctuation">,</span>
+                <span class="token property">"showLevelIcon"</span><span class="token operator">:</span> <span class="token boolean">false</span><span class="token punctuation">,</span>
+                <span class="token property">"level1Icon"</span><span class="token operator">:</span> <span class="token string">"fa fa-hand-o-right"</span><span class="token punctuation">,</span>
+                <span class="token property">"level2Icon"</span><span class="token operator">:</span> <span class="token string">"fa fa-hand-o-right"</span><span class="token punctuation">,</span>
+                <span class="token property">"level3Icon"</span><span class="token operator">:</span> <span class="token string">"fa fa-hand-o-right"</span>
+            <span class="token punctuation">&#125;</span><span class="token punctuation">,</span>
+            <span class="token property">"pageTop"</span><span class="token operator">:</span> <span class="token punctuation">&#123;</span>
+                <span class="token property">"showLevelIcon"</span><span class="token operator">:</span> <span class="token boolean">false</span><span class="token punctuation">,</span>
+                <span class="token property">"level1Icon"</span><span class="token operator">:</span> <span class="token string">"fa fa-hand-o-right"</span><span class="token punctuation">,</span>
+                <span class="token property">"level2Icon"</span><span class="token operator">:</span> <span class="token string">"fa fa-hand-o-right"</span><span class="token punctuation">,</span>
+                <span class="token property">"level3Icon"</span><span class="token operator">:</span> <span class="token string">"fa fa-hand-o-right"</span>
+            <span class="token punctuation">&#125;</span>
+        <span class="token punctuation">&#125;</span><span class="token punctuation">,</span>
+        <span class="token property">"fontsettings"</span><span class="token operator">:</span> <span class="token punctuation">&#123;</span>
+            <span class="token property">"theme"</span><span class="token operator">:</span> <span class="token string">"white"</span><span class="token punctuation">,</span>
+            <span class="token property">"family"</span><span class="token operator">:</span> <span class="token string">"sans"</span><span class="token punctuation">,</span>
+            <span class="token property">"size"</span><span class="token operator">:</span> <span class="token number">2</span>
+        <span class="token punctuation">&#125;</span><span class="token punctuation">,</span>
+        <span class="token property">"tbfed-pagefooter"</span><span class="token operator">:</span> <span class="token punctuation">&#123;</span>
+            <span class="token property">"copyright"</span><span class="token operator">:</span> <span class="token string">"Copyright@Njupt-Apollo-2d-2021"</span><span class="token punctuation">,</span>
+            <span class="token property">"modify_label"</span><span class="token operator">:</span> <span class="token string">"该文件最新修订时间："</span><span class="token punctuation">,</span>
+            <span class="token property">"modify_format"</span><span class="token operator">:</span> <span class="token string">"YYYY-MM-DD HH:mm:ss"</span>
+        <span class="token punctuation">&#125;</span><span class="token punctuation">,</span>
+        <span class="token property">"toc2"</span><span class="token operator">:</span> <span class="token punctuation">&#123;</span>
+            <span class="token property">"addClass"</span><span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+            <span class="token property">"className"</span><span class="token operator">:</span> <span class="token string">"toc"</span>
+        <span class="token punctuation">&#125;</span><span class="token punctuation">,</span>
+        <span class="token property">"prism"</span><span class="token operator">:</span> <span class="token punctuation">&#123;</span>
+            <span class="token property">"css"</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+                <span class="token string">"prismjs/themes/prism-solarizedlight.css"</span>
+            <span class="token punctuation">]</span>
+        <span class="token punctuation">&#125;</span><span class="token punctuation">,</span>
+        <span class="token property">"intopic-toc"</span><span class="token operator">:</span> <span class="token punctuation">&#123;</span>
+            <span class="token property">"selector"</span><span class="token operator">:</span> <span class="token string">".markdown-section h1, .markdown-section h2, .markdown-section h3, .markdown-section h4, .markdown-section h5, .markdown-section h6"</span><span class="token punctuation">,</span>
+            <span class="token property">"mode"</span><span class="token operator">:</span> <span class="token string">"nested"</span><span class="token punctuation">,</span>
+            <span class="token property">"maxDepth"</span><span class="token operator">:</span> <span class="token number">2</span><span class="token punctuation">,</span>
+            <span class="token property">"isCollapsed"</span><span class="token operator">:</span> <span class="token boolean">false</span><span class="token punctuation">,</span>
+            <span class="token property">"isScrollspyActive"</span><span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+            <span class="token property">"visible"</span><span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+            <span class="token property">"label"</span><span class="token operator">:</span> <span class="token punctuation">&#123;</span>
+                <span class="token property">"zh-hans"</span><span class="token operator">:</span> <span class="token string">"本文大纲"</span><span class="token punctuation">,</span>
+                <span class="token property">"en"</span><span class="token operator">:</span> <span class="token string">"In this article"</span>
+            <span class="token punctuation">&#125;</span>
+        <span class="token punctuation">&#125;</span><span class="token punctuation">,</span>
+        <span class="token property">"page-copyright"</span><span class="token operator">:</span> <span class="token punctuation">&#123;</span>
+            <span class="token property">"description"</span><span class="token operator">:</span> <span class="token string">"modified at"</span><span class="token punctuation">,</span>
+            <span class="token property">"signature"</span><span class="token operator">:</span> <span class="token string">"你的签名"</span><span class="token punctuation">,</span>
+            <span class="token property">"wisdom"</span><span class="token operator">:</span> <span class="token string">"Designer, Frontend Developer &amp; overall web enthusiast"</span><span class="token punctuation">,</span>
+            <span class="token property">"format"</span><span class="token operator">:</span> <span class="token string">"YYYY-MM-dd hh:mm:ss"</span><span class="token punctuation">,</span>
+            <span class="token property">"copyright"</span><span class="token operator">:</span> <span class="token string">"Copyright © Apollo"</span><span class="token punctuation">,</span>
+            <span class="token property">"timeColor"</span><span class="token operator">:</span> <span class="token string">"#666"</span><span class="token punctuation">,</span>
+            <span class="token property">"copyrightColor"</span><span class="token operator">:</span> <span class="token string">"#666"</span><span class="token punctuation">,</span>
+            <span class="token property">"utcOffset"</span><span class="token operator">:</span> <span class="token string">"8"</span><span class="token punctuation">,</span>
+            <span class="token property">"style"</span><span class="token operator">:</span> <span class="token string">"normal"</span><span class="token punctuation">,</span>
+            <span class="token property">"noPowered"</span><span class="token operator">:</span> <span class="token boolean">true</span>
+        <span class="token punctuation">&#125;</span>
+    <span class="token punctuation">&#125;</span><span class="token punctuation">,</span>
+    <span class="token property">"pdf"</span><span class="token operator">:</span> <span class="token punctuation">&#123;</span>
+        <span class="token property">"fontSize"</span><span class="token operator">:</span> <span class="token number">12</span><span class="token punctuation">,</span>
+        <span class="token property">"footerTemplate"</span><span class="token operator">:</span> <span class="token null keyword">null</span><span class="token punctuation">,</span>
+        <span class="token property">"headerTemplate"</span><span class="token operator">:</span> <span class="token null keyword">null</span><span class="token punctuation">,</span>
+        <span class="token property">"margin"</span><span class="token operator">:</span> <span class="token punctuation">&#123;</span>
+            <span class="token property">"bottom"</span><span class="token operator">:</span> <span class="token number">36</span><span class="token punctuation">,</span>
+            <span class="token property">"left"</span><span class="token operator">:</span> <span class="token number">62</span><span class="token punctuation">,</span>
+            <span class="token property">"right"</span><span class="token operator">:</span> <span class="token number">62</span><span class="token punctuation">,</span>
+            <span class="token property">"top"</span><span class="token operator">:</span> <span class="token number">36</span>
+        <span class="token punctuation">&#125;</span><span class="token punctuation">,</span>
+        <span class="token property">"pageNumbers"</span><span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+        <span class="token property">"paperSize"</span><span class="token operator">:</span> <span class="token string">"a4"</span>
+    <span class="token punctuation">&#125;</span>
+<span class="token punctuation">&#125;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<p>挑几个重要的说明一下</p>
+<ul>
+<li>title:文档名称</li>
+<li>root:根目录,因为默认的文档目录就在根目录下,我这里为了做隔离把文档分到了doc目录下,因此这里要做修改</li>
+<li>variables:这个是自定义的变量,我把它设成0,这样只要在文中写上<code>&#123;% if var %&#125;</code>,中间的文本就不会输出了,而我只要把这个变量的值改为1就能生成可以输出的.</li>
+<li>plugins:插件列表,内容大概看看就好,短横线开头表示该插件被关闭,这是为了防止插件之间的冲突</li>
+<li>pluginsConfig:插件配置</li>
+<li>pdf:gitbook的pdf输出配置</li>
+</ul>
+<h3 id="SUMMARY-md配置"><a href="#SUMMARY-md配置" class="headerlink" title="SUMMARY.md配置"></a><code>SUMMARY.md</code>配置</h3><p>SUMMARY文件应当位于doc目录下，它决定了文档的目录。一开始我采用的是手动编写的做法，然后越到后面越发现文件名与标题的对应变得困难，故改为了自动生成，一开始尝试了gitbook提供的自动生成插件，生成的SUMMARY跟个鬼一样。后面试了下gitbook-summary，这玩意好用多了，当然，还是有些美中不足的地方。</p>
+<p>安装后只需<code>book sm</code>即可自动生成SUMMARY文件。但是这个软件可能设计上和我的用法不一样，对于我这种文档目录位于doc的做法来说，它必须在doc目录下执行才能正常生成。因此合理的做法是</p>
+<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token builtin class-name">cd</span> doc
+book sm<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
+
+<p>同时，它允许使用自己的<code>book.json</code>来修改一些配置，这个文件位于doc目录下，与根目录的<code>book.json</code>不同（不过我倒希望它能是同一个文件）</p>
+<pre class="line-numbers language-json" data-language="json"><code class="language-json"><span class="token punctuation">&#123;</span>
+    <span class="token property">"title"</span><span class="token operator">:</span> <span class="token string">"Apollo2d-learning"</span><span class="token punctuation">,</span>
+    <span class="token property">"outputfile"</span><span class="token operator">:</span> <span class="token string">"SUMMARY.md"</span><span class="token punctuation">,</span>
+    <span class="token property">"catalog"</span><span class="token operator">:</span> <span class="token string">"all"</span><span class="token punctuation">,</span>
+    <span class="token property">"ignores"</span><span class="token operator">:</span> <span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+    <span class="token property">"unchanged"</span><span class="token operator">:</span> <span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+    <span class="token property">"sortedBy"</span><span class="token operator">:</span> <span class="token string">"-"</span><span class="token punctuation">,</span>
+    <span class="token property">"disableTitleFormatting"</span><span class="token operator">:</span> <span class="token boolean">true</span>
+<span class="token punctuation">&#125;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<p>还有一个问题就是，doc目录下必须有一个<code>README.md</code>。这个文件会被作为整个网页的入口，而如果不在SUMMARY中手动定义该文件的文件名，网页中会自动生成一个<code>introduction</code>作为入口。对于我们一堆中文标题，这个英文会比较突兀。这个问题的解决办法在下面。</p>
+<h3 id="渲染的一些问题"><a href="#渲染的一些问题" class="headerlink" title="渲染的一些问题"></a>渲染的一些问题</h3><p>代码块这方面，prism这个插件会对不同的语言进行语法高亮，而prism是对语言的定义有严格要求的，比如</p>
+<pre class="line-numbers language-markdown" data-language="markdown"><code class="language-markdown">```cpp ok
+```c++ no
+```javascript ok
+```js         no
+```bash  ok
+```shell no<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<p>怎么确定具体的名字呢？看prism的命名，比如cpp文件的prism渲染文件就是<code>prism-cpp.js</code>。所以搜一搜有没有<code>prism-你的语言.js</code>这个文件就行了。</p>
+<h2 id="gitlab配置"><a href="#gitlab配置" class="headerlink" title="gitlab配置"></a>gitlab配置</h2><h3 id="权限问题"><a href="#权限问题" class="headerlink" title="权限问题"></a>权限问题</h3><p>gitlab的权限规则可以用一句话说清：一个group的成员可以在subgroups中自动取得原来的权限，其他情况下都要手动分配权限。这个仓库位于<code>apollo-2d</code>这个顶级group的根目录下，拥有大组身份的同学都有完整的权限，而新来的同学都在另一个<code>material</code>的group中，它们以<code>developer</code>的身份被加入到文档所在的<code>project</code>中，因此可以正常提pr来修改文档内容。</p>
+<h3 id="多人协作"><a href="#多人协作" class="headerlink" title="多人协作"></a>多人协作</h3><p>多人协作其实是个小难点。多人协作的难点在于解决冲突问题，将SUMMARY改为自动生成也是解决这个问题的一部分，因为对文件的修改最后都要修改该文件。</p>
+<p>目前的操作应该是，从master分支clone，然后push时使用其他的分支名，然后再在gitlab仓库提交<code>pull request</code>，然后由管理员（就是我）来合并，如果有冲突，还要手动合并。</p>
+<h2 id="CI-x2F-CD配置"><a href="#CI-x2F-CD配置" class="headerlink" title="CI&#x2F;CD配置"></a>CI&#x2F;CD配置</h2><h3 id="gitlab-ci-yml配置"><a href="#gitlab-ci-yml配置" class="headerlink" title=".gitlab-ci.yml配置"></a><code>.gitlab-ci.yml</code>配置</h3><p>因为一开始建项目的时候就选了gitbook模板，所以有现成的模板了。默认的gitlab ci一个月有2000分钟，而我们一次生成大概在两分钟左右，所以理论上可以随便deploy（</p>
+<p>不过为了减少更新次数，也为了解决上面生成SUMMARY不完美的问题，还是稍微做了些修改。修改的内容都在注释里了</p>
+<pre class="line-numbers language-yaml" data-language="yaml"><code class="language-yaml"><span class="token comment"># requiring the environment of NodeJS 10</span>
+<span class="token key atrule">image</span><span class="token punctuation">:</span> node<span class="token punctuation">:</span><span class="token number">10</span>
+
+<span class="token comment"># add 'node_modules' to cache for speeding up builds</span>
+<span class="token key atrule">cache</span><span class="token punctuation">:</span>
+  <span class="token key atrule">paths</span><span class="token punctuation">:</span>
+    <span class="token punctuation">-</span> node_modules/ <span class="token comment"># Node modules and dependencies</span>
+
+<span class="token key atrule">before_script</span><span class="token punctuation">:</span>
+  <span class="token punctuation">-</span> npm install gitbook<span class="token punctuation">-</span>cli <span class="token punctuation">-</span>g <span class="token comment"># install gitbook</span>
+  <span class="token punctuation">-</span> npm install <span class="token punctuation">-</span>g gitbook<span class="token punctuation">-</span>summary <span class="token comment"># 这一行是我自己加的，安装了上面提到的SUMMARY生成工具</span>
+  <span class="token punctuation">-</span> gitbook fetch 3.2.3 <span class="token comment"># fetch final stable version</span>
+  <span class="token punctuation">-</span> gitbook install <span class="token comment"># add any requested plugins in book.json</span>
+  <span class="token punctuation">-</span> chmod a+x ./scripts/auto.sh <span class="token comment"># 我在script里写了个脚本来处理SUMMARY不完美的工具</span>
+  <span class="token punctuation">-</span> ./scripts/auto.sh
+
+<span class="token key atrule">test</span><span class="token punctuation">:</span>
+  <span class="token key atrule">stage</span><span class="token punctuation">:</span> test
+  <span class="token key atrule">script</span><span class="token punctuation">:</span>
+    <span class="token punctuation">-</span> gitbook build . public <span class="token comment"># build to public path</span>
+  <span class="token key atrule">only</span><span class="token punctuation">:</span>
+    <span class="token punctuation">-</span> branches <span class="token comment"># this job will affect every branch except 'master'</span>
+  <span class="token key atrule">except</span><span class="token punctuation">:</span>
+    <span class="token punctuation">-</span> master
+
+<span class="token comment"># the 'pages' job will deploy and build your site to the 'public' path</span>
+<span class="token key atrule">pages</span><span class="token punctuation">:</span>
+  <span class="token key atrule">stage</span><span class="token punctuation">:</span> deploy
+  <span class="token key atrule">script</span><span class="token punctuation">:</span>
+    <span class="token punctuation">-</span> gitbook build . public <span class="token comment"># build to public path</span>
+  <span class="token key atrule">artifacts</span><span class="token punctuation">:</span>
+    <span class="token key atrule">paths</span><span class="token punctuation">:</span>
+      <span class="token punctuation">-</span> public
+    <span class="token key atrule">expire_in</span><span class="token punctuation">:</span> 1 week
+  <span class="token key atrule">only</span><span class="token punctuation">:</span>
+    <span class="token key atrule">changes</span><span class="token punctuation">:</span>	<span class="token comment"># 这里做了修改，原来是only master，我改为了如果文档的日志有所变化，则重新deploy</span>
+      <span class="token punctuation">-</span> doc/附录3<span class="token punctuation">-</span>log/*<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<p>然后是两个脚本</p>
+<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token comment"># auto.sh</span>
+<span class="token builtin class-name">cd</span> ./doc
+book sm <span class="token comment">#首先生成SUMMARY文件</span>
+<span class="token builtin class-name">cd</span> <span class="token punctuation">..</span>
+<span class="token function">node</span> ./scripts/test.js <span class="token comment"># 然后是要给README.md一个名字，不让它自动生成introduction</span>
+<span class="token comment"># 一开始想到的是用sed来添加，然后发现这么做没用，可能是因为在容器里。然后我一看是个node的镜像，那就用nodejs来解决好了，故编写了个js文件</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<pre class="line-numbers language-javascript" data-language="javascript"><code class="language-javascript"><span class="token comment">//test.js</span>
+<span class="token keyword">const</span> fs <span class="token operator">=</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">"fs"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token comment">// fs.appendFile 追加文件内容</span>
+<span class="token comment">// 1, 参数1:表示要向那个文件追加内容,只一个文件的路径</span>
+<span class="token comment">// 2, 参数2:表示要追加的内容</span>
+<span class="token comment">// 3, 可选参数,表示追加文本内容的编码格式,如果省略,默认为utf-8</span>
+<span class="token comment">// 4, 参数4: 表示追加完成之后的回调[有一个参数err,是判断是否追加成功]</span>
+fs<span class="token punctuation">.</span><span class="token function">appendFile</span><span class="token punctuation">(</span><span class="token string">"./doc/SUMMARY.md"</span><span class="token punctuation">,</span> <span class="token string">"- [关于](README.md)"</span><span class="token punctuation">,</span> <span class="token punctuation">(</span><span class="token parameter">error</span><span class="token punctuation">)</span> <span class="token operator">=></span> <span class="token punctuation">&#123;</span>
+    <span class="token keyword">if</span> <span class="token punctuation">(</span>error<span class="token punctuation">)</span> <span class="token keyword">return</span> console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">"追加文件失败"</span> <span class="token operator">+</span> error<span class="token punctuation">.</span>message<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">"追加成功"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">&#125;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token comment">// 因为是抄下来的，所以注释就懒得删了，感谢原作者</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+</article><div class="post-copyright"><div class="post-copyright__author"><span class="post-copyright-meta">文章作者: </span><span class="post-copyright-info"><a href="https://kawhicurry.github.io">kawhicurry</a></span></div><div class="post-copyright__type"><span class="post-copyright-meta">文章链接: </span><span class="post-copyright-info"><a href="https://kawhicurry.github.io/Auto/8d15f7e6/">https://kawhicurry.github.io/Auto/8d15f7e6/</a></span></div><div class="post-copyright__notice"><span class="post-copyright-meta">版权声明: </span><span class="post-copyright-info">本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">CC BY-NC-SA 4.0</a> 许可协议。转载请注明来自 <a href="https://kawhicurry.github.io" target="_blank">Kawhicurry's Blog</a>！</span></div></div><div class="tag_share"><div class="post-meta__tag-list"><a class="post-meta__tags" href="/tags/gitbook/">gitbook</a><a class="post-meta__tags" href="/tags/apollo/">apollo</a></div><div class="post_share"><div class="addthis_inline_share_toolbox"></div><script src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-62037f9d1c65c8d1" async="async"></script></div></div><nav class="pagination-post" id="pagination"><div class="prev-post pull-left"><a href="/Front-end/41f9c73c/"><img class="prev-cover" src="https://cdn.jsdelivr.net/gh/kawhicurry/picgo/anime/kon4.jpg" onerror="onerror=null;src='/img/404.jpg'" alt="cover of previous post"><div class="pagination-info"><div class="label">上一篇</div><div class="prev_info">记录一次hexo生成的错误</div></div></a></div><div class="next-post pull-right"><a href="/test/2a459492/"><img class="next-cover" src="https://cdn.jsdelivr.net/gh/kawhicurry/picgo/anime/luren0.jpg" onerror="onerror=null;src='/img/404.jpg'" alt="cover of next post"><div class="pagination-info"><div class="label">下一篇</div><div class="next_info">image_test</div></div></a></div></nav><div class="relatedPosts"><div class="headline"><i class="fas fa-thumbs-up fa-fw"></i><span>相关推荐</span></div><div class="relatedPosts-list"><div><a href="/Auto/8afd9326/" title="修改2d球队的阵型"><img class="cover" src="https://cdn.jsdelivr.net/gh/kawhicurry/picgo/anime/re05.jpg" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2021-12-13</div><div class="title">修改2d球队的阵型</div></div></a></div><div><a href="/Project/7b72ee84/" title="2021-2022寒假apollo2d划"><img class="cover" src="https://cdn.jsdelivr.net/gh/kawhicurry/picgo/anime/chaopao1.jpg" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2022-01-08</div><div class="title">2021-2022寒假apollo2d划</div></div></a></div><div><a href="/Project/99ae6e60/" title="Apollo2D组选拔测试系统（上）"><img class="cover" src="https://cdn.jsdelivr.net/gh/kawhicurry/picgo/anime/bingguo0.jpg" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2022-03-18</div><div class="title">Apollo2D组选拔测试系统（上）</div></div></a></div><div><a href="/Project/a8ec5d07/" title="关于Apollo2D未来的一些思考"><img class="cover" src="https://cdn.jsdelivr.net/gh/kawhicurry/picgo/anime/kon0.jpg" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2022-03-30</div><div class="title">关于Apollo2D未来的一些思考</div></div></a></div></div></div><hr/><div id="post-comment"><div class="comment-head"><div class="comment-headline"><i class="fas fa-comments fa-fw"></i><span> 评论</span></div></div><div class="comment-wrap"><div><div id="gitalk-container"></div></div></div></div></div><div class="aside-content" id="aside-content"><div class="card-widget card-info"><div class="is-center"><div class="avatar-img"><img src="https://cdn.jsdelivr.net/gh/kawhicurry/picgo/profile/avatar.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="avatar"/></div><div class="author-info__name">kawhicurry</div><div class="author-info__description">An student aiming to be an operation engineer.</div></div><div class="card-info-data site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">75</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">38</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">9</div></a></div><a id="card-info-btn" target="_blank" rel="noopener" href="https://github.com/kawhicurry"><i class="fab fa-github"></i><span>来github找我耍</span></a><div class="card-info-social-icons is-center"><a class="social-icon" href="https://github.com/kawhicurry" target="_blank" title="Github"><i class="fab fa-github"></i></a><a class="social-icon" href="mailto:kawhicurry@foxmail.com" target="_blank" title="Email"><i class="fas fa-envelope"></i></a><a class="social-icon" href="https://kawhicurry.github.io/atom.xml" target="_blank" title="Rss"><i class="fas fa-rss"></i></a></div></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn fa-shake"></i><span>公告</span></div><div class="announcement_content">恭喜你发现了一个啥用没有的blog！</div></div><div class="sticky_layout"><div class="card-widget" id="card-toc"><div class="item-headline"><i class="fas fa-stream"></i><span>目录</span><span class="toc-percentage"></span></div><div class="toc-content"><ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#Apollo%E6%96%87%E6%A1%A3%E7%9A%84%E8%87%AA%E5%8A%A8%E6%9E%84%E5%BB%BA"><span class="toc-number">1.</span> <span class="toc-text">Apollo文档的自动构建</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#gitbook%E9%85%8D%E7%BD%AE"><span class="toc-number">1.1.</span> <span class="toc-text">gitbook配置</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%9B%AE%E5%BD%95%E6%A0%BC%E5%BC%8F"><span class="toc-number">1.1.1.</span> <span class="toc-text">目录格式</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#book-json%E7%9A%84%E9%85%8D%E7%BD%AE"><span class="toc-number">1.1.2.</span> <span class="toc-text">book.json的配置</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#SUMMARY-md%E9%85%8D%E7%BD%AE"><span class="toc-number">1.1.3.</span> <span class="toc-text">SUMMARY.md配置</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%B8%B2%E6%9F%93%E7%9A%84%E4%B8%80%E4%BA%9B%E9%97%AE%E9%A2%98"><span class="toc-number">1.1.4.</span> <span class="toc-text">渲染的一些问题</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#gitlab%E9%85%8D%E7%BD%AE"><span class="toc-number">1.2.</span> <span class="toc-text">gitlab配置</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%9D%83%E9%99%90%E9%97%AE%E9%A2%98"><span class="toc-number">1.2.1.</span> <span class="toc-text">权限问题</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%A4%9A%E4%BA%BA%E5%8D%8F%E4%BD%9C"><span class="toc-number">1.2.2.</span> <span class="toc-text">多人协作</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#CI-x2F-CD%E9%85%8D%E7%BD%AE"><span class="toc-number">1.3.</span> <span class="toc-text">CI&#x2F;CD配置</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#gitlab-ci-yml%E9%85%8D%E7%BD%AE"><span class="toc-number">1.3.1.</span> <span class="toc-text">.gitlab-ci.yml配置</span></a></li></ol></li></ol></li></ol></div></div><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>最新文章</span></div><div class="aside-list"><div class="aside-list-item"><a class="thumbnail" href="/Operation/8f58554d/" title="ESP,GRUB与BTRFS"><img src="https://cdn.jsdelivr.net/gh/kawhicurry/picgo/anime/chaopao3.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="ESP,GRUB与BTRFS"/></a><div class="content"><a class="title" href="/Operation/8f58554d/" title="ESP,GRUB与BTRFS">ESP,GRUB与BTRFS</a><time datetime="2022-10-24T21:07:07.000Z" title="发表于 2022-10-24 21:07:07">2022-10-24</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/Daily/c687b02a/" title="记录一次有趣的答辩经历"><img src="https://cdn.jsdelivr.net/gh/kawhicurry/picgo/anime/bingguo1.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="记录一次有趣的答辩经历"/></a><div class="content"><a class="title" href="/Daily/c687b02a/" title="记录一次有趣的答辩经历">记录一次有趣的答辩经历</a><time datetime="2022-10-22T20:17:08.000Z" title="发表于 2022-10-22 20:17:08">2022-10-22</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/Operation/63fa7eb5/" title="建立linux下完善的个人备份系统"><img src="https://cdn.jsdelivr.net/gh/kawhicurry/picgo/anime/bingguo0.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="建立linux下完善的个人备份系统"/></a><div class="content"><a class="title" href="/Operation/63fa7eb5/" title="建立linux下完善的个人备份系统">建立linux下完善的个人备份系统</a><time datetime="2022-04-25T19:11:04.000Z" title="发表于 2022-04-25 19:11:04">2022-04-25</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/Back-end/ace6f1b7/" title="用树莓派搭建一个简单的跳板机"><img src="https://cdn.jsdelivr.net/gh/kawhicurry/picgo/anime/luren0.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="用树莓派搭建一个简单的跳板机"/></a><div class="content"><a class="title" href="/Back-end/ace6f1b7/" title="用树莓派搭建一个简单的跳板机">用树莓派搭建一个简单的跳板机</a><time datetime="2022-04-23T17:57:33.000Z" title="发表于 2022-04-23 17:57:33">2022-04-23</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/Auto/b84eee2e/" title="折磨的ROS-in-arch（manjaro）"><img src="https://cdn.jsdelivr.net/gh/kawhicurry/picgo/anime/re03.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="折磨的ROS-in-arch（manjaro）"/></a><div class="content"><a class="title" href="/Auto/b84eee2e/" title="折磨的ROS-in-arch（manjaro）">折磨的ROS-in-arch（manjaro）</a><time datetime="2022-04-19T10:29:18.000Z" title="发表于 2022-04-19 10:29:18">2022-04-19</time></div></div></div></div></div></div></main><footer id="footer" style="background-image: url('https://cdn.jsdelivr.net/gh/kawhicurry/picgo/anime/daily1.jpg')"><div id="footer-wrap"><div class="copyright">&copy;2021 - 2022 By kawhicurry</div><div class="framework-info"><span>框架 </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo</a><span class="footer-separator">|</span><span>主题 </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly</a></div><div class="footer_custom_text">Welcome to the world of an operation engineer.</div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="readmode" type="button" title="阅读模式"><i class="fas fa-book-open"></i></button><button id="darkmode" type="button" title="浅色和深色模式转换"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="单栏和双栏切换"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside_config" type="button" title="设置"><i class="fas fa-cog fa-spin"></i></button><button class="close" id="mobile-toc-button" type="button" title="目录"><i class="fas fa-list-ul"></i></button><a id="to_comment" href="#post-comment" title="直达评论"><i class="fas fa-comments"></i></a><button id="go-up" type="button" title="回到顶部"><i class="fas fa-arrow-up"></i></button></div></div><div id="local-search"><div class="search-dialog"><nav class="search-nav"><span class="search-dialog-title">搜索</span><span id="loading-status"></span><button class="search-close-button"><i class="fas fa-times"></i></button></nav><div class="is-center" id="loading-database"><i class="fas fa-spinner fa-pulse"></i><span>  数据库加载中</span></div><div class="search-wrap"><div id="local-search-input"><div class="local-search-box"><input class="local-search-box--input" placeholder="搜索文章" type="text"/></div></div><hr/><div id="local-search-results"></div></div></div><div id="search-mask"></div></div><div><script src="/js/utils.js"></script><script src="/js/main.js"></script><script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.umd.min.js"></script><script src="/js/search/local-search.js"></script><div class="js-pjax"><script>function addGitalkSource () {
+  const ele = document.createElement('link')
+  ele.rel = 'stylesheet'
+  ele.href= 'https://cdn.jsdelivr.net/npm/gitalk/dist/gitalk.min.css'
+  document.getElementsByTagName('head')[0].appendChild(ele)
+}
+
+function loadGitalk () {
+  function initGitalk () {
+    var gitalk = new Gitalk(Object.assign({
+      clientID: '528affc74d9344c23daf',
+      clientSecret: '41afe1cad2849c60940bd386fe0bbda659a73a16',
+      repo: 'kawhicurry.github.io.comment',
+      owner: 'kawhicurry',
+      admin: ['kawhicurry'],
+      id: 'cc2d552487a76511fe55ce71f9003b5a',
+      updateCountCallback: commentCount
+    },null))
+
+    gitalk.render('gitalk-container')
+  }
+
+  if (typeof Gitalk === 'function') initGitalk()
+  else {
+    addGitalkSource()
+    getScript('https://cdn.jsdelivr.net/npm/gitalk/dist/gitalk.min.js').then(initGitalk)
+  }
+}
+
+function commentCount(n){
+  let isCommentCount = document.querySelector('#post-meta .gitalk-comment-count')
+  if (isCommentCount) {
+    isCommentCount.innerHTML= n
+  }
+}
+
+if ('Gitalk' === 'Gitalk' || !false) {
+  if (false) btf.loadComment(document.getElementById('gitalk-container'), loadGitalk)
+  else loadGitalk()
+} else {
+  function loadOtherComment () {
+    loadGitalk()
+  }
+}</script></div><script id="canvas_nest" defer="defer" color="0,0,255" opacity="0.7" zIndex="-1" count="99" mobile="false" src="https://cdn.jsdelivr.net/npm/butterfly-extsrc/dist/canvas-nest.min.js"></script><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script></div></body></html>
