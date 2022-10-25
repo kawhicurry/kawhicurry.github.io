@@ -1,5 +1,8 @@
 ---
-title: ESP,GRUB与BTRFS
+title: 'ESP,GRUB与BTRFS'
+categories:
+  - Operation
+abbrlink: 8f58554d
 date: 2022-10-24 21:07:07
 ---
 

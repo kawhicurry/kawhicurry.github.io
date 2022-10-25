@@ -2,6 +2,7 @@
 title: 建立linux下完善的个人备份系统
 categories:
   - Operation
+abbrlink: 63fa7eb5
 date: 2022-04-25 19:11:04
 ---
 
