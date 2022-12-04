@@ -6,7 +6,7 @@
   <link href="https://kawhicurry.github.io/atom.xml" rel="self"/>
   
   <link href="https://kawhicurry.github.io/"/>
-  <updated>2022-10-25T06:31:46.810Z</updated>
+  <updated>2022-12-04T07:26:26.602Z</updated>
   <id>https://kawhicurry.github.io/</id>
   
   <author>
@@ -15,6 +15,25 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Apollo2D项目回顾</title>
+    <link href="https://kawhicurry.github.io/Auto/43a7b386/"/>
+    <id>https://kawhicurry.github.io/Auto/43a7b386/</id>
+    <published>2022-11-28T18:39:12.000Z</published>
+    <updated>2022-12-04T07:26:26.602Z</updated>
+    
+    
+    <summary type="html">Apollo2D项目回顾</summary>
+    
+    
+    
+    <category term="Auto" scheme="https://kawhicurry.github.io/categories/Auto/"/>
+    
+    
+    <category term="apollo" scheme="https://kawhicurry.github.io/tags/apollo/"/>
+    
+  </entry>
   
   <entry>
     <title>ESP,GRUB与BTRFS</title>
@@ -508,33 +527,6 @@
     
     <category term="Daily" scheme="https://kawhicurry.github.io/categories/Daily/"/>
     
-    
-  </entry>
-  
-  <entry>
-    <title>Apollo2D组选拔测试系统（上）</title>
-    <link href="https://kawhicurry.github.io/Project/99ae6e60/"/>
-    <id>https://kawhicurry.github.io/Project/99ae6e60/</id>
-    <published>2022-03-18T08:34:02.000Z</published>
-    <updated>2022-10-22T12:14:45.182Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h1 id=&quot;起源&quot;&gt;&lt;a href=&quot;#起源&quot; class=&quot;headerlink&quot;</summary>
-        
-      
-    
-    
-    
-    <category term="Project" scheme="https://kawhicurry.github.io/categories/Project/"/>
-    
-    
-    <category term="apollo" scheme="https://kawhicurry.github.io/tags/apollo/"/>
-    
-    <category term="robucup" scheme="https://kawhicurry.github.io/tags/robucup/"/>
     
   </entry>
   
