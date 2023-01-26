@@ -6,7 +6,7 @@
   <link href="https://kawhicurry.github.io/atom.xml" rel="self"/>
   
   <link href="https://kawhicurry.github.io/"/>
-  <updated>2022-12-04T07:29:48.601Z</updated>
+  <updated>2023-01-26T13:57:28.567Z</updated>
   <id>https://kawhicurry.github.io/</id>
   
   <author>
@@ -17,11 +17,36 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>给飞扬哥的博客上传指南</title>
+    <link href="https://kawhicurry.github.io/Tools/35816fcf/"/>
+    <id>https://kawhicurry.github.io/Tools/35816fcf/</id>
+    <published>2023-01-26T21:27:32.000Z</published>
+    <updated>2023-01-26T13:57:28.567Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;本文旨在告诉飞扬哥如何修改自己的代码来将博客部署到自己的服务器上。&lt;/p&gt;
+&lt;h1 id=&quot;成品效果&quot;&gt;&lt;a href=&quot;#成品效果&quot; class=&quot;headerlink&quot; title=&quot;成品效果&quot;&gt;&lt;/a&gt;成品效果&lt;/h1&gt;&lt;p&gt;在命令行中输入&lt;/p&gt;
+&lt;pre</summary>
+        
+      
+    
+    
+    
+    <category term="Tools" scheme="https://kawhicurry.github.io/categories/Tools/"/>
+    
+    
+  </entry>
+  
+  <entry>
     <title>Apollo2D项目回顾</title>
     <link href="https://kawhicurry.github.io/Auto/43a7b386/"/>
     <id>https://kawhicurry.github.io/Auto/43a7b386/</id>
-    <published>2022-11-28T18:39:12.000Z</published>
-    <updated>2022-12-04T07:29:48.601Z</updated>
+    <published>2022-11-28T10:39:12.000Z</published>
+    <updated>2022-12-04T07:33:58.914Z</updated>
     
     
     <summary type="html">Apollo2D项目回顾</summary>
@@ -503,30 +528,6 @@
     <category term="cpp" scheme="https://kawhicurry.github.io/tags/cpp/"/>
     
     <category term="专栏：effective c++" scheme="https://kawhicurry.github.io/tags/%E4%B8%93%E6%A0%8F%EF%BC%9Aeffective-c/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>又一次加入manjaro大家庭</title>
-    <link href="https://kawhicurry.github.io/Daily/512f04dd/"/>
-    <id>https://kawhicurry.github.io/Daily/512f04dd/</id>
-    <published>2022-03-24T13:41:56.000Z</published>
-    <updated>2022-10-22T12:14:45.179Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;p&gt;没错，是又一次，之前装过一次manjaro了，然后好像是某次系统暴毙之后，再也没有抢救回来。&lt;/p&gt;
-&lt;p&gt;今天有个大一的姑娘装ubuntu环境，apt出问题了，来问我。我想起来，大概是一年前的这个时候，我也在宿舍兴奋地装着各种各样的发行版，从最开始常见的Ubuntu到后面</summary>
-        
-      
-    
-    
-    
-    <category term="Daily" scheme="https://kawhicurry.github.io/categories/Daily/"/>
-    
     
   </entry>
   

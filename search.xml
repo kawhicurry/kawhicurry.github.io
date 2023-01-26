@@ -4,6 +4,25 @@
   
     
     <entry>
+      <title>给飞扬哥的博客上传指南</title>
+      <link href="/Tools/35816fcf/"/>
+      <url>/Tools/35816fcf/</url>
+      
+        <content type="html"><![CDATA[<p>本文旨在告诉飞扬哥如何修改自己的代码来将博客部署到自己的服务器上。</p><h1 id="成品效果"><a href="#成品效果" class="headerlink" title="成品效果"></a>成品效果</h1><p>在命令行中输入</p><pre class="line-numbers language-none"><code class="language-none">hexo d<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre><p>博客会同时部署到 github 和服务器上。</p><p>访问地址： <code>http://******</code></p><h2 id="Docs-https-hexo-io-docs-one-command-deployment"><a href="#Docs-https-hexo-io-docs-one-command-deployment" class="headerlink" title="Docs: https://hexo.io/docs/one-command-deployment"></a>Docs: <a href="https://hexo.io/docs/one-command-deployment">https://hexo.io/docs/one-command-deployment</a></h2><h1 id="操作指南"><a href="#操作指南" class="headerlink" title="操作指南"></a>操作指南</h1><p>以下步骤都可以完整复制粘贴</p><p>首先把公钥找出来发给我</p><pre class="line-numbers language-none"><code class="language-none"># 敲完第一个之后一路回车ssh-keygen<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre><pre class="line-numbers language-none"><code class="language-none">cat ~&#x2F;.ssh&#x2F;id_rsa.pub<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre><p>这一步开始在你的博客目录那里进行</p><pre class="line-numbers language-none"><code class="language-none">npm install hexo-deployer-rsync --save<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre><p>对<code>_config.yml</code>中以下内容做一些修改</p><pre class="line-numbers language-none"><code class="language-none">deploy:  type: git  repo: https:&#x2F;&#x2F;github.com&#x2F;CFY73&#x2F;CFY73.github.io.git       # 你的repository地址（建议ssh）  branch: master  # 你的项目branch，默认是master  message: blog<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre><p>改成这样</p><pre class="line-numbers language-none"><code class="language-none">deploy:  - type: git    repo: https:&#x2F;&#x2F;github.com&#x2F;CFY73&#x2F;CFY73.github.io.git       # 你的repository地址（建议ssh）    branch: master  # 你的项目branch，默认是master    message: blog  - type: rsync    host: ******    user: ******    root: ******    port: ******    delete: true    verbose: true    ignore_errors: false<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre><p>然后就可以尝试一下了</p><pre class="line-numbers language-none"><code class="language-none">hexo d<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre><p>还没完，打开你的域名管理控制台。把域名的解析改为指向这个 ip 地址。</p><p>大功告成。</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> Tools </category>
+          
+      </categories>
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>Apollo2D项目回顾</title>
       <link href="/Auto/43a7b386/"/>
       <url>/Auto/43a7b386/</url>
