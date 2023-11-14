@@ -6,7 +6,7 @@
   <link href="https://kawhicurry.github.io/atom.xml" rel="self"/>
   
   <link href="https://kawhicurry.github.io/"/>
-  <updated>2023-01-26T13:57:28.567Z</updated>
+  <updated>2023-11-14T16:31:59.312Z</updated>
   <id>https://kawhicurry.github.io/</id>
   
   <author>
@@ -17,11 +17,38 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>从tc开始的一次简单的内核网络栈探索</title>
+    <link href="https://kawhicurry.github.io/Operation/47a3710b/"/>
+    <id>https://kawhicurry.github.io/Operation/47a3710b/</id>
+    <published>2023-10-29T12:30:06.000Z</published>
+    <updated>2023-11-14T16:31:59.312Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;引子&quot;&gt;&lt;a href=&quot;#引子&quot; class=&quot;headerlink&quot; title=&quot;引子&quot;&gt;&lt;/a&gt;引子&lt;/h1&gt;&lt;p&gt;本来只是在过&lt;a</summary>
+        
+      
+    
+    
+    
+    <category term="Operation" scheme="https://kawhicurry.github.io/categories/Operation/"/>
+    
+    
+    <category term="linux" scheme="https://kawhicurry.github.io/tags/linux/"/>
+    
+    <category term="tc" scheme="https://kawhicurry.github.io/tags/tc/"/>
+    
+  </entry>
+  
+  <entry>
     <title>给飞扬哥的博客上传指南</title>
     <link href="https://kawhicurry.github.io/Tools/35816fcf/"/>
     <id>https://kawhicurry.github.io/Tools/35816fcf/</id>
-    <published>2023-01-26T21:27:32.000Z</published>
-    <updated>2023-01-26T13:57:28.567Z</updated>
+    <published>2023-01-26T13:27:32.000Z</published>
+    <updated>2023-10-29T04:27:58.957Z</updated>
     
     
       
@@ -500,34 +527,6 @@
     <category term="apollo" scheme="https://kawhicurry.github.io/tags/apollo/"/>
     
     <category term="robucup" scheme="https://kawhicurry.github.io/tags/robucup/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>effective（3）</title>
-    <link href="https://kawhicurry.github.io/Language/a9167f5/"/>
-    <id>https://kawhicurry.github.io/Language/a9167f5/</id>
-    <published>2022-03-30T07:05:13.000Z</published>
-    <updated>2022-10-22T12:14:45.179Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h1 id=&quot;13-以对象管理资源&quot;&gt;&lt;a href=&quot;#13-以对象管理资源&quot; class=&quot;headerlink&quot; title=&quot;13 以对象管理资源&quot;&gt;&lt;/a&gt;13 以对象管理资源&lt;/h1&gt;&lt;ul&gt;
-&lt;li&gt;Resource Acquisition Is</summary>
-        
-      
-    
-    
-    
-    <category term="Language" scheme="https://kawhicurry.github.io/categories/Language/"/>
-    
-    
-    <category term="cpp" scheme="https://kawhicurry.github.io/tags/cpp/"/>
-    
-    <category term="专栏：effective c++" scheme="https://kawhicurry.github.io/tags/%E4%B8%93%E6%A0%8F%EF%BC%9Aeffective-c/"/>
     
   </entry>
   
