@@ -6,7 +6,7 @@
   <link href="https://kawhicurry.github.io/atom.xml" rel="self"/>
   
   <link href="https://kawhicurry.github.io/"/>
-  <updated>2024-01-02T05:34:11.353Z</updated>
+  <updated>2024-07-06T16:48:41.615Z</updated>
   <id>https://kawhicurry.github.io/</id>
   
   <author>
@@ -17,11 +17,34 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>daily-2024-07-07</title>
+    <link href="https://kawhicurry.github.io/Daily/41551188/"/>
+    <id>https://kawhicurry.github.io/Daily/41551188/</id>
+    <published>2024-07-07T00:34:01.000Z</published>
+    <updated>2024-07-06T16:48:41.615Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;时间过得真快，已经快一年没有更新博客了。中间其实有好几次告诉自己要来更新几篇博客，但总是因为这样或哪样的原因没有写成。&lt;br&gt;哪怕是最近写的tc，也是写到一半发现有更好玩的东西然后草草收尾了。&lt;br&gt;其实中间有不少的思考，但大多数时候，这些思考要么留存在脑海中，要么只能写下</summary>
+        
+      
+    
+    
+    
+    <category term="Daily" scheme="https://kawhicurry.github.io/categories/Daily/"/>
+    
+    
+  </entry>
+  
+  <entry>
     <title>从tc开始的一次简单的内核网络栈探索</title>
     <link href="https://kawhicurry.github.io/Operation/47a3710b/"/>
     <id>https://kawhicurry.github.io/Operation/47a3710b/</id>
-    <published>2023-10-29T12:30:06.000Z</published>
-    <updated>2024-01-02T05:34:11.353Z</updated>
+    <published>2023-10-29T04:30:06.000Z</published>
+    <updated>2024-07-06T16:31:34.718Z</updated>
     
     
       
@@ -499,34 +522,6 @@
     <category term="cpp" scheme="https://kawhicurry.github.io/tags/cpp/"/>
     
     <category term="专栏：effective c++" scheme="https://kawhicurry.github.io/tags/%E4%B8%93%E6%A0%8F%EF%BC%9Aeffective-c/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>关于Apollo2D未来的一些思考</title>
-    <link href="https://kawhicurry.github.io/Project/a8ec5d07/"/>
-    <id>https://kawhicurry.github.io/Project/a8ec5d07/</id>
-    <published>2022-03-30T09:39:14.000Z</published>
-    <updated>2022-10-22T12:14:45.182Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;p&gt;新队员终于选拔出来了，现在大二五个人，大一两个。按照林总的想法也推了些进度，不过总感觉哪里怪怪的。所以今天趁着安排了时间来做apollo相关的东西，决定来捋一捋哪里不对。&lt;/p&gt;
-&lt;h1 id=&quot;主要问题&quot;&gt;&lt;a href=&quot;#主要问题&quot;</summary>
-        
-      
-    
-    
-    
-    <category term="Project" scheme="https://kawhicurry.github.io/categories/Project/"/>
-    
-    
-    <category term="apollo" scheme="https://kawhicurry.github.io/tags/apollo/"/>
-    
-    <category term="robucup" scheme="https://kawhicurry.github.io/tags/robucup/"/>
     
   </entry>
   
