@@ -1,0 +1,465 @@
+<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"><title>分类: Operation | Kawhicurry's Blog</title><meta name="author" content="kawhicurry"><meta name="copyright" content="kawhicurry"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta name="description" content="Linux目录与文件管理路径相对路径与绝对路径略 快捷关键字：  .	表示此层目录、 ..	上层 -	前一个工作目录 ~[user]	某个用户的家目录 ​	空白也可表示自己的家目录   $PATH添加方式： PATH&amp;#x3D;&amp;quot;$&amp;amp;#123;PATH&amp;amp;#125;:&amp;#x2F;directory&amp;quot;  目录相关操作 cd"><link rel="shortcut icon" href="https://cdn.jsdelivr.net/gh/kawhicurry/picgo/profile/favicon.jpg"><link rel="canonical" href="https://kawhicurry.github.io/Operation/Linux/5da38e9e/"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//www.google-analytics.com" crossorigin=""/><link rel="preconnect" href="//busuanzi.ibruce.info"/><meta name="baidu-site-verification" content="code-UXVbU6tNCR"/><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/node-snackbar/dist/snackbar.min.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.min.css" media="print" onload="this.media='all'"><script async="async" src="https://www.googletagmanager.com/gtag/js?id=G-70WJTE71NM"></script><script>window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', 'G-70WJTE71NM');
+</script><script>const GLOBAL_CONFIG = { 
+  root: '/',
+  algolia: undefined,
+  localSearch: {"path":"/search.xml","preload":false,"languages":{"hits_empty":"找不到您查询的内容：${query}"}},
+  translate: {"defaultEncoding":2,"translateDelay":0,"msgToTraditionalChinese":"繁","msgToSimplifiedChinese":"簡"},
+  noticeOutdate: undefined,
+  highlight: {"plugin":"prismjs","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":1000},
+  copy: {
+    success: '复制成功',
+    error: '复制错误',
+    noSupport: '浏览器不支持'
+  },
+  relativeDate: {
+    homepage: false,
+    post: false
+  },
+  runtime: '天',
+  date_suffix: {
+    just: '刚刚',
+    min: '分钟前',
+    hour: '小时前',
+    day: '天前',
+    month: '个月前'
+  },
+  copyright: {"limitCount":50,"languages":{"author":"作者: kawhicurry","link":"链接: ","source":"来源: Kawhicurry's Blog","info":"著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。"}},
+  lightbox: 'fancybox',
+  Snackbar: {"chs_to_cht":"你已切换为繁体","cht_to_chs":"你已切换为简体","day_to_night":"你已切换为深色模式","night_to_day":"你已切换为浅色模式","bgLight":"#d8dee9","bgDark":"#2e3440","position":"bottom-left"},
+  source: {
+    justifiedGallery: {
+      js: 'https://cdn.jsdelivr.net/npm/flickr-justified-gallery/dist/fjGallery.min.js',
+      css: 'https://cdn.jsdelivr.net/npm/flickr-justified-gallery/dist/fjGallery.min.css'
+    }
+  },
+  isPhotoFigcaption: false,
+  islazyload: false,
+  isAnchor: false
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: '分类: Operation',
+  isPost: true,
+  isHome: false,
+  isHighlightShrink: false,
+  isToc: true,
+  postUpdate: '2024-07-20 11:57:33'
+}</script><noscript><style type="text/css">
+  #nav {
+    opacity: 1
+  }
+  .justified-gallery img {
+    opacity: 1
+  }
+
+  #recent-posts time,
+  #post-meta time {
+    display: inline !important
+  }
+</style></noscript><script>(win=>{
+    win.saveToLocal = {
+      set: function setWithExpiry(key, value, ttl) {
+        if (ttl === 0) return
+        const now = new Date()
+        const expiryDay = ttl * 86400000
+        const item = {
+          value: value,
+          expiry: now.getTime() + expiryDay,
+        }
+        localStorage.setItem(key, JSON.stringify(item))
+      },
+
+      get: function getWithExpiry(key) {
+        const itemStr = localStorage.getItem(key)
+
+        if (!itemStr) {
+          return undefined
+        }
+        const item = JSON.parse(itemStr)
+        const now = new Date()
+
+        if (now.getTime() > item.expiry) {
+          localStorage.removeItem(key)
+          return undefined
+        }
+        return item.value
+      }
+    }
+  
+    win.getScript = url => new Promise((resolve, reject) => {
+      const script = document.createElement('script')
+      script.src = url
+      script.async = true
+      script.onerror = reject
+      script.onload = script.onreadystatechange = function() {
+        const loadState = this.readyState
+        if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+        script.onload = script.onreadystatechange = null
+        resolve()
+      }
+      document.head.appendChild(script)
+    })
+  
+      win.activateDarkMode = function () {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+        }
+      }
+      win.activateLightMode = function () {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#ffffff')
+        }
+      }
+      const t = saveToLocal.get('theme')
+    
+          const isDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches
+          const isLightMode = window.matchMedia('(prefers-color-scheme: light)').matches
+          const isNotSpecified = window.matchMedia('(prefers-color-scheme: no-preference)').matches
+          const hasNoSupport = !isDarkMode && !isLightMode && !isNotSpecified
+
+          if (t === undefined) {
+            if (isLightMode) activateLightMode()
+            else if (isDarkMode) activateDarkMode()
+            else if (isNotSpecified || hasNoSupport) {
+              const now = new Date()
+              const hour = now.getHours()
+              const isNight = hour <= 6 || hour >= 18
+              isNight ? activateDarkMode() : activateLightMode()
+            }
+            window.matchMedia('(prefers-color-scheme: dark)').addListener(function (e) {
+              if (saveToLocal.get('theme') === undefined) {
+                e.matches ? activateDarkMode() : activateLightMode()
+              }
+            })
+          } else if (t === 'light') activateLightMode()
+          else activateDarkMode()
+        
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        if (asideStatus === 'hide') {
+          document.documentElement.classList.add('hide-aside')
+        } else {
+          document.documentElement.classList.remove('hide-aside')
+        }
+      }
+    
+    const detectApple = () => {
+      if(/iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)){
+        document.documentElement.classList.add('apple')
+      }
+    }
+    detectApple()
+    })(window)</script><meta name="generator" content="Hexo 6.3.0"><link rel="alternate" href="/atom.xml" title="Kawhicurry's Blog" type="application/atom+xml">
+</head><body><div id="web_bg"></div><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img is-center"><img src="https://cdn.jsdelivr.net/gh/kawhicurry/picgo/profile/avatar.jpg" onerror="onerror=null;src='/img/404.jpg'" alt="avatar"/></div><div class="sidebar-site-data site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">81</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">39</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">15</div></a></div><hr/><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> Home</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> Archives</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> Tags</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> Categories</span></a></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> Link</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> About</span></a></div></div></div></div><div class="post" id="body-wrap"><header class="post-bg" id="page-header" style="background-image: url('https://cdn.jsdelivr.net/gh/kawhicurry/picgo/nordic/ign-0009.png')"><nav id="nav"><span id="blog_name"><a id="site-name" href="/">Kawhicurry's Blog</a></span><div id="menus"><div id="search-button"><a class="site-page social-icon search"><i class="fas fa-search fa-fw"></i><span> 搜索</span></a></div><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> Home</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> Archives</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> Tags</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> Categories</span></a></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> Link</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> About</span></a></div></div><div id="toggle-menu"><a class="site-page"><i class="fas fa-bars fa-fw"></i></a></div></div></nav><div id="post-info"><h1 class="post-title">重学linux（2）</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">发表于</span><time class="post-meta-date-created" datetime="2022-01-20T05:34:46.000Z" title="发表于 2022-01-20 05:34:46">2022-01-20</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2024-07-20T11:57:33.554Z" title="更新于 2024-07-20 11:57:33">2024-07-20</time></span><span class="post-meta-categories"><span class="post-meta-separator">|</span><i class="fas fa-inbox fa-fw post-meta-icon"></i><a class="post-meta-categories" href="/categories/Operation/">Operation</a><i class="fas fa-angle-right post-meta-separator"></i><i class="fas fa-inbox fa-fw post-meta-icon"></i><a class="post-meta-categories" href="/categories/Operation/Linux/">Linux</a></span></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span class="post-meta-wordcount"><i class="far fa-file-word fa-fw post-meta-icon"></i><span class="post-meta-label">字数总计:</span><span class="word-count">1.3k</span><span class="post-meta-separator">|</span><i class="far fa-clock fa-fw post-meta-icon"></i><span class="post-meta-label">阅读时长:</span><span>4分钟</span></span><span class="post-meta-separator">|</span><span class="post-meta-pv-cv" id="" data-flag-title="重学linux（2）"><i class="far fa-eye fa-fw post-meta-icon"></i><span class="post-meta-label">阅读量:</span><span id="busuanzi_value_page_pv"><i class="fa-solid fa-spinner fa-spin"></i></span></span></div></div></div></header><main class="layout" id="content-inner"><div id="post"><article class="post-content" id="article-container"><h1 id="Linux目录与文件管理"><a href="#Linux目录与文件管理" class="headerlink" title="Linux目录与文件管理"></a>Linux目录与文件管理</h1><h2 id="路径"><a href="#路径" class="headerlink" title="路径"></a>路径</h2><h3 id="相对路径与绝对路径"><a href="#相对路径与绝对路径" class="headerlink" title="相对路径与绝对路径"></a>相对路径与绝对路径</h3><p>略</p>
+<p>快捷关键字：</p>
+<blockquote>
+<p>.	表示此层目录、</p>
+<p>..	上层</p>
+<p>-	前一个工作目录</p>
+<p>~[user]	某个用户的家目录</p>
+<p>​	空白也可表示自己的家目录 </p>
+</blockquote>
+<h2 id="PATH"><a href="#PATH" class="headerlink" title="$PATH"></a>$PATH</h2><p>添加方式：</p>
+<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token assign-left variable"><span class="token environment constant">PATH</span></span><span class="token operator">=</span><span class="token string">"<span class="token variable">$&#123;<span class="token environment constant">PATH</span>&#125;</span>:/directory"</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+<h2 id="目录相关操作"><a href="#目录相关操作" class="headerlink" title="目录相关操作"></a>目录相关操作</h2><ul>
+<li>cd</li>
+<li>pwd -P：表示真实地址，而非链接地址</li>
+<li>mkdir<ul>
+<li>-m 设置文件权限</li>
+<li>-p 递归创建</li>
+</ul>
+</li>
+<li>rmdir<ul>
+<li>-p 连同上层空目录一起删除</li>
+</ul>
+</li>
+</ul>
+<h2 id="文件相关操作"><a href="#文件相关操作" class="headerlink" title="文件相关操作"></a>文件相关操作</h2><h3 id="ls"><a href="#ls" class="headerlink" title="ls"></a>ls</h3><p>略</p>
+<h3 id="cp-rm-mv"><a href="#cp-rm-mv" class="headerlink" title="cp rm mv"></a>cp rm mv</h3><h4 id="cp"><a href="#cp" class="headerlink" title="cp"></a>cp</h4><table>
+<thead>
+<tr>
+<th>参数</th>
+<th>选项</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>-a -dr –preserve-all</td>
+<td>复制所有属性</td>
+</tr>
+<tr>
+<td>-i</td>
+<td>若存在，询问是否覆盖</td>
+</tr>
+<tr>
+<td>-l</td>
+<td>硬链接，相应的s为symbolic link</td>
+</tr>
+<tr>
+<td>-p</td>
+<td>带权限赋值</td>
+</tr>
+<tr>
+<td>-r</td>
+<td>递归赋值，用于文件夹赋值</td>
+</tr>
+<tr>
+<td>-u</td>
+<td>更新式复制，当destination比source旧才复制</td>
+</tr>
+</tbody></table>
+<p>还有一点，如果cp的source有两个以上，destination一定要是目录。</p>
+<h4 id="rm"><a href="#rm" class="headerlink" title="rm"></a>rm</h4><table>
+<thead>
+<tr>
+<th>参数</th>
+<th>选项</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>-f</td>
+<td>force</td>
+</tr>
+<tr>
+<td>-i</td>
+<td>询问</td>
+</tr>
+<tr>
+<td>-r</td>
+<td>递归</td>
+</tr>
+<tr>
+<td>-v</td>
+<td>verbose</td>
+</tr>
+</tbody></table>
+<p>来自rm的man page：</p>
+<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">To remove a <span class="token function">file</span> whose name starts with a <span class="token string">'-'</span>, <span class="token keyword">for</span> example <span class="token string">'-foo'</span>, use one of these commands:
+
+       <span class="token function">rm</span> -- -foo
+
+       <span class="token function">rm</span> ./-foo<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<p>其中–可以告诉parser，后面的东西不是option，而是arguments</p>
+<h4 id="mv"><a href="#mv" class="headerlink" title="mv"></a>mv</h4><p>同cp</p>
+<p><strong>注</strong>：rename可用于给多个文件重命名，以下为<code>man page</code>，大概是做匹配然后替换，但是rename有两个版本，C语言版使用通配符匹配，perl版本使用正则表达式匹配。可以使用<code>rename --verson</code>查看具体版本。</p>
+<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">SYNOPSIS
+       <span class="token function">rename</span> <span class="token punctuation">[</span>options<span class="token punctuation">]</span> expression replacement file<span class="token punctuation">..</span>.
+
+DESCRIPTION
+       <span class="token function">rename</span>  will  <span class="token function">rename</span>  the  specified  files  by  replacing the first occurrence of expression <span class="token keyword">in</span> their name by
+       replacement.
+
+OPTIONS
+       -s, --symlink
+              Do not <span class="token function">rename</span> a symlink but its target.
+
+       -v, --verbose
+              Show <span class="token function">which</span> files where renamed, <span class="token keyword">if</span> any.
+
+       -n, --no-act
+              Do not <span class="token function">make</span> any changes.
+
+       -o, --no-overwrite
+              Do not overwrite existing files.
+
+       -V, --version
+              Display version information and exit.
+
+       -h, --help
+              Display <span class="token builtin class-name">help</span> text and <span class="token builtin class-name">exit</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">区分方法: <span class="token function">rename</span> --version
+
+如果返回结果中包含 util-linux , 说明是 C 语言版本, 反之是 Perl 版本<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
+
+<h3 id="获取文件名和目录名"><a href="#获取文件名和目录名" class="headerlink" title="获取文件名和目录名"></a>获取文件名和目录名</h3><pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">$ <span class="token function">basename</span> /etc/sysconfig/network
+network
+$ <span class="token function">dirname</span> /etc/sysconfig/network
+/etc/sysconfig<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre>
+
+<h2 id="查看文件内容"><a href="#查看文件内容" class="headerlink" title="查看文件内容"></a>查看文件内容</h2><h3 id="直接查看"><a href="#直接查看" class="headerlink" title="直接查看"></a>直接查看</h3><h4 id="cat"><a href="#cat" class="headerlink" title="cat"></a>cat</h4><p>concatenate（串联）：正向全部显示</p>
+<table>
+<thead>
+<tr>
+<th>参数</th>
+<th>选项</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>-n</td>
+<td>打印行号</td>
+</tr>
+<tr>
+<td>-T</td>
+<td>显示tab键</td>
+</tr>
+<tr>
+<td>-v</td>
+<td>显示看不出来的特殊字符</td>
+</tr>
+<tr>
+<td>-A</td>
+<td>相当于-vET</td>
+</tr>
+<tr>
+<td>-E</td>
+<td>显示换行符</td>
+</tr>
+</tbody></table>
+<h4 id="tac"><a href="#tac" class="headerlink" title="tac"></a>tac</h4><p>cat的反向</p>
+<h4 id="nl"><a href="#nl" class="headerlink" title="nl"></a>nl</h4><p>添加行号打印</p>
+<h3 id="可翻页查看"><a href="#可翻页查看" class="headerlink" title="可翻页查看"></a>可翻页查看</h3><h4 id="more"><a href="#more" class="headerlink" title="more"></a>more</h4><p>vim操作模式，只能向后翻页</p>
+<h4 id="less"><a href="#less" class="headerlink" title="less"></a>less</h4><p>vim操作模式，更灵活</p>
+<h3 id="数据截取"><a href="#数据截取" class="headerlink" title="数据截取"></a>数据截取</h3><h4 id="head"><a href="#head" class="headerlink" title="head"></a>head</h4><pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token function">head</span> -n <span class="token punctuation">[</span>行数<span class="token punctuation">]</span> 文件<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+<h4 id="tail"><a href="#tail" class="headerlink" title="tail"></a>tail</h4><pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token function">tail</span> -n <span class="token punctuation">[</span>行数<span class="token punctuation">]</span> 文件 <span class="token punctuation">[</span>-f<span class="token punctuation">]</span> <span class="token comment"># f表示持续刷新</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+<h3 id="非纯文本文件"><a href="#非纯文本文件" class="headerlink" title="非纯文本文件"></a>非纯文本文件</h3><h4 id="od"><a href="#od" class="headerlink" title="od"></a>od</h4><p>略了吧，没人会看二进制的</p>
+<h3 id="修改文件时间or建立新文件"><a href="#修改文件时间or建立新文件" class="headerlink" title="修改文件时间or建立新文件"></a>修改文件时间or建立新文件</h3><p>touch</p>
+<p>略了吧，一年到头改不了几次</p>
+<h2 id="权限"><a href="#权限" class="headerlink" title="权限"></a>权限</h2><h3 id="默认权限"><a href="#默认权限" class="headerlink" title="默认权限"></a>默认权限</h3><pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token builtin class-name">umask</span> <span class="token punctuation">[</span>-S<span class="token punctuation">]</span> <span class="token comment"># 查看默认权限</span>
+<span class="token builtin class-name">umask</span> 002 <span class="token comment"># 修改默认权限,这里的数字表示被拿走的权限</span>
+<span class="token comment">#而默认情况下，文件不会有x权限，文件夹一定有x权限</span>
+<span class="token comment">#即文件为-rw-rw-rw，目录为drwxrwxrwx</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre>
+
+<h3 id="隐藏属性"><a href="#隐藏属性" class="headerlink" title="隐藏属性"></a>隐藏属性</h3><pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">lsattr <span class="token comment"># 显示文件隐藏属性</span>
+chattr <span class="token comment"># 修改文件隐藏属性</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
+
+<p>一些隐藏属性</p>
+<table>
+<thead>
+<tr>
+<th>属性</th>
+<th>内容</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>a</td>
+<td>该文件只能增加，不能删除或修改数据</td>
+</tr>
+<tr>
+<td>i</td>
+<td>该文件不能被删除，改名，设置链接或写入数据</td>
+</tr>
+<tr>
+<td>s与u</td>
+<td>s是该文件被删除后将彻底删除，无法找回，u相反</td>
+</tr>
+</tbody></table>
+<h3 id="特殊权限"><a href="#特殊权限" class="headerlink" title="特殊权限"></a>特殊权限</h3><h4 id="SUID–Set-UID"><a href="#SUID–Set-UID" class="headerlink" title="SUID–Set UID"></a>SUID–Set UID</h4><ul>
+<li>只能用于binary</li>
+<li>执行者要拥有该文件的x权限</li>
+<li>执行者执行该文件时会获得该文件的owner的权限</li>
+<li>举例：&#x2F;usr&#x2F;bin&#x2F;passwd（权限为<code>-rwsr-xr-x</code>）</li>
+</ul>
+<h4 id="SGID–Set-GID"><a href="#SGID–Set-GID" class="headerlink" title="SGID–Set GID"></a>SGID–Set GID</h4><p>同上，不过</p>
+<ul>
+<li>获得的是该文件group的权限</li>
+<li>可用于目录和binary</li>
+<li>举例：&#x2F;usr&#x2F;bin&#x2F;locate（权限为<code>-rwx--s--x</code>）</li>
+</ul>
+<h4 id="SBIT–Sticky-Bit"><a href="#SBIT–Sticky-Bit" class="headerlink" title="SBIT–Sticky Bit"></a>SBIT–Sticky Bit</h4><ul>
+<li>只对目录有效</li>
+<li>当用户对该目录有r和x权限，就自动拥有该目录内的w权限</li>
+<li>当用户在该目录下建立文件或目录的时候，只有自己和root有权限删除该文件</li>
+<li>举例：&#x2F;tmp（权限为<code>drwxrwxrwt</code>）</li>
+</ul>
+<h4 id="特殊权限的设置"><a href="#特殊权限的设置" class="headerlink" title="特殊权限的设置"></a>特殊权限的设置</h4><p>以上三者也遵循421，举例：<code>chmod 4755 filename</code></p>
+<h4 id="查看文件类型"><a href="#查看文件类型" class="headerlink" title="查看文件类型"></a>查看文件类型</h4><pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token function">file</span> filename<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+<h2 id="命令与文件的查找"><a href="#命令与文件的查找" class="headerlink" title="命令与文件的查找"></a>命令与文件的查找</h2><h3 id="命令的查找"><a href="#命令的查找" class="headerlink" title="命令的查找"></a>命令的查找</h3><pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token function">which</span> <span class="token punctuation">[</span>-a<span class="token punctuation">]</span> <span class="token builtin class-name">command</span> <span class="token comment"># -a 表示列出所有PATH中的该命令</span>
+<span class="token function">which</span> <span class="token function">history</span> <span class="token comment"># 找不到history，因为这是bash的内置命令，只能用type来</span>
+<span class="token builtin class-name">type</span> <span class="token builtin class-name">command</span> <span class="token comment"># 后面会说</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
+
+<h3 id="文件的查找"><a href="#文件的查找" class="headerlink" title="文件的查找"></a>文件的查找</h3><h4 id="whereis"><a href="#whereis" class="headerlink" title="whereis"></a>whereis</h4><p>速查重要目录，可用<code>whereis -l</code>查看去找的主要目录</p>
+<h4 id="locate-x2F-updatedb"><a href="#locate-x2F-updatedb" class="headerlink" title="locate &#x2F; updatedb"></a>locate &#x2F; updatedb</h4><p><code>locate</code>通过数据库速查，<code>updatedb</code>手动更新数据库</p>
+<h4 id="find"><a href="#find" class="headerlink" title="find"></a>find</h4><p>查硬盘万能大法。</p>
+<p>时间参数的说明</p>
+<ul>
+<li><code>atime</code>，last access time</li>
+<li><code>ctime</code>，last change time</li>
+<li><code>mtime</code>，last modify time</li>
+</ul>
+<p>时间参数后的数字的说明</p>
+<ul>
+<li>n，表示n天前的<em>一天之内</em></li>
+<li>+n，n天之前（不包括第n天）</li>
+<li>-n，n天之内（包括第n天）</li>
+</ul>
+<p>用户参数</p>
+<ul>
+<li>-uid n</li>
+<li>-gid n</li>
+<li>-user name</li>
+<li>-group name</li>
+<li><strong>-nouser</strong></li>
+<li><strong>-nogroup</strong></li>
+</ul>
+<p>权限参数</p>
+<ul>
+<li>-name filename</li>
+<li>-size [+-]SIZE</li>
+<li>-type TYPE</li>
+<li>-perm mode 权限的精确匹配</li>
+<li>-perm -mode 必须包含某个权限</li>
+<li>-perm &#x2F;mode 包含任意某个权限</li>
+</ul>
+<p>其他操作</p>
+<ul>
+<li>-exec command 查找完之后跟的额外操作</li>
+<li>-print 默认操作，输出至屏幕</li>
+</ul>
+<p>exec举例</p>
+<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token function">find</span> /usr/bin /usr/sbin -perm /7000 -exec <span class="token function">ls</span> -l <span class="token punctuation">&#123;</span><span class="token punctuation">&#125;</span> <span class="token punctuation">\</span><span class="token punctuation">;</span>
+<span class="token comment"># exec后不可使用别名</span>
+<span class="token comment"># &#123;&#125;表示find找到的内容</span>
+<span class="token comment"># \;表示结束，exec会从`-exec`后面执行到`\;`结束</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre>
+
+</article><div class="post-copyright"><div class="post-copyright__author"><span class="post-copyright-meta">文章作者: </span><span class="post-copyright-info"><a href="https://kawhicurry.github.io">kawhicurry</a></span></div><div class="post-copyright__type"><span class="post-copyright-meta">文章链接: </span><span class="post-copyright-info"><a href="https://kawhicurry.github.io/Operation/Linux/5da38e9e/">https://kawhicurry.github.io/Operation/Linux/5da38e9e/</a></span></div><div class="post-copyright__notice"><span class="post-copyright-meta">版权声明: </span><span class="post-copyright-info">本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">CC BY-NC-SA 4.0</a> 许可协议。转载请注明来自 <a href="https://kawhicurry.github.io" target="_blank">Kawhicurry's Blog</a>！</span></div></div><div class="tag_share"><div class="post-meta__tag-list"><a class="post-meta__tags" href="/tags/linux/">linux</a><a class="post-meta__tags" href="/tags/%E4%B8%93%E6%A0%8F%EF%BC%9A%E9%87%8D%E5%AD%A6linux/">专栏：重学linux</a></div><div class="post_share"><div class="addthis_inline_share_toolbox"></div><script src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-62037f9d1c65c8d1" async="async"></script></div></div><nav class="pagination-post" id="pagination"><div class="prev-post pull-left"><a href="/Operation/Linux/ec3bdbd7/"><img class="prev-cover" src="https://cdn.jsdelivr.net/gh/kawhicurry/picgo/nordic/ign_dudeOnBuilding.png" onerror="onerror=null;src='/img/404.jpg'" alt="cover of previous post"><div class="pagination-info"><div class="label">上一篇</div><div class="prev_info">重学linux（3）.md</div></div></a></div><div class="next-post pull-right"><a href="/Auto/e6d71455/"><img class="next-cover" src="https://cdn.jsdelivr.net/gh/kawhicurry/picgo/nordic/ign_legendary.png" onerror="onerror=null;src='/img/404.jpg'" alt="cover of next post"><div class="pagination-info"><div class="label">下一篇</div><div class="next_info">ROS学习笔记（1）</div></div></a></div></nav><div class="relatedPosts"><div class="headline"><i class="fas fa-thumbs-up fa-fw"></i><span>相关推荐</span></div><div class="relatedPosts-list"><div><a href="/Operation/Linux/f7aa4615/" title="重学linux（0）"><img class="cover" src="https://cdn.jsdelivr.net/gh/kawhicurry/picgo/nordic/ign_leafHelmet.png" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2022-01-18</div><div class="title">重学linux（0）</div></div></a></div><div><a href="/Operation/Linux/a4d04884/" title="重学linux（10）"><img class="cover" src="https://cdn.jsdelivr.net/gh/kawhicurry/picgo/nordic/arctic-landscape.png" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2022-03-02</div><div class="title">重学linux（10）</div></div></a></div><div><a href="/Operation/Linux/1c6c2fe1/" title="重学linux（11）"><img class="cover" src="https://cdn.jsdelivr.net/gh/kawhicurry/picgo/nordic/ign_sunset.png" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2022-03-02</div><div class="title">重学linux（11）</div></div></a></div><div><a href="/Operation/Linux/ed9800f/" title="重学linux（12）"><img class="cover" src="https://cdn.jsdelivr.net/gh/kawhicurry/picgo/nordic/ign_travelling.jpg" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2022-03-03</div><div class="title">重学linux（12）</div></div></a></div><div><a href="/Operation/Linux/b665e76a/" title="重学linux（13）"><img class="cover" src="https://cdn.jsdelivr.net/gh/kawhicurry/picgo/nordic/nord_mountains.png" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2022-03-06</div><div class="title">重学linux（13）</div></div></a></div><div><a href="/Operation/Linux/2bb2dfd3/" title="重学linux（14）"><img class="cover" src="https://cdn.jsdelivr.net/gh/kawhicurry/picgo/nordic/ign_blue_chains.png" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2022-03-07</div><div class="title">重学linux（14）</div></div></a></div></div></div><hr/><div id="post-comment"><div class="comment-head"><div class="comment-headline"><i class="fas fa-comments fa-fw"></i><span> 评论</span></div></div><div class="comment-wrap"><div><div id="gitalk-container"></div></div></div></div></div><div class="aside-content" id="aside-content"><div class="card-widget card-info"><div class="is-center"><div class="avatar-img"><img src="https://cdn.jsdelivr.net/gh/kawhicurry/picgo/profile/avatar.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="avatar"/></div><div class="author-info__name">kawhicurry</div><div class="author-info__description">An student aiming to be an operation engineer.</div></div><div class="card-info-data site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">81</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">39</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">15</div></a></div><a id="card-info-btn" target="_blank" rel="noopener" href="https://github.com/kawhicurry"><i class="fab fa-github"></i><span>逛逛博主的github</span></a><div class="card-info-social-icons is-center"><a class="social-icon" href="https://github.com/kawhicurry" target="_blank" title="Github"><i class="fab fa-github"></i></a><a class="social-icon" href="mailto:kawhicurry@foxmail.com" target="_blank" title="Email"><i class="fas fa-envelope"></i></a><a class="social-icon" href="https://kawhicurry.github.io/atom.xml" target="_blank" title="Rss"><i class="fas fa-rss"></i></a></div></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn fa-shake"></i><span>公告</span></div><div class="announcement_content">我们一天天所度过的所谓日常,可能是接连不断的奇迹</div></div><div class="sticky_layout"><div class="card-widget" id="card-toc"><div class="item-headline"><i class="fas fa-stream"></i><span>目录</span><span class="toc-percentage"></span></div><div class="toc-content"><ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#Linux%E7%9B%AE%E5%BD%95%E4%B8%8E%E6%96%87%E4%BB%B6%E7%AE%A1%E7%90%86"><span class="toc-number">1.</span> <span class="toc-text">Linux目录与文件管理</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E8%B7%AF%E5%BE%84"><span class="toc-number">1.1.</span> <span class="toc-text">路径</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%9B%B8%E5%AF%B9%E8%B7%AF%E5%BE%84%E4%B8%8E%E7%BB%9D%E5%AF%B9%E8%B7%AF%E5%BE%84"><span class="toc-number">1.1.1.</span> <span class="toc-text">相对路径与绝对路径</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#PATH"><span class="toc-number">1.2.</span> <span class="toc-text">$PATH</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%9B%AE%E5%BD%95%E7%9B%B8%E5%85%B3%E6%93%8D%E4%BD%9C"><span class="toc-number">1.3.</span> <span class="toc-text">目录相关操作</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%96%87%E4%BB%B6%E7%9B%B8%E5%85%B3%E6%93%8D%E4%BD%9C"><span class="toc-number">1.4.</span> <span class="toc-text">文件相关操作</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#ls"><span class="toc-number">1.4.1.</span> <span class="toc-text">ls</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#cp-rm-mv"><span class="toc-number">1.4.2.</span> <span class="toc-text">cp rm mv</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#cp"><span class="toc-number">1.4.2.1.</span> <span class="toc-text">cp</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#rm"><span class="toc-number">1.4.2.2.</span> <span class="toc-text">rm</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#mv"><span class="toc-number">1.4.2.3.</span> <span class="toc-text">mv</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E8%8E%B7%E5%8F%96%E6%96%87%E4%BB%B6%E5%90%8D%E5%92%8C%E7%9B%AE%E5%BD%95%E5%90%8D"><span class="toc-number">1.4.3.</span> <span class="toc-text">获取文件名和目录名</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%9F%A5%E7%9C%8B%E6%96%87%E4%BB%B6%E5%86%85%E5%AE%B9"><span class="toc-number">1.5.</span> <span class="toc-text">查看文件内容</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%9B%B4%E6%8E%A5%E6%9F%A5%E7%9C%8B"><span class="toc-number">1.5.1.</span> <span class="toc-text">直接查看</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#cat"><span class="toc-number">1.5.1.1.</span> <span class="toc-text">cat</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#tac"><span class="toc-number">1.5.1.2.</span> <span class="toc-text">tac</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#nl"><span class="toc-number">1.5.1.3.</span> <span class="toc-text">nl</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%8F%AF%E7%BF%BB%E9%A1%B5%E6%9F%A5%E7%9C%8B"><span class="toc-number">1.5.2.</span> <span class="toc-text">可翻页查看</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#more"><span class="toc-number">1.5.2.1.</span> <span class="toc-text">more</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#less"><span class="toc-number">1.5.2.2.</span> <span class="toc-text">less</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%95%B0%E6%8D%AE%E6%88%AA%E5%8F%96"><span class="toc-number">1.5.3.</span> <span class="toc-text">数据截取</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#head"><span class="toc-number">1.5.3.1.</span> <span class="toc-text">head</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#tail"><span class="toc-number">1.5.3.2.</span> <span class="toc-text">tail</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E9%9D%9E%E7%BA%AF%E6%96%87%E6%9C%AC%E6%96%87%E4%BB%B6"><span class="toc-number">1.5.4.</span> <span class="toc-text">非纯文本文件</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#od"><span class="toc-number">1.5.4.1.</span> <span class="toc-text">od</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%BF%AE%E6%94%B9%E6%96%87%E4%BB%B6%E6%97%B6%E9%97%B4or%E5%BB%BA%E7%AB%8B%E6%96%B0%E6%96%87%E4%BB%B6"><span class="toc-number">1.5.5.</span> <span class="toc-text">修改文件时间or建立新文件</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%9D%83%E9%99%90"><span class="toc-number">1.6.</span> <span class="toc-text">权限</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E9%BB%98%E8%AE%A4%E6%9D%83%E9%99%90"><span class="toc-number">1.6.1.</span> <span class="toc-text">默认权限</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E9%9A%90%E8%97%8F%E5%B1%9E%E6%80%A7"><span class="toc-number">1.6.2.</span> <span class="toc-text">隐藏属性</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%89%B9%E6%AE%8A%E6%9D%83%E9%99%90"><span class="toc-number">1.6.3.</span> <span class="toc-text">特殊权限</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#SUID%E2%80%93Set-UID"><span class="toc-number">1.6.3.1.</span> <span class="toc-text">SUID–Set UID</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#SGID%E2%80%93Set-GID"><span class="toc-number">1.6.3.2.</span> <span class="toc-text">SGID–Set GID</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#SBIT%E2%80%93Sticky-Bit"><span class="toc-number">1.6.3.3.</span> <span class="toc-text">SBIT–Sticky Bit</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E7%89%B9%E6%AE%8A%E6%9D%83%E9%99%90%E7%9A%84%E8%AE%BE%E7%BD%AE"><span class="toc-number">1.6.3.4.</span> <span class="toc-text">特殊权限的设置</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E6%9F%A5%E7%9C%8B%E6%96%87%E4%BB%B6%E7%B1%BB%E5%9E%8B"><span class="toc-number">1.6.3.5.</span> <span class="toc-text">查看文件类型</span></a></li></ol></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%91%BD%E4%BB%A4%E4%B8%8E%E6%96%87%E4%BB%B6%E7%9A%84%E6%9F%A5%E6%89%BE"><span class="toc-number">1.7.</span> <span class="toc-text">命令与文件的查找</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%91%BD%E4%BB%A4%E7%9A%84%E6%9F%A5%E6%89%BE"><span class="toc-number">1.7.1.</span> <span class="toc-text">命令的查找</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%96%87%E4%BB%B6%E7%9A%84%E6%9F%A5%E6%89%BE"><span class="toc-number">1.7.2.</span> <span class="toc-text">文件的查找</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#whereis"><span class="toc-number">1.7.2.1.</span> <span class="toc-text">whereis</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#locate-x2F-updatedb"><span class="toc-number">1.7.2.2.</span> <span class="toc-text">locate &#x2F; updatedb</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#find"><span class="toc-number">1.7.2.3.</span> <span class="toc-text">find</span></a></li></ol></li></ol></li></ol></li></ol></div></div><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>最新文章</span></div><div class="aside-list"><div class="aside-list-item"><a class="thumbnail" href="/AI/47184172/" title="第一次LLM学习之旅"><img src="https://cdn.jsdelivr.net/gh/kawhicurry/picgo/nordic/ign_raid_in_the_dark.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="第一次LLM学习之旅"/></a><div class="content"><a class="title" href="/AI/47184172/" title="第一次LLM学习之旅">第一次LLM学习之旅</a><time datetime="2024-07-20T12:14:31.254Z" title="发表于 2024-07-20 12:14:31">2024-07-20</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/Daily/41551188/" title="daily-2024-07-07"><img src="https://cdn.jsdelivr.net/gh/kawhicurry/picgo/nordic/voidlinux.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="daily-2024-07-07"/></a><div class="content"><a class="title" href="/Daily/41551188/" title="daily-2024-07-07">daily-2024-07-07</a><time datetime="2024-07-06T16:34:01.000Z" title="发表于 2024-07-06 16:34:01">2024-07-06</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/Operation/Linux/47a3710b/" title="从tc开始的一次简单的内核网络栈探索"><img src="https://cdn.jsdelivr.net/gh/kawhicurry/picgo/nordic/ign_about_to_die.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="从tc开始的一次简单的内核网络栈探索"/></a><div class="content"><a class="title" href="/Operation/Linux/47a3710b/" title="从tc开始的一次简单的内核网络栈探索">从tc开始的一次简单的内核网络栈探索</a><time datetime="2023-10-29T04:30:06.000Z" title="发表于 2023-10-29 04:30:06">2023-10-29</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/Tools/35816fcf/" title="给飞扬哥的博客上传指南"><img src="https://cdn.jsdelivr.net/gh/kawhicurry/picgo/nordic/ign_farFromTomorrow.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="给飞扬哥的博客上传指南"/></a><div class="content"><a class="title" href="/Tools/35816fcf/" title="给飞扬哥的博客上传指南">给飞扬哥的博客上传指南</a><time datetime="2023-01-26T13:27:32.000Z" title="发表于 2023-01-26 13:27:32">2023-01-26</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/Auto/43a7b386/" title="Apollo2D项目回顾"><img src="https://cdn.jsdelivr.net/gh/kawhicurry/picgo/nordic/super-mario.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="Apollo2D项目回顾"/></a><div class="content"><a class="title" href="/Auto/43a7b386/" title="Apollo2D项目回顾">Apollo2D项目回顾</a><time datetime="2022-11-28T10:39:12.000Z" title="发表于 2022-11-28 10:39:12">2022-11-28</time></div></div></div></div></div></div></main><footer id="footer" style="background-image: url('https://cdn.jsdelivr.net/gh/kawhicurry/picgo/nordic/nord_alone_tree.png')"><div id="footer-wrap"><div class="copyright">&copy;2021 - 2024 By kawhicurry</div><div class="framework-info"><span>框架 </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo</a><span class="footer-separator">|</span><span>主题 </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly</a></div><div class="footer_custom_text">Welcome to the world of an growing SRE.</div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="readmode" type="button" title="阅读模式"><i class="fas fa-book-open"></i></button><button id="translateLink" type="button" title="简繁转换">繁</button><button id="darkmode" type="button" title="浅色和深色模式转换"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="单栏和双栏切换"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside_config" type="button" title="设置"><i class="fas fa-cog fa-spin"></i></button><button class="close" id="mobile-toc-button" type="button" title="目录"><i class="fas fa-list-ul"></i></button><a id="to_comment" href="#post-comment" title="直达评论"><i class="fas fa-comments"></i></a><button id="go-up" type="button" title="回到顶部"><i class="fas fa-arrow-up"></i></button></div></div><div id="local-search"><div class="search-dialog"><nav class="search-nav"><span class="search-dialog-title">搜索</span><span id="loading-status"></span><button class="search-close-button"><i class="fas fa-times"></i></button></nav><div class="is-center" id="loading-database"><i class="fas fa-spinner fa-pulse"></i><span>  数据库加载中</span></div><div class="search-wrap"><div id="local-search-input"><div class="local-search-box"><input class="local-search-box--input" placeholder="搜索文章" type="text"/></div></div><hr/><div id="local-search-results"></div></div></div><div id="search-mask"></div></div><div><script src="/js/utils.js"></script><script src="/js/main.js"></script><script src="/js/tw_cn.js"></script><script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.umd.min.js"></script><script src="https://cdn.jsdelivr.net/npm/instant.page/instantpage.min.js" type="module"></script><script src="https://cdn.jsdelivr.net/npm/node-snackbar/dist/snackbar.min.js"></script><script src="/js/search/local-search.js"></script><div class="js-pjax"><script>function addGitalkSource () {
+  const ele = document.createElement('link')
+  ele.rel = 'stylesheet'
+  ele.href= 'https://cdn.jsdelivr.net/npm/gitalk/dist/gitalk.min.css'
+  document.getElementsByTagName('head')[0].appendChild(ele)
+}
+
+function loadGitalk () {
+  function initGitalk () {
+    var gitalk = new Gitalk(Object.assign({
+      clientID: '528affc74d9344c23daf',
+      clientSecret: '41afe1cad2849c60940bd386fe0bbda659a73a16',
+      repo: 'kawhicurry.github.io.comment',
+      owner: 'kawhicurry',
+      admin: ['kawhicurry'],
+      id: 'a888b07965a73ed2c9542e7bf38a7a87',
+      updateCountCallback: commentCount
+    },null))
+
+    gitalk.render('gitalk-container')
+  }
+
+  if (typeof Gitalk === 'function') initGitalk()
+  else {
+    addGitalkSource()
+    getScript('https://cdn.jsdelivr.net/npm/gitalk/dist/gitalk.min.js').then(initGitalk)
+  }
+}
+
+function commentCount(n){
+  let isCommentCount = document.querySelector('#post-meta .gitalk-comment-count')
+  if (isCommentCount) {
+    isCommentCount.innerHTML= n
+  }
+}
+
+if ('Gitalk' === 'Gitalk' || !false) {
+  if (false) btf.loadComment(document.getElementById('gitalk-container'), loadGitalk)
+  else loadGitalk()
+} else {
+  function loadOtherComment () {
+    loadGitalk()
+  }
+}</script></div><script id="canvas_nest" defer="defer" color="0,0,255" opacity="0.7" zIndex="-1" count="99" mobile="false" src="https://cdn.jsdelivr.net/npm/butterfly-extsrc/dist/canvas-nest.min.js"></script><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script></div></body></html>
