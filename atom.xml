@@ -96,7 +96,7 @@
     <link href="https://kawhicurry.github.io/Tools/35816fcf/"/>
     <id>https://kawhicurry.github.io/Tools/35816fcf/</id>
     <published>2023-01-26T13:27:32.000Z</published>
-    <updated>2023-10-29T04:27:58.957Z</updated>
+    <updated>2024-07-20T11:44:31.034Z</updated>
     
     
       
@@ -121,7 +121,7 @@
     <link href="https://kawhicurry.github.io/Auto/43a7b386/"/>
     <id>https://kawhicurry.github.io/Auto/43a7b386/</id>
     <published>2022-11-28T10:39:12.000Z</published>
-    <updated>2022-12-04T07:33:58.914Z</updated>
+    <updated>2024-07-20T11:44:31.034Z</updated>
     
     
     <summary type="html">Apollo2D项目回顾</summary>
@@ -242,7 +242,7 @@
     <link href="https://kawhicurry.github.io/Auto/b84eee2e/"/>
     <id>https://kawhicurry.github.io/Auto/b84eee2e/</id>
     <published>2022-04-19T10:29:18.000Z</published>
-    <updated>2022-10-22T12:14:45.179Z</updated>
+    <updated>2024-07-20T11:44:31.034Z</updated>
     
     
       
@@ -406,31 +406,6 @@
   
   <entry>
     <title>关于学习C++</title>
-    <link href="https://kawhicurry.github.io/Language/eb74c786/"/>
-    <id>https://kawhicurry.github.io/Language/eb74c786/</id>
-    <published>2022-04-06T04:46:22.000Z</published>
-    <updated>2024-07-20T11:50:58.594Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;p&gt;记录下最近遇到的麻烦。&lt;/p&gt;
-&lt;p&gt;最近开始啃effective和apue。看effective的感觉就是，哇，好有道理，然后忘记。看apue的感觉就像是，嗷，有这么个api，然后忘记。&lt;/p&gt;
-&lt;p&gt;果然不写代码还是要出问题，还是得找点东西来写写。试一试好了。用设置ta</summary>
-        
-      
-    
-    
-    
-    <category term="Language" scheme="https://kawhicurry.github.io/categories/Language/"/>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>关于学习C++</title>
     <link href="https://kawhicurry.github.io/Language/Cpp/eb74c786/"/>
     <id>https://kawhicurry.github.io/Language/Cpp/eb74c786/</id>
     <published>2022-04-06T04:46:22.000Z</published>
@@ -527,6 +502,35 @@
         
         
     <summary type="html">&lt;h1 id=&quot;32-确定你的public继承塑膜出is-a关系&quot;&gt;&lt;a href=&quot;#32-确定你的public继承塑膜出is-a关系&quot; class=&quot;headerlink&quot; title=&quot;32 确定你的public继承塑膜出is-a关系&quot;&gt;&lt;/a&gt;32</summary>
+        
+      
+    
+    
+    
+    <category term="Language" scheme="https://kawhicurry.github.io/categories/Language/"/>
+    
+    <category term="Cpp" scheme="https://kawhicurry.github.io/categories/Language/Cpp/"/>
+    
+    
+    <category term="cpp" scheme="https://kawhicurry.github.io/tags/cpp/"/>
+    
+    <category term="专栏：effective c++" scheme="https://kawhicurry.github.io/tags/%E4%B8%93%E6%A0%8F%EF%BC%9Aeffective-c/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>effective（5）</title>
+    <link href="https://kawhicurry.github.io/Language/Cpp/2ffa3829/"/>
+    <id>https://kawhicurry.github.io/Language/Cpp/2ffa3829/</id>
+    <published>2022-04-01T06:54:56.000Z</published>
+    <updated>2024-07-20T11:57:33.554Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;26-尽可能延后变量定义式的出现时间&quot;&gt;&lt;a href=&quot;#26-尽可能延后变量定义式的出现时间&quot; class=&quot;headerlink&quot; title=&quot;26 尽可能延后变量定义式的出现时间&quot;&gt;&lt;/a&gt;26</summary>
         
       
     
