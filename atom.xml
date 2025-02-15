@@ -6,7 +6,7 @@
   <link href="https://kawhicurry.github.io/atom.xml" rel="self"/>
   
   <link href="https://kawhicurry.github.io/"/>
-  <updated>2024-08-02T15:09:36.823Z</updated>
+  <updated>2025-02-15T06:35:19.936Z</updated>
   <id>https://kawhicurry.github.io/</id>
   
   <author>
@@ -20,8 +20,8 @@
     <title>第一次LLM学习之旅</title>
     <link href="https://kawhicurry.github.io/AI/47184172/"/>
     <id>https://kawhicurry.github.io/AI/47184172/</id>
-    <published>2024-07-20T12:14:31.254Z</published>
-    <updated>2024-08-02T15:09:36.823Z</updated>
+    <published>2025-02-15T06:35:19.935Z</published>
+    <updated>2025-02-15T06:35:19.936Z</updated>
     
     
       
@@ -40,11 +40,36 @@
   </entry>
   
   <entry>
+    <title>lock教程</title>
+    <link href="https://kawhicurry.github.io/Tools/undefined/"/>
+    <id>https://kawhicurry.github.io/Tools/undefined/</id>
+    <published>2025-02-15T06:08:14.000Z</published>
+    <updated>2025-02-15T06:32:24.252Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;Mac输入法有一点非常讨喜，就是把平时不会用到的CapsLock按键，改为了中英文输入法切换。&lt;/p&gt;
+&lt;p&gt;于是研究了下win下是否也能支持类似的功能，发现还真行。刚好blog很久没更新了，顺便来更新下&lt;/p&gt;
+&lt;h2 id=&quot;前置知识&quot;&gt;&lt;a href=&quot;#前置知识&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="Tools" scheme="https://kawhicurry.github.io/categories/Tools/"/>
+    
+    
+  </entry>
+  
+  <entry>
     <title>daily-2024-07-07</title>
     <link href="https://kawhicurry.github.io/Daily/41551188/"/>
     <id>https://kawhicurry.github.io/Daily/41551188/</id>
-    <published>2024-07-06T16:34:01.000Z</published>
-    <updated>2024-07-20T11:44:31.034Z</updated>
+    <published>2024-07-07T00:34:01.000Z</published>
+    <updated>2025-02-15T06:35:19.937Z</updated>
     
     
       
@@ -66,8 +91,8 @@
     <title>从tc开始的一次简单的内核网络栈探索</title>
     <link href="https://kawhicurry.github.io/Operation/Linux/47a3710b/"/>
     <id>https://kawhicurry.github.io/Operation/Linux/47a3710b/</id>
-    <published>2023-10-29T04:30:06.000Z</published>
-    <updated>2024-07-20T11:57:33.554Z</updated>
+    <published>2023-10-29T12:30:06.000Z</published>
+    <updated>2025-02-15T06:35:19.938Z</updated>
     
     
       
@@ -95,8 +120,8 @@
     <title>给飞扬哥的博客上传指南</title>
     <link href="https://kawhicurry.github.io/Tools/35816fcf/"/>
     <id>https://kawhicurry.github.io/Tools/35816fcf/</id>
-    <published>2023-01-26T13:27:32.000Z</published>
-    <updated>2024-07-20T11:44:31.034Z</updated>
+    <published>2023-01-26T21:27:32.000Z</published>
+    <updated>2025-02-15T06:35:19.940Z</updated>
     
     
       
@@ -120,8 +145,8 @@
     <title>Apollo2D项目回顾</title>
     <link href="https://kawhicurry.github.io/Auto/43a7b386/"/>
     <id>https://kawhicurry.github.io/Auto/43a7b386/</id>
-    <published>2022-11-28T10:39:12.000Z</published>
-    <updated>2024-07-20T11:44:31.034Z</updated>
+    <published>2022-11-28T18:39:12.000Z</published>
+    <updated>2025-02-15T06:35:19.936Z</updated>
     
     
     <summary type="html">Apollo2D项目回顾</summary>
@@ -139,8 +164,8 @@
     <title>ESP,GRUB与BTRFS</title>
     <link href="https://kawhicurry.github.io/Operation/Linux/8f58554d/"/>
     <id>https://kawhicurry.github.io/Operation/Linux/8f58554d/</id>
-    <published>2022-10-24T13:07:07.000Z</published>
-    <updated>2024-07-20T11:57:33.554Z</updated>
+    <published>2022-10-24T21:07:07.000Z</published>
+    <updated>2025-02-15T06:35:19.938Z</updated>
     
     
       
@@ -167,8 +192,8 @@
     <title>记录一次有趣的答辩经历</title>
     <link href="https://kawhicurry.github.io/Auto/c687b02a/"/>
     <id>https://kawhicurry.github.io/Auto/c687b02a/</id>
-    <published>2022-10-22T12:17:08.000Z</published>
-    <updated>2024-07-20T11:45:53.594Z</updated>
+    <published>2022-10-22T20:17:08.000Z</published>
+    <updated>2025-02-15T06:35:19.937Z</updated>
     
     
       
@@ -191,8 +216,8 @@
     <title>建立linux下完善的个人备份系统</title>
     <link href="https://kawhicurry.github.io/Operation/Linux/63fa7eb5/"/>
     <id>https://kawhicurry.github.io/Operation/Linux/63fa7eb5/</id>
-    <published>2022-04-25T11:11:04.000Z</published>
-    <updated>2024-07-20T11:57:33.554Z</updated>
+    <published>2022-04-25T19:11:04.000Z</published>
+    <updated>2025-02-15T06:35:19.938Z</updated>
     
     
       
@@ -216,8 +241,8 @@
     <title>用树莓派搭建一个简单的跳板机</title>
     <link href="https://kawhicurry.github.io/Operation/Network/ace6f1b7/"/>
     <id>https://kawhicurry.github.io/Operation/Network/ace6f1b7/</id>
-    <published>2022-04-23T09:57:33.000Z</published>
-    <updated>2024-07-20T11:57:33.564Z</updated>
+    <published>2022-04-23T17:57:33.000Z</published>
+    <updated>2025-02-15T06:35:19.939Z</updated>
     
     
       
@@ -241,8 +266,8 @@
     <title>折磨的ROS-in-arch（manjaro）</title>
     <link href="https://kawhicurry.github.io/Auto/b84eee2e/"/>
     <id>https://kawhicurry.github.io/Auto/b84eee2e/</id>
-    <published>2022-04-19T10:29:18.000Z</published>
-    <updated>2024-07-20T11:44:31.034Z</updated>
+    <published>2022-04-19T18:29:18.000Z</published>
+    <updated>2025-02-15T06:35:19.937Z</updated>
     
     
       
@@ -264,8 +289,8 @@
     <title>APUE（2）</title>
     <link href="https://kawhicurry.github.io/Language/Cpp/a113ba1f/"/>
     <id>https://kawhicurry.github.io/Language/Cpp/a113ba1f/</id>
-    <published>2022-04-11T09:30:11.000Z</published>
-    <updated>2024-07-20T11:57:33.554Z</updated>
+    <published>2022-04-11T17:30:11.000Z</published>
+    <updated>2025-02-15T06:35:19.937Z</updated>
     
     
       
@@ -293,8 +318,8 @@
     <title>维护自己的AUR源</title>
     <link href="https://kawhicurry.github.io/Operation/Linux/8d703467/"/>
     <id>https://kawhicurry.github.io/Operation/Linux/8d703467/</id>
-    <published>2022-04-09T12:53:59.000Z</published>
-    <updated>2024-07-20T11:57:33.554Z</updated>
+    <published>2022-04-09T20:53:59.000Z</published>
+    <updated>2025-02-15T06:35:19.938Z</updated>
     
     
       
@@ -322,8 +347,8 @@
     <title>WebSoccerMonitor</title>
     <link href="https://kawhicurry.github.io/Auto/93340145/"/>
     <id>https://kawhicurry.github.io/Auto/93340145/</id>
-    <published>2022-04-09T11:50:18.000Z</published>
-    <updated>2024-07-20T11:47:30.974Z</updated>
+    <published>2022-04-09T19:50:18.000Z</published>
+    <updated>2025-02-15T06:35:19.936Z</updated>
     
     
       
@@ -350,8 +375,8 @@
     <title>APUE（1）</title>
     <link href="https://kawhicurry.github.io/Language/Cpp/b3a615f1/"/>
     <id>https://kawhicurry.github.io/Language/Cpp/b3a615f1/</id>
-    <published>2022-04-06T04:53:34.000Z</published>
-    <updated>2024-07-20T11:57:33.554Z</updated>
+    <published>2022-04-06T12:53:34.000Z</published>
+    <updated>2025-02-15T06:35:19.937Z</updated>
     
     
       
@@ -379,8 +404,8 @@
     <title>APUE（0）</title>
     <link href="https://kawhicurry.github.io/Language/Cpp/b1a7294/"/>
     <id>https://kawhicurry.github.io/Language/Cpp/b1a7294/</id>
-    <published>2022-04-06T04:52:35.000Z</published>
-    <updated>2024-07-20T11:57:33.564Z</updated>
+    <published>2022-04-06T12:52:35.000Z</published>
+    <updated>2025-02-15T06:35:19.937Z</updated>
     
     
       
@@ -408,8 +433,8 @@
     <title>关于学习C++</title>
     <link href="https://kawhicurry.github.io/Language/Cpp/eb74c786/"/>
     <id>https://kawhicurry.github.io/Language/Cpp/eb74c786/</id>
-    <published>2022-04-06T04:46:22.000Z</published>
-    <updated>2024-07-20T11:57:33.554Z</updated>
+    <published>2022-04-06T12:46:22.000Z</published>
+    <updated>2025-02-15T06:35:19.938Z</updated>
     
     
       
@@ -435,8 +460,8 @@
     <title>effective（8）</title>
     <link href="https://kawhicurry.github.io/Language/Cpp/dd90e0f4/"/>
     <id>https://kawhicurry.github.io/Language/Cpp/dd90e0f4/</id>
-    <published>2022-04-06T04:27:03.000Z</published>
-    <updated>2024-07-20T11:57:33.554Z</updated>
+    <published>2022-04-06T12:27:03.000Z</published>
+    <updated>2025-02-15T06:35:19.938Z</updated>
     
     
       
@@ -464,8 +489,8 @@
     <title>effective（7）</title>
     <link href="https://kawhicurry.github.io/Language/Cpp/85f3f0a2/"/>
     <id>https://kawhicurry.github.io/Language/Cpp/85f3f0a2/</id>
-    <published>2022-04-06T04:25:53.000Z</published>
-    <updated>2024-07-20T11:57:33.554Z</updated>
+    <published>2022-04-06T12:25:53.000Z</published>
+    <updated>2025-02-15T06:35:19.938Z</updated>
     
     
       
@@ -493,8 +518,8 @@
     <title>effective（6）</title>
     <link href="https://kawhicurry.github.io/Language/Cpp/3d4f97c7/"/>
     <id>https://kawhicurry.github.io/Language/Cpp/3d4f97c7/</id>
-    <published>2022-04-02T07:48:46.000Z</published>
-    <updated>2024-07-20T11:57:33.554Z</updated>
+    <published>2022-04-02T15:48:46.000Z</published>
+    <updated>2025-02-15T06:35:19.938Z</updated>
     
     
       
@@ -502,35 +527,6 @@
         
         
     <summary type="html">&lt;h1 id=&quot;32-确定你的public继承塑膜出is-a关系&quot;&gt;&lt;a href=&quot;#32-确定你的public继承塑膜出is-a关系&quot; class=&quot;headerlink&quot; title=&quot;32 确定你的public继承塑膜出is-a关系&quot;&gt;&lt;/a&gt;32</summary>
-        
-      
-    
-    
-    
-    <category term="Language" scheme="https://kawhicurry.github.io/categories/Language/"/>
-    
-    <category term="Cpp" scheme="https://kawhicurry.github.io/categories/Language/Cpp/"/>
-    
-    
-    <category term="cpp" scheme="https://kawhicurry.github.io/tags/cpp/"/>
-    
-    <category term="专栏：effective c++" scheme="https://kawhicurry.github.io/tags/%E4%B8%93%E6%A0%8F%EF%BC%9Aeffective-c/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>effective（5）</title>
-    <link href="https://kawhicurry.github.io/Language/Cpp/2ffa3829/"/>
-    <id>https://kawhicurry.github.io/Language/Cpp/2ffa3829/</id>
-    <published>2022-04-01T06:54:56.000Z</published>
-    <updated>2024-07-20T11:57:33.554Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h1 id=&quot;26-尽可能延后变量定义式的出现时间&quot;&gt;&lt;a href=&quot;#26-尽可能延后变量定义式的出现时间&quot; class=&quot;headerlink&quot; title=&quot;26 尽可能延后变量定义式的出现时间&quot;&gt;&lt;/a&gt;26</summary>
         
       
     
