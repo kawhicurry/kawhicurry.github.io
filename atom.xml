@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>Kawhicurry&#39;s Blog</title>
-  <icon>https://kawhicurry.github.io/icon.png</icon>
+  <icon>https://kawhicurry.online/icon.png</icon>
   <subtitle>Welcome to Kawhicurry&#39;s Blog</subtitle>
-  <link href="https://kawhicurry.github.io/atom.xml" rel="self"/>
+  <link href="https://kawhicurry.online/atom.xml" rel="self"/>
   
-  <link href="https://kawhicurry.github.io/"/>
-  <updated>2025-02-22T13:41:21.695Z</updated>
-  <id>https://kawhicurry.github.io/</id>
+  <link href="https://kawhicurry.online/"/>
+  <updated>2025-02-22T15:04:45.259Z</updated>
+  <id>https://kawhicurry.online/</id>
   
   <author>
     <name>kawhicurry</name>
@@ -18,10 +18,10 @@
   
   <entry>
     <title>第一次LLM学习之旅</title>
-    <link href="https://kawhicurry.github.io/AI/47184172/"/>
-    <id>https://kawhicurry.github.io/AI/47184172/</id>
-    <published>2025-02-22T13:41:21.695Z</published>
-    <updated>2025-02-22T13:41:21.695Z</updated>
+    <link href="https://kawhicurry.online/AI/47184172/"/>
+    <id>https://kawhicurry.online/AI/47184172/</id>
+    <published>2025-02-22T15:03:45.980Z</published>
+    <updated>2025-02-22T15:04:45.259Z</updated>
     
     
       
@@ -34,17 +34,17 @@
     
     
     
-    <category term="AI" scheme="https://kawhicurry.github.io/categories/AI/"/>
+    <category term="AI" scheme="https://kawhicurry.online/categories/AI/"/>
     
     
   </entry>
   
   <entry>
     <title>自动化的讽刺</title>
-    <link href="https://kawhicurry.github.io/Auto/6b018282/"/>
-    <id>https://kawhicurry.github.io/Auto/6b018282/</id>
+    <link href="https://kawhicurry.online/Auto/6b018282/"/>
+    <id>https://kawhicurry.online/Auto/6b018282/</id>
     <published>2025-02-22T08:41:40.000Z</published>
-    <updated>2025-02-22T13:41:21.696Z</updated>
+    <updated>2025-02-22T15:04:45.261Z</updated>
     
     
       
@@ -58,17 +58,17 @@
     
     
     
-    <category term="Auto" scheme="https://kawhicurry.github.io/categories/Auto/"/>
+    <category term="Auto" scheme="https://kawhicurry.online/categories/Auto/"/>
     
     
   </entry>
   
   <entry>
     <title>lock教程</title>
-    <link href="https://kawhicurry.github.io/Tools/undefined/"/>
-    <id>https://kawhicurry.github.io/Tools/undefined/</id>
+    <link href="https://kawhicurry.online/Tools/undefined/"/>
+    <id>https://kawhicurry.online/Tools/undefined/</id>
     <published>2025-02-15T06:08:14.000Z</published>
-    <updated>2025-02-15T06:32:24.252Z</updated>
+    <updated>2025-02-22T15:04:45.263Z</updated>
     
     
       
@@ -83,17 +83,17 @@
     
     
     
-    <category term="Tools" scheme="https://kawhicurry.github.io/categories/Tools/"/>
+    <category term="Tools" scheme="https://kawhicurry.online/categories/Tools/"/>
     
     
   </entry>
   
   <entry>
     <title>daily-2024-07-07</title>
-    <link href="https://kawhicurry.github.io/Daily/41551188/"/>
-    <id>https://kawhicurry.github.io/Daily/41551188/</id>
+    <link href="https://kawhicurry.online/Daily/41551188/"/>
+    <id>https://kawhicurry.online/Daily/41551188/</id>
     <published>2024-07-06T16:34:01.000Z</published>
-    <updated>2025-02-22T13:41:21.696Z</updated>
+    <updated>2025-02-22T15:04:45.262Z</updated>
     
     
       
@@ -106,17 +106,17 @@
     
     
     
-    <category term="Daily" scheme="https://kawhicurry.github.io/categories/Daily/"/>
+    <category term="Daily" scheme="https://kawhicurry.online/categories/Daily/"/>
     
     
   </entry>
   
   <entry>
     <title>从tc开始的一次简单的内核网络栈探索</title>
-    <link href="https://kawhicurry.github.io/Operation/Linux/47a3710b/"/>
-    <id>https://kawhicurry.github.io/Operation/Linux/47a3710b/</id>
+    <link href="https://kawhicurry.online/Operation/Linux/47a3710b/"/>
+    <id>https://kawhicurry.online/Operation/Linux/47a3710b/</id>
     <published>2023-10-29T04:30:06.000Z</published>
-    <updated>2025-02-22T13:41:21.697Z</updated>
+    <updated>2025-02-22T15:04:45.266Z</updated>
     
     
       
@@ -129,23 +129,23 @@
     
     
     
-    <category term="Operation" scheme="https://kawhicurry.github.io/categories/Operation/"/>
+    <category term="Operation" scheme="https://kawhicurry.online/categories/Operation/"/>
     
-    <category term="Linux" scheme="https://kawhicurry.github.io/categories/Operation/Linux/"/>
+    <category term="Linux" scheme="https://kawhicurry.online/categories/Operation/Linux/"/>
     
     
-    <category term="linux" scheme="https://kawhicurry.github.io/tags/linux/"/>
+    <category term="linux" scheme="https://kawhicurry.online/tags/linux/"/>
     
-    <category term="tc" scheme="https://kawhicurry.github.io/tags/tc/"/>
+    <category term="tc" scheme="https://kawhicurry.online/tags/tc/"/>
     
   </entry>
   
   <entry>
     <title>给飞扬哥的博客上传指南</title>
-    <link href="https://kawhicurry.github.io/Tools/35816fcf/"/>
-    <id>https://kawhicurry.github.io/Tools/35816fcf/</id>
+    <link href="https://kawhicurry.online/Tools/35816fcf/"/>
+    <id>https://kawhicurry.online/Tools/35816fcf/</id>
     <published>2023-01-26T13:27:32.000Z</published>
-    <updated>2025-02-22T13:41:21.699Z</updated>
+    <updated>2025-02-22T15:04:45.263Z</updated>
     
     
       
@@ -159,36 +159,36 @@
     
     
     
-    <category term="Tools" scheme="https://kawhicurry.github.io/categories/Tools/"/>
+    <category term="Tools" scheme="https://kawhicurry.online/categories/Tools/"/>
     
     
   </entry>
   
   <entry>
     <title>Apollo2D项目回顾</title>
-    <link href="https://kawhicurry.github.io/Auto/43a7b386/"/>
-    <id>https://kawhicurry.github.io/Auto/43a7b386/</id>
+    <link href="https://kawhicurry.online/Auto/43a7b386/"/>
+    <id>https://kawhicurry.online/Auto/43a7b386/</id>
     <published>2022-11-28T10:39:12.000Z</published>
-    <updated>2025-02-22T13:41:21.695Z</updated>
+    <updated>2025-02-22T15:04:45.259Z</updated>
     
     
     <summary type="html">Apollo2D项目回顾</summary>
     
     
     
-    <category term="Auto" scheme="https://kawhicurry.github.io/categories/Auto/"/>
+    <category term="Auto" scheme="https://kawhicurry.online/categories/Auto/"/>
     
     
-    <category term="apollo" scheme="https://kawhicurry.github.io/tags/apollo/"/>
+    <category term="apollo" scheme="https://kawhicurry.online/tags/apollo/"/>
     
   </entry>
   
   <entry>
     <title>ESP,GRUB与BTRFS</title>
-    <link href="https://kawhicurry.github.io/Operation/Linux/8f58554d/"/>
-    <id>https://kawhicurry.github.io/Operation/Linux/8f58554d/</id>
+    <link href="https://kawhicurry.online/Operation/Linux/8f58554d/"/>
+    <id>https://kawhicurry.online/Operation/Linux/8f58554d/</id>
     <published>2022-10-24T13:07:07.000Z</published>
-    <updated>2025-02-22T13:41:21.697Z</updated>
+    <updated>2025-02-22T15:04:45.266Z</updated>
     
     
       
@@ -204,19 +204,19 @@
     
     
     
-    <category term="Operation" scheme="https://kawhicurry.github.io/categories/Operation/"/>
+    <category term="Operation" scheme="https://kawhicurry.online/categories/Operation/"/>
     
-    <category term="Linux" scheme="https://kawhicurry.github.io/categories/Operation/Linux/"/>
+    <category term="Linux" scheme="https://kawhicurry.online/categories/Operation/Linux/"/>
     
     
   </entry>
   
   <entry>
     <title>记录一次有趣的答辩经历</title>
-    <link href="https://kawhicurry.github.io/Auto/c687b02a/"/>
-    <id>https://kawhicurry.github.io/Auto/c687b02a/</id>
+    <link href="https://kawhicurry.online/Auto/c687b02a/"/>
+    <id>https://kawhicurry.online/Auto/c687b02a/</id>
     <published>2022-10-22T12:17:08.000Z</published>
-    <updated>2025-02-22T13:41:21.696Z</updated>
+    <updated>2025-02-22T15:04:45.261Z</updated>
     
     
       
@@ -230,17 +230,17 @@
     
     
     
-    <category term="Auto" scheme="https://kawhicurry.github.io/categories/Auto/"/>
+    <category term="Auto" scheme="https://kawhicurry.online/categories/Auto/"/>
     
     
   </entry>
   
   <entry>
     <title>建立linux下完善的个人备份系统</title>
-    <link href="https://kawhicurry.github.io/Operation/Linux/63fa7eb5/"/>
-    <id>https://kawhicurry.github.io/Operation/Linux/63fa7eb5/</id>
+    <link href="https://kawhicurry.online/Operation/Linux/63fa7eb5/"/>
+    <id>https://kawhicurry.online/Operation/Linux/63fa7eb5/</id>
     <published>2022-04-25T11:11:04.000Z</published>
-    <updated>2025-02-22T13:41:21.698Z</updated>
+    <updated>2025-02-22T15:04:45.266Z</updated>
     
     
       
@@ -253,19 +253,19 @@
     
     
     
-    <category term="Operation" scheme="https://kawhicurry.github.io/categories/Operation/"/>
+    <category term="Operation" scheme="https://kawhicurry.online/categories/Operation/"/>
     
-    <category term="Linux" scheme="https://kawhicurry.github.io/categories/Operation/Linux/"/>
+    <category term="Linux" scheme="https://kawhicurry.online/categories/Operation/Linux/"/>
     
     
   </entry>
   
   <entry>
     <title>用树莓派搭建一个简单的跳板机</title>
-    <link href="https://kawhicurry.github.io/Operation/Network/ace6f1b7/"/>
-    <id>https://kawhicurry.github.io/Operation/Network/ace6f1b7/</id>
+    <link href="https://kawhicurry.online/Operation/Network/ace6f1b7/"/>
+    <id>https://kawhicurry.online/Operation/Network/ace6f1b7/</id>
     <published>2022-04-23T09:57:33.000Z</published>
-    <updated>2025-02-22T13:41:21.699Z</updated>
+    <updated>2025-02-22T15:04:45.268Z</updated>
     
     
       
@@ -278,19 +278,19 @@
     
     
     
-    <category term="Operation" scheme="https://kawhicurry.github.io/categories/Operation/"/>
+    <category term="Operation" scheme="https://kawhicurry.online/categories/Operation/"/>
     
-    <category term="Network" scheme="https://kawhicurry.github.io/categories/Operation/Network/"/>
+    <category term="Network" scheme="https://kawhicurry.online/categories/Operation/Network/"/>
     
     
   </entry>
   
   <entry>
     <title>折磨的ROS-in-arch（manjaro）</title>
-    <link href="https://kawhicurry.github.io/Auto/b84eee2e/"/>
-    <id>https://kawhicurry.github.io/Auto/b84eee2e/</id>
+    <link href="https://kawhicurry.online/Auto/b84eee2e/"/>
+    <id>https://kawhicurry.online/Auto/b84eee2e/</id>
     <published>2022-04-19T10:29:18.000Z</published>
-    <updated>2025-02-22T13:41:21.696Z</updated>
+    <updated>2025-02-22T15:04:45.261Z</updated>
     
     
       
@@ -303,17 +303,17 @@
     
     
     
-    <category term="Auto" scheme="https://kawhicurry.github.io/categories/Auto/"/>
+    <category term="Auto" scheme="https://kawhicurry.online/categories/Auto/"/>
     
     
   </entry>
   
   <entry>
     <title>APUE（2）</title>
-    <link href="https://kawhicurry.github.io/Language/Cpp/a113ba1f/"/>
-    <id>https://kawhicurry.github.io/Language/Cpp/a113ba1f/</id>
+    <link href="https://kawhicurry.online/Language/Cpp/a113ba1f/"/>
+    <id>https://kawhicurry.online/Language/Cpp/a113ba1f/</id>
     <published>2022-04-11T09:30:11.000Z</published>
-    <updated>2025-02-22T13:41:21.697Z</updated>
+    <updated>2025-02-22T15:04:45.263Z</updated>
     
     
       
@@ -326,23 +326,23 @@
     
     
     
-    <category term="Language" scheme="https://kawhicurry.github.io/categories/Language/"/>
+    <category term="Language" scheme="https://kawhicurry.online/categories/Language/"/>
     
-    <category term="Cpp" scheme="https://kawhicurry.github.io/categories/Language/Cpp/"/>
+    <category term="Cpp" scheme="https://kawhicurry.online/categories/Language/Cpp/"/>
     
     
-    <category term="linux" scheme="https://kawhicurry.github.io/tags/linux/"/>
+    <category term="linux" scheme="https://kawhicurry.online/tags/linux/"/>
     
-    <category term="专栏：APUE" scheme="https://kawhicurry.github.io/tags/%E4%B8%93%E6%A0%8F%EF%BC%9AAPUE/"/>
+    <category term="专栏：APUE" scheme="https://kawhicurry.online/tags/%E4%B8%93%E6%A0%8F%EF%BC%9AAPUE/"/>
     
   </entry>
   
   <entry>
     <title>维护自己的AUR源</title>
-    <link href="https://kawhicurry.github.io/Operation/Linux/8d703467/"/>
-    <id>https://kawhicurry.github.io/Operation/Linux/8d703467/</id>
+    <link href="https://kawhicurry.online/Operation/Linux/8d703467/"/>
+    <id>https://kawhicurry.online/Operation/Linux/8d703467/</id>
     <published>2022-04-09T12:53:59.000Z</published>
-    <updated>2025-02-22T13:41:21.698Z</updated>
+    <updated>2025-02-22T15:04:45.266Z</updated>
     
     
       
@@ -355,23 +355,23 @@
     
     
     
-    <category term="Operation" scheme="https://kawhicurry.github.io/categories/Operation/"/>
+    <category term="Operation" scheme="https://kawhicurry.online/categories/Operation/"/>
     
-    <category term="Linux" scheme="https://kawhicurry.github.io/categories/Operation/Linux/"/>
+    <category term="Linux" scheme="https://kawhicurry.online/categories/Operation/Linux/"/>
     
     
-    <category term="linux" scheme="https://kawhicurry.github.io/tags/linux/"/>
+    <category term="linux" scheme="https://kawhicurry.online/tags/linux/"/>
     
-    <category term="aur" scheme="https://kawhicurry.github.io/tags/aur/"/>
+    <category term="aur" scheme="https://kawhicurry.online/tags/aur/"/>
     
   </entry>
   
   <entry>
     <title>WebSoccerMonitor</title>
-    <link href="https://kawhicurry.github.io/Auto/93340145/"/>
-    <id>https://kawhicurry.github.io/Auto/93340145/</id>
+    <link href="https://kawhicurry.online/Auto/93340145/"/>
+    <id>https://kawhicurry.online/Auto/93340145/</id>
     <published>2022-04-09T11:50:18.000Z</published>
-    <updated>2025-02-22T13:41:21.696Z</updated>
+    <updated>2025-02-22T15:04:45.261Z</updated>
     
     
       
@@ -385,21 +385,21 @@
     
     
     
-    <category term="Auto" scheme="https://kawhicurry.github.io/categories/Auto/"/>
+    <category term="Auto" scheme="https://kawhicurry.online/categories/Auto/"/>
     
     
-    <category term="robocup" scheme="https://kawhicurry.github.io/tags/robocup/"/>
+    <category term="robocup" scheme="https://kawhicurry.online/tags/robocup/"/>
     
-    <category term="front" scheme="https://kawhicurry.github.io/tags/front/"/>
+    <category term="front" scheme="https://kawhicurry.online/tags/front/"/>
     
   </entry>
   
   <entry>
     <title>APUE（1）</title>
-    <link href="https://kawhicurry.github.io/Language/Cpp/b3a615f1/"/>
-    <id>https://kawhicurry.github.io/Language/Cpp/b3a615f1/</id>
+    <link href="https://kawhicurry.online/Language/Cpp/b3a615f1/"/>
+    <id>https://kawhicurry.online/Language/Cpp/b3a615f1/</id>
     <published>2022-04-06T04:53:34.000Z</published>
-    <updated>2025-02-22T13:41:21.697Z</updated>
+    <updated>2025-02-22T15:04:45.263Z</updated>
     
     
       
@@ -412,23 +412,23 @@
     
     
     
-    <category term="Language" scheme="https://kawhicurry.github.io/categories/Language/"/>
+    <category term="Language" scheme="https://kawhicurry.online/categories/Language/"/>
     
-    <category term="Cpp" scheme="https://kawhicurry.github.io/categories/Language/Cpp/"/>
+    <category term="Cpp" scheme="https://kawhicurry.online/categories/Language/Cpp/"/>
     
     
-    <category term="linux" scheme="https://kawhicurry.github.io/tags/linux/"/>
+    <category term="linux" scheme="https://kawhicurry.online/tags/linux/"/>
     
-    <category term="专栏：APUE" scheme="https://kawhicurry.github.io/tags/%E4%B8%93%E6%A0%8F%EF%BC%9AAPUE/"/>
+    <category term="专栏：APUE" scheme="https://kawhicurry.online/tags/%E4%B8%93%E6%A0%8F%EF%BC%9AAPUE/"/>
     
   </entry>
   
   <entry>
     <title>APUE（0）</title>
-    <link href="https://kawhicurry.github.io/Language/Cpp/b1a7294/"/>
-    <id>https://kawhicurry.github.io/Language/Cpp/b1a7294/</id>
+    <link href="https://kawhicurry.online/Language/Cpp/b1a7294/"/>
+    <id>https://kawhicurry.online/Language/Cpp/b1a7294/</id>
     <published>2022-04-06T04:52:35.000Z</published>
-    <updated>2025-02-22T13:41:21.696Z</updated>
+    <updated>2025-02-22T15:04:45.263Z</updated>
     
     
       
@@ -441,23 +441,23 @@
     
     
     
-    <category term="Language" scheme="https://kawhicurry.github.io/categories/Language/"/>
+    <category term="Language" scheme="https://kawhicurry.online/categories/Language/"/>
     
-    <category term="Cpp" scheme="https://kawhicurry.github.io/categories/Language/Cpp/"/>
+    <category term="Cpp" scheme="https://kawhicurry.online/categories/Language/Cpp/"/>
     
     
-    <category term="linux" scheme="https://kawhicurry.github.io/tags/linux/"/>
+    <category term="linux" scheme="https://kawhicurry.online/tags/linux/"/>
     
-    <category term="专栏：APUE" scheme="https://kawhicurry.github.io/tags/%E4%B8%93%E6%A0%8F%EF%BC%9AAPUE/"/>
+    <category term="专栏：APUE" scheme="https://kawhicurry.online/tags/%E4%B8%93%E6%A0%8F%EF%BC%9AAPUE/"/>
     
   </entry>
   
   <entry>
     <title>关于学习C++</title>
-    <link href="https://kawhicurry.github.io/Language/Cpp/eb74c786/"/>
-    <id>https://kawhicurry.github.io/Language/Cpp/eb74c786/</id>
+    <link href="https://kawhicurry.online/Language/Cpp/eb74c786/"/>
+    <id>https://kawhicurry.online/Language/Cpp/eb74c786/</id>
     <published>2022-04-06T04:46:22.000Z</published>
-    <updated>2025-02-22T13:41:21.697Z</updated>
+    <updated>2025-02-22T15:04:45.265Z</updated>
     
     
       
@@ -472,19 +472,19 @@
     
     
     
-    <category term="Language" scheme="https://kawhicurry.github.io/categories/Language/"/>
+    <category term="Language" scheme="https://kawhicurry.online/categories/Language/"/>
     
-    <category term="Cpp" scheme="https://kawhicurry.github.io/categories/Language/Cpp/"/>
+    <category term="Cpp" scheme="https://kawhicurry.online/categories/Language/Cpp/"/>
     
     
   </entry>
   
   <entry>
     <title>effective（8）</title>
-    <link href="https://kawhicurry.github.io/Language/Cpp/dd90e0f4/"/>
-    <id>https://kawhicurry.github.io/Language/Cpp/dd90e0f4/</id>
+    <link href="https://kawhicurry.online/Language/Cpp/dd90e0f4/"/>
+    <id>https://kawhicurry.online/Language/Cpp/dd90e0f4/</id>
     <published>2022-04-06T04:27:03.000Z</published>
-    <updated>2025-02-22T13:41:21.697Z</updated>
+    <updated>2025-02-22T15:04:45.265Z</updated>
     
     
       
@@ -497,23 +497,23 @@
     
     
     
-    <category term="Language" scheme="https://kawhicurry.github.io/categories/Language/"/>
+    <category term="Language" scheme="https://kawhicurry.online/categories/Language/"/>
     
-    <category term="Cpp" scheme="https://kawhicurry.github.io/categories/Language/Cpp/"/>
+    <category term="Cpp" scheme="https://kawhicurry.online/categories/Language/Cpp/"/>
     
     
-    <category term="cpp" scheme="https://kawhicurry.github.io/tags/cpp/"/>
+    <category term="cpp" scheme="https://kawhicurry.online/tags/cpp/"/>
     
-    <category term="专栏：effective c++" scheme="https://kawhicurry.github.io/tags/%E4%B8%93%E6%A0%8F%EF%BC%9Aeffective-c/"/>
+    <category term="专栏：effective c++" scheme="https://kawhicurry.online/tags/%E4%B8%93%E6%A0%8F%EF%BC%9Aeffective-c/"/>
     
   </entry>
   
   <entry>
     <title>effective（7）</title>
-    <link href="https://kawhicurry.github.io/Language/Cpp/85f3f0a2/"/>
-    <id>https://kawhicurry.github.io/Language/Cpp/85f3f0a2/</id>
+    <link href="https://kawhicurry.online/Language/Cpp/85f3f0a2/"/>
+    <id>https://kawhicurry.online/Language/Cpp/85f3f0a2/</id>
     <published>2022-04-06T04:25:53.000Z</published>
-    <updated>2025-02-22T13:41:21.697Z</updated>
+    <updated>2025-02-22T15:04:45.265Z</updated>
     
     
       
@@ -526,14 +526,14 @@
     
     
     
-    <category term="Language" scheme="https://kawhicurry.github.io/categories/Language/"/>
+    <category term="Language" scheme="https://kawhicurry.online/categories/Language/"/>
     
-    <category term="Cpp" scheme="https://kawhicurry.github.io/categories/Language/Cpp/"/>
+    <category term="Cpp" scheme="https://kawhicurry.online/categories/Language/Cpp/"/>
     
     
-    <category term="cpp" scheme="https://kawhicurry.github.io/tags/cpp/"/>
+    <category term="cpp" scheme="https://kawhicurry.online/tags/cpp/"/>
     
-    <category term="专栏：effective c++" scheme="https://kawhicurry.github.io/tags/%E4%B8%93%E6%A0%8F%EF%BC%9Aeffective-c/"/>
+    <category term="专栏：effective c++" scheme="https://kawhicurry.online/tags/%E4%B8%93%E6%A0%8F%EF%BC%9Aeffective-c/"/>
     
   </entry>
   
