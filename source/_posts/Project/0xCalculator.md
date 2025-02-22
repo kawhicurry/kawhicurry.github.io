@@ -1,5 +1,6 @@
 ---
 title: 0xCalculator 16进制计算器
+cover : https://cdn.jsdelivr.net/gh/kawhicurry/picgo/gallery/nord/DSC_9765.JPG
 categories:
   - Project
 tags:

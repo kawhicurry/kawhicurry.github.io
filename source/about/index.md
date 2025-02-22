@@ -1,5 +1,6 @@
 ---
 title: about
+cover : https://cdn.jsdelivr.net/gh/kawhicurry/picgo/gallery/nord/DSC_9980.JPG
 date: 2022-02-07 16:21:06
 updated: 2024-01-02 13:12:00
 type: "about"

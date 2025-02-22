@@ -1,5 +1,6 @@
 ---
 title: 关于Apollo2D未来的一些思考
+cover : https://cdn.jsdelivr.net/gh/kawhicurry/picgo/gallery/nord/DSC_0004.JPG
 tags:
   - apollo
   - robucup

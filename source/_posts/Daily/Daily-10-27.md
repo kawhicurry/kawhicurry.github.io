@@ -1,5 +1,6 @@
 ---
 title: Daily-10-27
+cover : https://cdn.jsdelivr.net/gh/kawhicurry/picgo/gallery/nord/DSC_9980.JPG
 categories: Daily
 tags:
   - daily

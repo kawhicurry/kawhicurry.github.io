@@ -1,5 +1,6 @@
 ---
 title: 第一次LLM学习之旅
+cover : https://cdn.jsdelivr.net/gh/kawhicurry/picgo/gallery/nord/DSC_0088.JPG
 categories:
   - AI
 abbrlink: '47184172'

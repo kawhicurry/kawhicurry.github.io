@@ -1,5 +1,6 @@
 ---
 title: 记录一次hexo生成的错误
+cover : https://cdn.jsdelivr.net/gh/kawhicurry/picgo/gallery/nord/DSC_9980.JPG
 tags:
   - hexo
 description: 记录一次hexo生成的错误

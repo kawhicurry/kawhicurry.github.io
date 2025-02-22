@@ -1,5 +1,6 @@
 ---
 title: 折磨的ROS-in-arch（manjaro）
+cover : https://cdn.jsdelivr.net/gh/kawhicurry/picgo/gallery/nord/img_1327.jpg
 categories:
   - Auto
 abbrlink: b84eee2e

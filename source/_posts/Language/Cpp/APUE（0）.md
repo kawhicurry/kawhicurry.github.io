@@ -1,5 +1,6 @@
 ---
 title: APUE（0）
+cover : https://cdn.jsdelivr.net/gh/kawhicurry/picgo/gallery/nord/DSC_0164.JPG
 tags:
   - 专栏：APUE
   - linux

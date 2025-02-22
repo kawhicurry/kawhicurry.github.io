@@ -1,5 +1,6 @@
 ---
 layout: windoes中英文切换改为capslock教程
+cover : https://cdn.jsdelivr.net/gh/kawhicurry/picgo/gallery/nord/DSC_0147.JPG
 title: lock教程
 date: 2025-02-15 14:08:14
 tags:

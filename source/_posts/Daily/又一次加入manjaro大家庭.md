@@ -1,5 +1,6 @@
 ---
 title: 又一次加入manjaro大家庭
+cover : https://cdn.jsdelivr.net/gh/kawhicurry/picgo/gallery/nord/img_1206.jpg
 categories:
   - Daily
 abbrlink: 512f04dd

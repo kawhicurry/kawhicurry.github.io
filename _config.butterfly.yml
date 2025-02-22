@@ -37,7 +37,7 @@ copy:
 social:
   fab fa-github: https://github.com/kawhicurry || Github
   fas fa-envelope: mailto:kawhicurry@foxmail.com || Email
-  fas fa-rss: https://kawhicurry.github.io/atom.xml || Rss
+  fas fa-rss: https://kawhicurry.online/atom.xml || Rss
 
 # search (搜索)
 # --------------------------------------
@@ -134,8 +134,6 @@ cover:
     - https://cdn.jsdelivr.net/gh/kawhicurry/picgo/gallery/nord/DSC_9765.JPG
     - https://cdn.jsdelivr.net/gh/kawhicurry/picgo/gallery/nord/DSC_9980.JPG
     - https://cdn.jsdelivr.net/gh/kawhicurry/picgo/gallery/nord/img_1206.jpg
-    - https://cdn.jsdelivr.net/gh/kawhicurry/picgo/gallery/nord/IMG_1214.JPG
-    - https://cdn.jsdelivr.net/gh/kawhicurry/picgo/gallery/nord/IMG_1217.JPG
     - https://cdn.jsdelivr.net/gh/kawhicurry/picgo/gallery/nord/img_1293.jpg
     - https://cdn.jsdelivr.net/gh/kawhicurry/picgo/gallery/nord/img_1327.jpg
 
@@ -506,7 +504,7 @@ tag_ui: # 留空或 index
 # Website Background (設置網站背景)
 # can set it to color or image (可設置圖片 或者 顔色)
 # The formal of image: url(http://xxxxxx.com/xxx.jpg)
-background: url(https://cdn.jsdelivr.net/gh/kawhicurry/picgo/nordic/nord_alone_tree.png)
+background: https://cdn.jsdelivr.net/gh/kawhicurry/picgo/nordic/nord_alone_tree.png
 
 # Footer Background
 footer_bg: https://cdn.jsdelivr.net/gh/kawhicurry/picgo/nordic/nord_alone_tree.png
@@ -538,7 +536,7 @@ canvas_fluttering_ribbon:
 # canvas_nest
 # https://github.com/hustcc/canvas-nest.js
 canvas_nest:
-  enable: true
+  enable: false
   color: "0,0,255" #color of lines, default: '0,0,0'; RGB values: (R,G,B).(note: use ',' to separate.)
   opacity: 0.7 # the opacity of line (0~1), default: 0.5.
   zIndex: -1 # z-index property of the background, default: -1.

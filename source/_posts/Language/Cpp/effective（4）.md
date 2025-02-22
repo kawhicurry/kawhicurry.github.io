@@ -1,5 +1,6 @@
 ---
 title: effective（4）
+cover : https://cdn.jsdelivr.net/gh/kawhicurry/picgo/gallery/nord/DSC_9980.JPG
 tags:
   - 专栏：effective c++
   - cpp

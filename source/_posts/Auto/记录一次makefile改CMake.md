@@ -1,5 +1,6 @@
 ---
 title: 记录一次makefile改CMake
+cover : https://cdn.jsdelivr.net/gh/kawhicurry/picgo/gallery/nord/DSC_0088.JPG
 tags:
   - c
   - cpp

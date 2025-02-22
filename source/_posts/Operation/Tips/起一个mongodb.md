@@ -1,5 +1,6 @@
 ---
 title: 起一个mongodb
+cover : https://cdn.jsdelivr.net/gh/kawhicurry/picgo/gallery/nord/DSC_0143.JPG
 categories:
   - Operation
   - Tips

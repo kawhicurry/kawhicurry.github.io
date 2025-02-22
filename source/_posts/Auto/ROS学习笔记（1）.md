@@ -1,5 +1,6 @@
 ---
 title: ROS学习笔记（1）
+cover : https://cdn.jsdelivr.net/gh/kawhicurry/picgo/gallery/nord/DSC_0015.JPG
 tags:
   - tag1
   - tag2

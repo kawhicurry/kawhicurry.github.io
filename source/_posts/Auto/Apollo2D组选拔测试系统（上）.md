@@ -1,5 +1,6 @@
 ---
 title: Apollo2D组选拔测试系统（上）
+cover : https://cdn.jsdelivr.net/gh/kawhicurry/picgo/gallery/nord/img_1327.jpg
 tag:
   - apollo
   - robucup

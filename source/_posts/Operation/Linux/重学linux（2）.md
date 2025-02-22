@@ -1,5 +1,6 @@
 ---
 title: 重学linux（2）
+cover : https://cdn.jsdelivr.net/gh/kawhicurry/picgo/gallery/nord/DSC_0015.JPG
 tags:
   - 专栏：重学linux
   - linux

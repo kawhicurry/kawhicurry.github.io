@@ -1,5 +1,6 @@
 ---
 title: Apollo2D项目回顾
+cover : https://cdn.jsdelivr.net/gh/kawhicurry/picgo/gallery/nord/img_1293.jpg
 description: Apollo2D项目回顾
 tags:
   - apollo

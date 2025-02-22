@@ -1,5 +1,6 @@
 ---
 title: New-Start
+cover : https://cdn.jsdelivr.net/gh/kawhicurry/picgo/gallery/nord/img_1293.jpg
 categories: Daily
 tags:
   - daily

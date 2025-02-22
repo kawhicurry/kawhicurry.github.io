@@ -1,5 +1,6 @@
 ---
 title: vim小技巧（0）
+cover : https://cdn.jsdelivr.net/gh/kawhicurry/picgo/gallery/nord/img_1206.jpg
 tags:
   - 专栏：每天几个vim小技巧
   - vim

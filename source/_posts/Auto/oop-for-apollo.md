@@ -1,5 +1,6 @@
 ---
 title: 给Apollo的面对对象课
+cover : https://cdn.jsdelivr.net/gh/kawhicurry/picgo/gallery/nord/DSC_0132.JPG
 categories:
   - Auto
 tags:

@@ -1,5 +1,6 @@
 ---
 title: Hello World
+cover : https://cdn.jsdelivr.net/gh/kawhicurry/picgo/gallery/nord/img_1327.jpg
 categories: test
 tags:
   - test

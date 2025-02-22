@@ -1,5 +1,6 @@
 ---
 title: image_test
+cover : https://cdn.jsdelivr.net/gh/kawhicurry/picgo/gallery/nord/DSC_9980.JPG
 tags:
   - test
 categories:

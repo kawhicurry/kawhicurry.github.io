@@ -13,7 +13,8 @@ timezone: 'Asia/Shanghai'
 
 # URL
 ## Set your site url here. For example, if you use GitHub Page, set url as 'https://username.github.io/project'
-url: https://kawhicurry.github.io
+# url: https://kawhicurry.github.io
+url: https://kawhicurry.online
 # url: http://localhost:4000/
 permalink: :category/:abbrlink/
 permalink_defaults:
@@ -169,3 +170,6 @@ robotstxt:
   disallow:
   allow:
   sitemap: https://kawhicurry.github.io/sitemap.xml
+
+filter:
+  - scripts/cover

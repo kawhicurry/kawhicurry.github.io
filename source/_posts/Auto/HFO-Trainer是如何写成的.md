@@ -1,5 +1,6 @@
 ---
 title: HFO-Trainer是如何写成的
+cover : https://cdn.jsdelivr.net/gh/kawhicurry/picgo/gallery/nord/DSC_0145.JPG
 categories:
   - Auto
 abbrlink: 660044d6

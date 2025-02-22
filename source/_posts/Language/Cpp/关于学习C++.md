@@ -1,5 +1,6 @@
 ---
 title: 关于学习C++
+cover : https://cdn.jsdelivr.net/gh/kawhicurry/picgo/gallery/nord/DSC_9980.JPG
 categories:
   - Language
   - Cpp

@@ -1,5 +1,6 @@
 ---
 title: 维护自己的AUR源
+cover : https://cdn.jsdelivr.net/gh/kawhicurry/picgo/gallery/nord/img_1206.jpg
 tags:
   - linux
   - aur
