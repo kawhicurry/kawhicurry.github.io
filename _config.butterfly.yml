@@ -122,6 +122,10 @@ cover:
   # When cover is not set, the default cover is displayed (當沒有設置cover時，默認的封面顯示)
   default_cover:
     # - https://cdn.jsdelivr.net/gh/kawhicurry/picgo/
+    - https://cdn.jsdelivr.net/gh/kawhicurry/picgo/gallery/nord/20250518-DSC_0056.jpg
+    - https://cdn.jsdelivr.net/gh/kawhicurry/picgo/gallery/nord/20250518-DSC_0065.jpg
+    - https://cdn.jsdelivr.net/gh/kawhicurry/picgo/gallery/nord/20250518-DSC_0083.jpg
+    - https://cdn.jsdelivr.net/gh/kawhicurry/picgo/gallery/nord/20250518-DSC_0169.jpg
     - https://cdn.jsdelivr.net/gh/kawhicurry/picgo/gallery/nord/DSC_0004.JPG
     - https://cdn.jsdelivr.net/gh/kawhicurry/picgo/gallery/nord/DSC_0015.JPG
     - https://cdn.jsdelivr.net/gh/kawhicurry/picgo/gallery/nord/DSC_0088.JPG
@@ -136,7 +140,6 @@ cover:
     - https://cdn.jsdelivr.net/gh/kawhicurry/picgo/gallery/nord/img_1206.jpg
     - https://cdn.jsdelivr.net/gh/kawhicurry/picgo/gallery/nord/img_1293.jpg
     - https://cdn.jsdelivr.net/gh/kawhicurry/picgo/gallery/nord/img_1327.jpg
-
 
 
     # todo: add more tree
