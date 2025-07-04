@@ -1,6 +1,6 @@
 ---
 title: Qingyou_1
-cover : https://cdn.jsdelivr.net/gh/kawhicurry/picgo/gallery/nord/img_1327.jpg
+cover : https://gallery-cos.kawhicurry.online/picgo/gallery/nord/img_1327.jpg
 categories: Daily
 tags:
   - qingyou

@@ -1,6 +1,6 @@
 ---
 title: HFO-Trainer是如何写成的
-cover : https://cdn.jsdelivr.net/gh/kawhicurry/picgo/gallery/nord/DSC_0145.JPG
+cover : https://gallery-cos.kawhicurry.online/picgo/gallery/nord/DSC_0145.JPG
 categories:
   - Auto
 abbrlink: 660044d6
@@ -80,7 +80,7 @@ A big difference between HFO system and official rcssserver is that HFO system p
 
 We also provides some atomic actions similar to the HFO system's, but ours are optimized and verified to be more efficient. The diagram below shows cycles spent on catching ball between them.
 
-![compare](https://cdn.jsdelivr.net/gh/kawhicurry/picgo/tech/Apollo5.png)
+![compare](https://gallery-cos.kawhicurry.online/picgo/tech/Apollo5.png)
 
 ### HFO with more conditions
 
@@ -90,9 +90,9 @@ The original HFO system defined a lot of constants like HFO area and others in t
 
 For beginners who start a trip of 2D simulation, they need time to understand how rcssserver works. So we apply the HFO trainer on teaching beginners. The rookies this year(2022) of Apollo2D are taught to write a player that can get a moving ball as rapidly as they can. We applied HFO trainer on it and added a condition about getting the ball. Their recently grades are like below
 
-![compare](https://cdn.jsdelivr.net/gh/kawhicurry/picgo/tech/Apollo3.png)
+![compare](https://gallery-cos.kawhicurry.online/picgo/tech/Apollo3.png)
 
-![compare](https://cdn.jsdelivr.net/gh/kawhicurry/picgo/tech/Apollo4.png)
+![compare](https://gallery-cos.kawhicurry.online/picgo/tech/Apollo4.png)
 
 ### About future
 

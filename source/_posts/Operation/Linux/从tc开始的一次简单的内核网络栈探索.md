@@ -1,6 +1,6 @@
 ---
 title: 从tc开始的一次简单的内核网络栈探索
-cover : https://cdn.jsdelivr.net/gh/kawhicurry/picgo/gallery/nord/DSC_9371.JPG
+cover : https://gallery-cos.kawhicurry.online/picgo/gallery/nord/DSC_9371.JPG
 tags:
   - linux
   - tc

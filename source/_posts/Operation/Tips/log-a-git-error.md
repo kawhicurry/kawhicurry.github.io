@@ -1,6 +1,6 @@
 ---
 title: log-a-git-error
-cover : https://cdn.jsdelivr.net/gh/kawhicurry/picgo/gallery/nord/DSC_0145.JPG
+cover : https://gallery-cos.kawhicurry.online/picgo/gallery/nord/DSC_0145.JPG
 categories:
   - Operation
   - Tips

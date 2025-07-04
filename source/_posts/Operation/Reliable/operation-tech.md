@@ -1,6 +1,6 @@
 ---
 title: Situation of operation technology
-cover : https://cdn.jsdelivr.net/gh/kawhicurry/picgo/gallery/nord/DSC_0132.JPG
+cover : https://gallery-cos.kawhicurry.online/picgo/gallery/nord/DSC_0132.JPG
 categories:
   - Operation
   - Reliable

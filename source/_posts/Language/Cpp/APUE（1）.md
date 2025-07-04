@@ -1,6 +1,6 @@
 ---
 title: APUE（1）
-cover : https://cdn.jsdelivr.net/gh/kawhicurry/picgo/gallery/nord/DSC_0088.JPG
+cover : https://gallery-cos.kawhicurry.online/picgo/gallery/nord/DSC_0088.JPG
 tags:
   - 专栏：APUE
   - linux

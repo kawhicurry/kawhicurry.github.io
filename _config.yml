@@ -3,9 +3,9 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: Kawhicurry's Blog
-subtitle: Welcome to Kawhicurry's Blog
-description: An student aiming to be an operation engineer.
+title: KawhiCurry's Blog
+subtitle: Welcome to KawhiCurry's Blog
+description: SRE, building a reliable world with infinite possibility
 keywords: blog,operation,cpp,robocup,ros
 author: kawhicurry
 language: zh-CN

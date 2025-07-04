@@ -1,6 +1,6 @@
 ---
 title: 记录从无人机上学到的东西
-cover : https://cdn.jsdelivr.net/gh/kawhicurry/picgo/gallery/nord/DSC_0145.JPG
+cover : https://gallery-cos.kawhicurry.online/picgo/gallery/nord/DSC_0145.JPG
 categories:
   - Auto
 tags: auto

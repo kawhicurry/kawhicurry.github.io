@@ -1,6 +1,6 @@
 ---
 title: 自制Rss阅读器
-cover : https://cdn.jsdelivr.net/gh/kawhicurry/picgo/gallery/nord/DSC_0015.JPG
+cover : https://gallery-cos.kawhicurry.online/picgo/gallery/nord/DSC_0015.JPG
 categories:
   - Project
 tags:

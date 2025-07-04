@@ -1,6 +1,6 @@
 ---
 title: 又一次加入manjaro大家庭
-cover : https://cdn.jsdelivr.net/gh/kawhicurry/picgo/gallery/nord/img_1206.jpg
+cover : https://gallery-cos.kawhicurry.online/picgo/gallery/nord/img_1206.jpg
 categories:
   - Daily
 abbrlink: 512f04dd
@@ -25,5 +25,5 @@ date: 2022-03-24 21:41:56
 
 最后的最后，附上这张图，下起大雨了，得赶紧回去了。
 
-![bamboo](https://cdn.jsdelivr.net/gh/kawhicurry/picgo/scenery/bamboo0.png)
+![bamboo](https://gallery-cos.kawhicurry.online/picgo/scenery/bamboo0.png)
 

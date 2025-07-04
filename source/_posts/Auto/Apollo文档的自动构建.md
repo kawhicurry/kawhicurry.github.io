@@ -1,6 +1,6 @@
 ---
 title: Apollo文档的自动构建
-cover : https://cdn.jsdelivr.net/gh/kawhicurry/picgo/gallery/nord/DSC_0132.JPG
+cover : https://gallery-cos.kawhicurry.online/picgo/gallery/nord/DSC_0132.JPG
 tags:
   - gitbook
   - apollo

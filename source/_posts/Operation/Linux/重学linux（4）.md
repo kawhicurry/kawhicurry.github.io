@@ -1,6 +1,6 @@
 ---
 title: 重学linux（4）
-cover : https://cdn.jsdelivr.net/gh/kawhicurry/picgo/gallery/nord/DSC_0164.JPG
+cover : https://gallery-cos.kawhicurry.online/picgo/gallery/nord/DSC_0164.JPG
 tags:
   - 专栏：重学linux
   - linux

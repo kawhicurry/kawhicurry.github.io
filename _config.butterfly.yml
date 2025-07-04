@@ -11,6 +11,7 @@ menu:
   #   Music: /music/ || fas fa-music
   #   Movie: /movies/ || fas fa-video
   Link: /link/ || fas fa-link
+  Gallery: https://gallery.kawhicurry.online || fas fa-image
   About: /about/ || fas fa-heart
 
 # Code Blocks (代碼相關)
@@ -647,7 +648,7 @@ aside:
       link: https://github.com/kawhicurry
   card_announcement:
     enable: true
-    content: 我们一天天所度过的所谓日常,可能是接连不断的奇迹
+    content: 点右上角gallery去看看我拍的照片！
   card_recent_post:
     enable: true
     limit: 5 # if set 0 will show all

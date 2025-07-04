@@ -7,7 +7,7 @@ description: 记录一次docker迁移
 categories:
   - Operation
   - Tips
-cover: 'https://cdn.jsdelivr.net/gh/kawhicurry/picgo/tech/docker0.jpeg'
+cover: 'https://gallery-cos.kawhicurry.online/picgo/tech/docker0.jpeg'
 abbrlink: 1ee5701f
 date: 2022-01-13 13:55:28
 ---

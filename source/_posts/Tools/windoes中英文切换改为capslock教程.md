@@ -1,6 +1,6 @@
 ---
 title: windoes中英文切换改为capslock教程
-cover: 'https://cdn.jsdelivr.net/gh/kawhicurry/picgo/gallery/nord/DSC_0147.JPG'
+cover: 'https://gallery-cos.kawhicurry.online/picgo/gallery/nord/DSC_0147.JPG'
 categories:
   - Tools
 abbrlink: 45bb8011
